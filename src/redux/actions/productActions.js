@@ -23,7 +23,7 @@ import {
 	PRODUCT_TOP_FAIL,
 } from '../constants/productConstants'
 import { logout } from './userActions'
-import products from '../_data/products.json'
+import products from '../../_data/products.json'
 
 export const listProducts =
 	(keyword = '', pageNumber = '') =>
