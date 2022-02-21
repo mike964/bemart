@@ -26,7 +26,7 @@ const ProductCarousel = () => {
 	) : (
 		<Carousel
 			pause='hover'
-			className='bg-light-gray'
+			className='bg-light-gray mb-3'
 			indicators={false}>
 			{products &&
 				products.map((item) => {

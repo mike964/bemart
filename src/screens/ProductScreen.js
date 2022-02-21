@@ -21,6 +21,8 @@ import {
 import { PRODUCT_CREATE_REVIEW_RESET } from '../redux/constants/productConstants'
 
 const ProductScreen = ({ history, match }) => {
+	console.log(match.params)
+
 	const [qty, setQty] = useState(1)
 	const [rating, setRating] = useState(0)
 	const [comment, setComment] = useState('')
@@ -173,7 +175,7 @@ const ProductScreen = ({ history, match }) => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={6}>
+						{/* <Col md={6}>
 							<h2>Reviews</h2>
 							{product.reviews.length === 0 && (
 								<Message>No Reviews</Message>
@@ -258,7 +260,7 @@ const ProductScreen = ({ history, match }) => {
 									)}
 								</ListGroup.Item>
 							</ListGroup>
-						</Col>
+						</Col> */}
 					</Row>
 				</>
 			)}

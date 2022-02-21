@@ -24,6 +24,7 @@ import {
 } from '../constants/productConstants'
 import { logout } from './userActions'
 import products from '../../_data/products.json'
+import { getProduct } from '../../util'
 
 export const listProducts =
 	(keyword = '', pageNumber = '') =>
@@ -34,6 +35,11 @@ export const listProducts =
 			// const { data } = await axios.get(
 			//   `/api/products?keyword=${keyword}&pageNumber=${pageNumber}`
 			// )
+
+			const products_1 = products.map((item) =>
+				getProduct(item)
+			)
+			console.log(products_1)
 
 			console.log(products)
 			const data = { products, pages: 2, page: 1 }
@@ -58,15 +64,21 @@ export const listProductDetails =
 		try {
 			dispatch({ type: PRODUCT_DETAILS_REQUEST })
 
-			const { data } = await axios.get(
-				`/api/products/${id}`
-			)
+			// const { data } = await axios.get(
+			// 	`/api/products/${id}`
+			// )
+			const product = products.filter((item) => {
+				return item._id === id || item.asin === id
+			})
+
+			const data = product[0] ? getProduct(product[0]) : {}
 
 			dispatch({
 				type: PRODUCT_DETAILS_SUCCESS,
 				payload: data,
 			})
 		} catch (error) {
+			console.log(error)
 			dispatch({
 				type: PRODUCT_DETAILS_FAIL,
 				payload:
