@@ -99,3 +99,9 @@ h2 {
 	max-height: 40px;
 	overflow: hidden;
 }
+
+.card-product-grid:hover,
+.card.card-product-list:hover {
+	box-shadow: 0 3px 10px rgb(51 51 51 / 10%);
+	transition: 0.2s;
+}

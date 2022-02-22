@@ -36,13 +36,16 @@ export const listProducts =
 			//   `/api/products?keyword=${keyword}&pageNumber=${pageNumber}`
 			// )
 
-			const products_1 = products.map((item) =>
-				getProduct(item)
-			)
-			console.log(products_1)
+			let x = pageNumber * 12 - 12
 
-			console.log(products)
-			const data = { products, pages: 2, page: 1 }
+			// const data = { products, pages: 2, page: 1 }
+			const data = {
+				products: products.slice(x, x + 12),
+				pages: products
+					? Math.ceil(products.length / 12)
+					: 2,
+				page: pageNumber,
+			}
 
 			dispatch({
 				type: PRODUCT_LIST_SUCCESS,
