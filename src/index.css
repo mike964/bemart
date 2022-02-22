@@ -67,3 +67,35 @@ h2 {
 .carousel-indicators {
 	background-color: orange;
 }
+
+/* -------------------- */
+/* SINGEL PRODUCT ITEM */
+/* ------------------ */
+
+.card-product-grid {
+	box-shadow: 0 1px 2px rgb(51 51 51 / 7%);
+	border-radius: 0.3rem;
+}
+
+.img-wrap {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+	height: 220px;
+	/* border: 1px solid green; */
+	border-bottom: 1px solid rgb(219, 219, 219);
+	padding: 1.5rem;
+}
+
+.img-wrap img {
+	/* height: 100%; */
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+}
+
+.card-title {
+	max-height: 40px;
+	overflow: hidden;
+}
