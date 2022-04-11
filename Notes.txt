@@ -1,0 +1,28 @@
+2022-2-20
+
+# TODOS 
+----------------------------------------------- 
+- Add prettier config
+- Fix top products                                                            #DONE
+- Fix single product page                                    		#DONE  
+- Todo : Fix produt item cards length, in home page           #DONE
+- Todo : Fix pagination, make pagination work                     #DONE
+- Shorten product name , and when hover show full detail 
+- move search box out
+- Search input suggestions 
+
+- Add use login as 'admin' or 'custormer'
+
+
+
+# NOTES 
+--------------------------------------------------
+No need for admin
+Make it like Amazon  / LG / acer / anker ...
+
+
+=================================================
+use this : 
+https://bootstrap-ecommerce.com/components.html
+https://themes.getbootstrap.com/preview/?theme_id=35287
+https://colorlib.com/wp/free-bootstrap-ecommerce-website-templates/
