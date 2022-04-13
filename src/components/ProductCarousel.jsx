@@ -5,14 +5,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import Loader from './Loader'
 import Message from './Message'
 import { listTopProducts } from '../redux/actions/productActions'
-import { getProduct } from '../util'
+import { getProduct } from '../utils'
 
 const ProductCarousel = () => {
 	const dispatch = useDispatch()
 
-	const productTopRated = useSelector(
-		(state) => state.productTopRated
-	)
+	const productTopRated = useSelector(state => state.productTopRated)
 	const { loading, error, products } = productTopRated
 
 	useEffect(() => {
@@ -24,12 +22,9 @@ const ProductCarousel = () => {
 	) : error ? (
 		<Message variant='danger'>{error}</Message>
 	) : (
-		<Carousel
-			pause='hover'
-			className='bg-light-gray mb-3'
-			indicators={false}>
+		<Carousel pause='hover' className='bg-light-gray mb-3' indicators={false}>
 			{products &&
-				products.map((item) => {
+				products.map(item => {
 					const product = getProduct(item) // change product propertis in order to fit
 					return (
 						<Carousel.Item key={product._id}>
@@ -37,11 +32,7 @@ const ProductCarousel = () => {
 								<div
 									className='bg-white text-center'
 									style={{ minWidth: '400px' }}>
-									<Image
-										src={product.image}
-										alt={product.name}
-										fluid
-									/>
+									<Image src={product.image} alt={product.name} fluid />
 								</div>
 								<Carousel.Caption className='carousel-caption'>
 									<h2>

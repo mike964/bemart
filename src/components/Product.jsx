@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
-import { getProduct } from '../util'
+import { getProduct } from '../utils'
 
-const Product = (props) => {
+const Product = props => {
 	const product = getProduct(props.product)
 
 	// console.log(props.product.rating.slice(0, 3))
