@@ -13,7 +13,9 @@ const Product = props => {
 		<Card className='my-3 card-product-grid'>
 			{/* <Card.Img src={product.image} variant='top' /> */}
 			<div className='img-wrap'>
-				<img src={product.image} alt='' />
+				<Link to={`/product/${product._id}`}>
+					<img src={product.image} alt='' />
+				</Link>
 			</div>
 
 			<Card.Body>

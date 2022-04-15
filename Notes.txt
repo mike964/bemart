@@ -1,4 +1,10 @@
 
+# NOTES 
+-----------------------------------------------------
+No need for admin
+Make it like Amazon  / LG / acer / anker ...
+
+
 2022-4-12
 This is actually an amazon clone to use as show case project
 
@@ -39,6 +45,12 @@ I think now I should return to roadmap project
 video 8.4 done
 
 
+
+=================================================
+use this : 
+https://bootstrap-ecommerce.com/components.html
+https://themes.getbootstrap.com/preview/?theme_id=35287
+https://colorlib.com/wp/free-bootstrap-ecommerce-website-templates/
 
 
 ==== LATER ============================

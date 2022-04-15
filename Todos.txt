@@ -3,27 +3,17 @@ Inspired by Brad Traversy Proshop MERN project
 
 # TODOS 
 ----------------------------------------------- 
-- Add prettier config
-- Fix top products                                                            #DONE
-- Fix single product page                                    		#DONE  
-- Todo : Fix produt item cards length, in home page           #DONE
-- Todo : Fix pagination, make pagination work                     #DONE
-- Shorten product name , and when hover show full detail 
+- Add prettier config          (no need)
+- Fix top products                                            ✅
+- Fix single product page                                     ✅
+- Fix produt item cards length, in home page                  ✅
+- Fix pagination, make pagination work                        ✅
+- Shorten product name , when hover show full detail 
+- open prudct item page when product image clicked 
+- add product to cart icon for each product in list
 - move search box out
 - Search input suggestions 
 
 - Add use login as 'admin' or 'custormer'
+- Build Banner slice show component
 
-
-
-# NOTES 
---------------------------------------------------
-No need for admin
-Make it like Amazon  / LG / acer / anker ...
-
-
-=================================================
-use this : 
-https://bootstrap-ecommerce.com/components.html
-https://themes.getbootstrap.com/preview/?theme_id=35287
-https://colorlib.com/wp/free-bootstrap-ecommerce-website-templates/

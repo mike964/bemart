@@ -84,7 +84,7 @@ h2 {
 	display: block;
 	height: 220px;
 	/* border: 1px solid green; */
-	border-bottom: 1px solid rgb(219, 219, 219);
+	/* border-bottom: 1px solid rgb(219, 219, 219); */
 	padding: 1.5rem;
 }
 
@@ -104,4 +104,15 @@ h2 {
 .card.card-product-list:hover {
 	box-shadow: 0 3px 10px rgb(51 51 51 / 10%);
 	transition: 0.2s;
+}
+
+header {
+	background: #242449;
+	/* border-bottom: #d3d3d3 1px solid; */
+	/* border-bottom: #b6b4e7 1px solid; */
+	margin-bottom: 1.5rem;
+}
+
+header > .navbar {
+	padding: 1rem;
 }
