@@ -19,7 +19,7 @@ const Product = props => {
 			</div>
 
 			<Card.Body>
-				<Link to={`/product/${product._id}`}>
+				<Link to={`/product/${product._id}`} className='product-title'>
 					<Card.Title as='div'>
 						<strong>{product.name}</strong>
 					</Card.Title>

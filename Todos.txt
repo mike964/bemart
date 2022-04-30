@@ -12,7 +12,9 @@ Inspired by Brad Traversy Proshop MERN project
 - open prudct item page when product image clicked 
 - add product to cart icon for each product in list
 - move search box out
-- Search input suggestions 
+- Search input suggestions - for ex. search iphone
+Make the search bar pro - with suggestion
+Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 
 - Add use login as 'admin' or 'custormer'                    
 - Build Banner slice show component                           ✅ 22.4.30

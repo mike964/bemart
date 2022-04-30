@@ -71,6 +71,13 @@ const Header = () => {
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
+			<div className='navbar-footer d-flex container'>
+				<div class='p-2 flex-fill clickable'>Laptops</div>
+				<div class='p-2 flex-fill clickable'>Cell Phones</div>
+				<div class='p-2 flex-fill clickable'>Cameras</div>
+				<div class='p-2 flex-fill clickable'>Gaming</div>
+				<div class='p-2 flex-fill clickable'>Gift Cards</div>
+			</div>
 		</header>
 	)
 }

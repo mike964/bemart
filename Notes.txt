@@ -54,12 +54,10 @@ use this :
 https://bootstrap-ecommerce.com/components.html
 https://themes.getbootstrap.com/preview/?theme_id=35287
 https://colorlib.com/wp/free-bootstrap-ecommerce-website-templates/
-
-
-==== LATER ============================
-At the end add infinite scroll
-Make the search bar pro - with suggestion
-Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
-
  https://www.apple.com/shop/accessories/all/headphones-speakers?page=1
  https://www.udemy.com/course/create-a-twitter-clone-with-nodejs-socketio-and-mongodb/
+ 
+
+
+22.4.30
+Tomorrow Start working on Search functionality. also add authentication with redux create slice 
