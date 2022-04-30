@@ -18,14 +18,14 @@ const Header = () => {
 
 	return (
 		<header>
-			<Navbar
-				// bg='dark'
-				variant='light'
-				expand='lg'
-				collapseOnSelect>
+			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand className='text-light'>UNIMART</Navbar.Brand>
+						<Navbar.Brand
+						// className='text-light'
+						>
+							UNIMART
+						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>

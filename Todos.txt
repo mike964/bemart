@@ -17,3 +17,6 @@ Inspired by Brad Traversy Proshop MERN project
 - Add use login as 'admin' or 'custormer'
 - Build Banner slice show component
 
+- If user not logged in pop up login dialog for user to log in 
+- Add multiple language 
+- Add multiple currency
