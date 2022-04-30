@@ -3,21 +3,21 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import Header from './components/header/Header'
 import Footer from './components/Footer'
-import HomeScreen from './screens/HomeScreen'
-import ProductScreen from './screens/ProductScreen'
-import CartScreen from './screens/CartScreen'
-import LoginScreen from './screens/LoginScreen'
-import RegisterScreen from './screens/RegisterScreen'
-import ProfileScreen from './screens/ProfileScreen'
-import ShippingScreen from './screens/ShippingScreen'
-import PaymentScreen from './screens/PaymentScreen'
-import PlaceOrderScreen from './screens/PlaceOrderScreen'
-import OrderScreen from './screens/OrderScreen'
-import UserListScreen from './screens/UserListScreen'
-import UserEditScreen from './screens/UserEditScreen'
-import ProductListScreen from './screens/ProductListScreen'
-import ProductEditScreen from './screens/ProductEditScreen'
-import OrderListScreen from './screens/OrderListScreen'
+import HomeScreen from './pages/HomeScreen.jsx'
+import ProductScreen from './pages/ProductScreen'
+import CartScreen from './pages/CartScreen'
+import LoginScreen from './pages/LoginScreen'
+import RegisterScreen from './pages/RegisterScreen'
+import ProfileScreen from './pages/ProfileScreen'
+import ShippingScreen from './pages/ShippingScreen'
+import PaymentScreen from './pages/PaymentScreen'
+import PlaceOrderScreen from './pages/PlaceOrderScreen'
+import OrderScreen from './pages/OrderScreen'
+import UserListScreen from './pages/UserListScreen'
+import UserEditScreen from './pages/UserEditScreen'
+import ProductListScreen from './pages/ProductListScreen'
+import ProductEditScreen from './pages/ProductEditScreen'
+import OrderListScreen from './pages/OrderListScreen'
 import SearchInput from './components/header/SearchInput'
 // import Navbar2 from './components/Navbar2'
 
@@ -26,7 +26,7 @@ const App = () => {
 		<Router>
 			<Header />
 			{/* <Navbar2 /> */}
-			<main className='py-3'>
+			<main className='pyy-3'>
 				<Container>
 					<Route path='/order/:id' component={OrderScreen} />
 					<Route path='/shipping' component={ShippingScreen} />
