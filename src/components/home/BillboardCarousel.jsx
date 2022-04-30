@@ -22,15 +22,15 @@ const BillboardCarousel = () => {
 					src={item.image}
 					alt={`slide-${item.id}`}
 				/>
-				<Carousel.Caption>
+				{/* <Carousel.Caption>
 					<h3>First slide label</h3>
 					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-				</Carousel.Caption>
+				</Carousel.Caption> */}
 			</Carousel.Item>
 		))
 	}
 
-	return <Carousel indicators={false}>{renderBillboardItems()}</Carousel>
+	return <Carousel indicators={true}>{renderBillboardItems()}</Carousel>
 }
 
 export default BillboardCarousel

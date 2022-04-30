@@ -47,6 +47,11 @@ h2 {
 .carousel a {
 	margin: 0 auto;
 }
+
+.carousel-indicators {
+	background-color: rgba(206, 234, 244, 0.065) !important;
+}
+
 @media (max-width: 900px) {
 	.carousel-caption h2 {
 		font-size: 2.5vw;
