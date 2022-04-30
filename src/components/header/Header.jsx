@@ -72,10 +72,24 @@ const Header = () => {
 				</Container>
 			</Navbar>
 			<div className='navbar-footer d-flex container'>
+				<NavDropdown
+					id='nav-dropdown-dark-example'
+					className='flex-fill'
+					title='Products'
+					menuVariant='dark'>
+					<NavDropdown.Item href='#action/3.1'>
+						Computers & Components
+					</NavDropdown.Item>
+					<NavDropdown.Item href='#action/3.2'>Laptops</NavDropdown.Item>
+					<NavDropdown.Item href='#action/3.3'>Cell Phones</NavDropdown.Item>
+					<NavDropdown.Item href='#action/3.3'>Accessories</NavDropdown.Item>
+					<NavDropdown.Divider />
+					<NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
+				</NavDropdown>
 				<div class='p-2 flex-fill clickable'>Laptops</div>
-				<div class='p-2 flex-fill clickable'>Cell Phones</div>
 				<div class='p-2 flex-fill clickable'>Cameras</div>
-				<div class='p-2 flex-fill clickable'>Gaming</div>
+				<div class='p-2 flex-fill clickable'>Cell Phones</div>
+				<div class='p-2 flex-fill clickable'>Accessories</div>
 				<div class='p-2 flex-fill clickable'>Gift Cards</div>
 			</div>
 		</header>

@@ -2,6 +2,10 @@ main {
 	min-height: 80vh;
 }
 
+a {
+	color: #6a6e77 !important;
+}
+
 h3 {
 	padding: 1rem 0;
 }
