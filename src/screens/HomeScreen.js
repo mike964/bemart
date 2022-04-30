@@ -9,6 +9,7 @@ import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel.jsx'
 import Meta from '../components/Meta'
 import { listProducts } from '../redux/actions/productActions'
+import BillboardCarousel from '../components/home/BillboardCarousel.jsx'
 
 const HomeScreen = ({ match }) => {
 	const keyword = match.params.keyword
@@ -17,11 +18,8 @@ const HomeScreen = ({ match }) => {
 
 	const dispatch = useDispatch()
 
-	const productList = useSelector(
-		(state) => state.productList
-	)
-	const { loading, error, products, page, pages } =
-		productList
+	const productList = useSelector(state => state.productList)
+	const { loading, error, products, page, pages } = productList
 
 	useEffect(() => {
 		dispatch(listProducts(keyword, pageNumber))
@@ -32,7 +30,8 @@ const HomeScreen = ({ match }) => {
 		<>
 			<Meta />
 			{!keyword ? (
-				<ProductCarousel />
+				// <ProductCarousel />
+				<BillboardCarousel />
 			) : (
 				<Link to='/' className='btn btn-light'>
 					Go Back
@@ -47,13 +46,8 @@ const HomeScreen = ({ match }) => {
 				<>
 					<Row>
 						{products &&
-							products.map((product) => (
-								<Col
-									key={product._id}
-									sm={12}
-									md={6}
-									lg={4}
-									xl={3}>
+							products.map(product => (
+								<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
 									<Product product={product} />
 								</Col>
 							))}

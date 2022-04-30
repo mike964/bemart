@@ -14,8 +14,8 @@ Inspired by Brad Traversy Proshop MERN project
 - move search box out
 - Search input suggestions 
 
-- Add use login as 'admin' or 'custormer'
-- Build Banner slice show component
+- Add use login as 'admin' or 'custormer'                    
+- Build Banner slice show component                           ✅ 22.4.30
 
 - If user not logged in pop up login dialog for user to log in 
 - Add multiple language 
