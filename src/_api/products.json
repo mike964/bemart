@@ -108,6 +108,7 @@
 			"imageResolution": "679 x 679"
 		},
 		"categories": ["Tablets"],
+		"category": "Tablets",
 		"keywords": ["apple", "tablet", "ipad"]
 	},
 	{
@@ -628,7 +629,9 @@
 			"Computers & Tablets",
 			"Laptops",
 			"Traditional Laptops"
-		]
+		],
+		"category": "Laptops",
+		"keywords": ["apple"]
 	},
 	{
 		"title": "Lenovo Flex 5 14\" 2-in-1 Laptop, 14.0\" FHD (1920 x 1080) Touch Display, AMD Ryzen 5 4500U Processor, 16GB DDR4, 256GB SSD, AMD Radeon Graphics, Digital Pen Included, Win 10, 81X20005US, Graphite Grey",
@@ -858,7 +861,9 @@
 			"Computers & Tablets",
 			"Laptops",
 			"2 in 1 Laptops"
-		]
+		],
+		"category": "Laptops",
+		"keywords": ["apple"]
 	},
 	{
 		"title": "Asus L510MA-DS04 15.6\" Celeron N4020 4 GB RAM 128 GB eMMC",
@@ -1089,7 +1094,9 @@
 			"Computers & Tablets",
 			"Laptops",
 			"Traditional Laptops"
-		]
+		],
+		"category": "Laptops",
+		"keywords": ["asus"]
 	},
 	{
 		"title": "Apple 20W USB-C Power Adapter",
@@ -1245,13 +1252,20 @@
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41iWogJnZQL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
 		},
-		"categories": [],
+		"categories": [
+			"Accessories",
+			"Cell Phone Accessories",
+			"Charchers",
+			"Power Adapters"
+		],
+		"category": "Cell Phone Accessories",
+		"keywords": ["apple"],
 		"currency": null,
 		"acKeywordLink": null,
 		"deliveryMessage": "Get free shipping Free 5-8 day shipping within the U.S. when you order $25.00 of eligible items sold or fulfilled by Amazon. Or get 4-5 business-day shipping on this item for $5.99 . (Prices may vary for AK and HI.) Learn more about free shipping Friday, May 21 on orders over $25.00 shipped by Amazon. Details"
 	},
 	{
-		"title": "Anker Portable Charger, PowerCore Slim 10000 Power Bank, 10000mAh Battery Pack, High-Speed PowerIQ Charging Technology for iPhone, Samsung Galaxy, and More",
+		"title": "Anker Portable Charger, PowerCore Slim 10000 Power Bank, 10000mAh Battery Pack",
 		"manufacturer": "Visit the Anker Store",
 		"countReview": 17046,
 		"answeredQuestions": 334,

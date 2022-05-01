@@ -11,19 +11,30 @@ const fake_api = (endpoint, payload) => {
 
 	switch (endpoint) {
 		case '/products':
-			data = { products }
+			if (!payload) {
+				data = { products }
+			} else {
+				// * payload = filters =>
+				// case '/products?search':
+				// * payload (filters) : {property : 'catergory' , value : 'laptops'}
+				// console.log(payload)  // {category: 'Laptops'}
+				console.log(Object.keys(payload)) // ["category"]
+				const key = Object.keys(payload)[0]
+
+				const filteredProducts = products.filter(
+					item => item[key] === payload[key]
+				)
+
+				console.log(filteredProducts)
+				data = { products: filteredProducts }
+			}
 			break
 		case '/products/id':
 			let product = products.filter(item => item._id === payload)
 			// console.log( product )   // array
 			data = product[0]
 			break
-		case '/products?category':
-			const filteredProducts = products.filter(
-				item => item.category.toLowerCase === payload
-			)
-			data = filteredProducts
-			break
+
 		case '/login':
 			let user = users.filter(item => item.email === payload)
 			data = user[0]
@@ -51,7 +62,7 @@ const axios_get = (endpoint, payload) => {
 	const thePromise = new Promise((resolve, reject) => {
 		// resolve(meetingDetails); // means return
 		let data = fake_api(endpoint, payload)
-		console.log(data)
+		// console.log(data)
 
 		setTimeout(() => {
 			if (data) {
