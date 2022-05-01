@@ -1,4 +1,8 @@
-import { products, users } from './_data'
+import { users } from './_data'
+import products from './products'
+
+// Filter products by category
+// '/products?category=laptops'
 
 const fake_api = (endpoint, payload) => {
 	let data
@@ -14,8 +18,11 @@ const fake_api = (endpoint, payload) => {
 			// console.log( product )   // array
 			data = product[0]
 			break
-		case '/cellphones':
-			data = cellphones
+		case '/products?category':
+			const filteredProducts = products.filter(
+				item => item.category.toLowerCase === payload
+			)
+			data = filteredProducts
 			break
 		case '/login':
 			let user = users.filter(item => item.email === payload)
@@ -44,7 +51,7 @@ const axios_get = (endpoint, payload) => {
 	const thePromise = new Promise((resolve, reject) => {
 		// resolve(meetingDetails); // means return
 		let data = fake_api(endpoint, payload)
-		// console.log(data);
+		console.log(data)
 
 		setTimeout(() => {
 			if (data) {
@@ -53,7 +60,7 @@ const axios_get = (endpoint, payload) => {
 			} else {
 				reject(new Error('No data to return!'))
 			}
-		}, 1000)
+		}, 800)
 	})
 
 	// const result = await thePromise();   // TypeError: thePromise is not a function

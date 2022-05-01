@@ -23,8 +23,9 @@ import {
 	PRODUCT_TOP_FAIL,
 } from '../constants/productConstants'
 import { logout } from './userActions'
-import products from '../../_api/products.json'
+// import products from '../../_api/products.json'
 import { getProduct } from '../../utils'
+import { axios_get } from '../../_api/fake_api'
 
 export const listProducts =
 	(keyword = '', pageNumber = '') =>
@@ -35,6 +36,11 @@ export const listProducts =
 			// const { data } = await axios.get(
 			//   `/api/products?keyword=${keyword}&pageNumber=${pageNumber}`
 			// )
+
+			// * Fetch products from fake api
+			const response = await axios_get('/products', '')
+			console.log(response)
+			const products = response.data.products
 
 			let x = pageNumber * 12 - 12
 
@@ -61,6 +67,7 @@ export const listProducts =
 	}
 
 export const listProductDetails = id => async dispatch => {
+	const products = []
 	try {
 		dispatch({ type: PRODUCT_DETAILS_REQUEST })
 
@@ -247,6 +254,7 @@ export const createProductReview =
 	}
 
 export const listTopProducts = () => async dispatch => {
+	const products = []
 	try {
 		dispatch({ type: PRODUCT_TOP_REQUEST })
 

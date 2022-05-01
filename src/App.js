@@ -19,46 +19,69 @@ import ProductListScreen from './pages/ProductListScreen'
 import ProductEditScreen from './pages/ProductEditScreen'
 import OrderListScreen from './pages/OrderListScreen'
 import SearchInput from './components/header/SearchInput'
+import ProductsPage from './pages/ProductsPage'
+import { Switch } from 'react-router-dom'
 // import Navbar2 from './components/Navbar2'
 
 const App = () => {
+	// For navigation in header
+	const productPages = [
+		{ title: 'Laptops', slug: 'laptops' },
+		{ title: 'Cell Phones', slug: 'cellphones' },
+		{ title: 'Cameras', slug: 'cameras' },
+	]
+
 	return (
 		<Router>
 			<Header />
 			{/* <Navbar2 /> */}
 			<main className='pyy-3'>
 				<Container>
-					<Route path='/order/:id' component={OrderScreen} />
-					<Route path='/shipping' component={ShippingScreen} />
-					<Route path='/payment' component={PaymentScreen} />
-					<Route path='/placeorder' component={PlaceOrderScreen} />
-					<Route path='/login' component={LoginScreen} />
-					<Route path='/register' component={RegisterScreen} />
-					<Route path='/profile' component={ProfileScreen} />
-					<Route path='/product/:id' component={ProductScreen} />
-					<Route path='/cart/:id?' component={CartScreen} />
-					<Route path='/admin/userlist' component={UserListScreen} />
-					<Route path='/admin/user/:id/edit' component={UserEditScreen} />
-					<Route
-						path='/admin/productlist'
-						component={ProductListScreen}
-						exact
-					/>
-					<Route
-						path='/admin/productlist/:pageNumber'
-						component={ProductListScreen}
-						exact
-					/>
-					<Route path='/admin/product/:id/edit' component={ProductEditScreen} />
-					<Route path='/admin/orderlist' component={OrderListScreen} />
-					<Route path='/search/:keyword' component={HomeScreen} exact />
-					<Route path='/page/:pageNumber' component={HomeScreen} exact />
-					<Route
-						path='/search/:keyword/page/:pageNumber'
-						component={HomeScreen}
-						exact
-					/>
-					<Route path='/' component={HomeScreen} exact />
+					<Switch>
+						<Route path='/order/:id' component={OrderScreen} />
+						<Route path='/shipping' component={ShippingScreen} />
+						<Route path='/payment' component={PaymentScreen} />
+						<Route path='/placeorder' component={PlaceOrderScreen} />
+						<Route path='/login' component={LoginScreen} />
+						<Route path='/register' component={RegisterScreen} />
+						<Route path='/profile' component={ProfileScreen} />
+						<Route path='/product/:id' component={ProductScreen} />
+						<Route path='/cart/:id?' component={CartScreen} />
+						<Route path='/admin/userlist' component={UserListScreen} />
+						<Route path='/admin/user/:id/edit' component={UserEditScreen} />
+						<Route
+							path='/admin/productlist'
+							component={ProductListScreen}
+							exact
+						/>
+						<Route
+							path='/admin/productlist/:pageNumber'
+							component={ProductListScreen}
+							exact
+						/>
+						<Route
+							path='/admin/product/:id/edit'
+							component={ProductEditScreen}
+						/>
+						<Route path='/admin/orderlist' component={OrderListScreen} />
+						<Route path='/search/:keyword' component={HomeScreen} exact />
+						<Route path='/page/:pageNumber' component={HomeScreen} exact />
+						<Route
+							path='/search/:keyword/page/:pageNumber'
+							component={HomeScreen}
+							exact
+						/>
+						{/* Added by me */}
+						{/* <Route path='/products/:category' component={ProductsPage} /> */}
+
+						{productPages.map(item => (
+							<Route path={`/products/${item.slug}`}>
+								<ProductsPage title={item.title} />
+							</Route>
+						))}
+
+						<Route path='/' component={HomeScreen} exact />
+					</Switch>
 				</Container>
 			</main>
 			<Footer />

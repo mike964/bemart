@@ -6,6 +6,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import SearchBox from './SearchBox'
 import { logout } from '../../redux/actions/userActions'
 import SearchInput from './SearchInput'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 	const dispatch = useDispatch()
@@ -77,23 +78,29 @@ const Header = () => {
 					className='flex-fill'
 					title='Products'
 					menuVariant='dark'>
-					<NavDropdown.Item href='#action/3.1'>
-						Computers & Components
-					</NavDropdown.Item>
+					<NavDropdown.Item href='#action/3.1'>Computers</NavDropdown.Item>
 					<NavDropdown.Item href='#action/3.2'>Laptops</NavDropdown.Item>
 					<NavDropdown.Item href='#action/3.3'>Cell Phones</NavDropdown.Item>
 					<NavDropdown.Item href='#action/3.3'>Accessories</NavDropdown.Item>
 					<NavDropdown.Divider />
 					<NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
 				</NavDropdown>
-				<div class='p-2 flex-fill clickable'>Laptops</div>
-				<div class='p-2 flex-fill clickable'>Cameras</div>
-				<div class='p-2 flex-fill clickable'>Cell Phones</div>
-				<div class='p-2 flex-fill clickable'>Accessories</div>
-				<div class='p-2 flex-fill clickable'>Gift Cards</div>
+				<div className='p-2 flex-fill clickable'>
+					<Link to='/products/laptops'>Laptops</Link>
+				</div>
+				<div className='p-2 flex-fill clickable'>
+					<Link to='/products/cameras'>Cameras</Link>
+				</div>
+				<div className='p-2 flex-fill clickable'>Cell Phones</div>
+				<div className='p-2 flex-fill clickable'>Accessories</div>
+				<div className='p-2 flex-fill clickable'>Gift Cards</div>
 			</div>
 		</header>
 	)
 }
+
+const ProductsDropdownItem = () => (
+	<NavDropdown.Item href='/products/laptops'>Laptops</NavDropdown.Item>
+)
 
 export default Header

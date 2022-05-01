@@ -16,7 +16,7 @@ const SearchInput = () => {
 				/>
 				<InputGroup.Append>
 					<Button variant='warning'>
-						<i class='fa fa-search' aria-hidden='true' />
+						<i className='fa fa-search' aria-hidden='true' />
 					</Button>
 				</InputGroup.Append>
 			</InputGroup>
