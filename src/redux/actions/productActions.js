@@ -67,22 +67,25 @@ export const listProducts =
 	}
 
 export const listProductDetails = id => async dispatch => {
-	const products = []
+	// const products = []
 	try {
 		dispatch({ type: PRODUCT_DETAILS_REQUEST })
 
 		// const { data } = await axios.get(
 		// 	`/api/products/${id}`
 		// )
-		const product = products.filter(item => {
-			return item._id === id || item.asin === id
-		})
+		// const product = products.filter(item => {
+		// 	return item._id === id || item.asin === id
+		// })
 
-		const data = product[0] ? getProduct(product[0]) : {}
+		const response = await axios_get('/product/id', id)
+		console.log(response)
+
+		const product = getProduct(response.data)
 
 		dispatch({
 			type: PRODUCT_DETAILS_SUCCESS,
-			payload: data,
+			payload: product,
 		})
 	} catch (error) {
 		console.log(error)
