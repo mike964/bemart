@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
@@ -8,14 +8,41 @@ import { listProducts } from '../redux/actions/productActions'
 
 // should contain filters, title, page number chnage...
 const ProductsPage = ({ title }) => {
-	let { category } = useParams()
+	let { category_slug: slug } = useParams()
 	const dispatch = useDispatch()
+
+	const [pageDetails, setPageDetails] = useState({})
+
+	console.log(slug)
+
+	// * Get page details
+	function getDetails(slug) {
+		switch (slug) {
+			case 'laptops':
+				return { title: 'Laptops', category: 'Laptops' }
+			case 'cellphones':
+				return { title: 'Cell Phones', category: 'Cell Phones' }
+			case 'cameras':
+				return { title: 'Cameras & Photo', category: 'Digital Cameras' }
+			case 'accessories':
+				return { title: 'Accessories', category: 'Accessories' }
+			default:
+				return 'No category found'
+		}
+	}
 
 	const productList = useSelector(state => state.productList)
 	const { loading, error, products, page, pages } = productList
 
 	useEffect(() => {
-		dispatch(listProducts(1, 1, { category: 'Laptops' }))
+		let x = getDetails(slug)
+		setPageDetails(x)
+		dispatch(listProducts(1, 1, { category: x.category }, true))
+		// dispatch(listProducts(1, 1, { category }))
+	}, [slug, dispatch])
+
+	useEffect(() => {
+		console.log('ProductsPage mounted.')
 	}, [])
 
 	// const products = []
@@ -23,8 +50,7 @@ const ProductsPage = ({ title }) => {
 	return (
 		<div>
 			<div className='mb3'>
-				<h3>{category}</h3>
-				<h3>{title}</h3>
+				<h3>{pageDetails.title}</h3>
 			</div>
 			<div className='mb-3'></div>
 			<Row>

@@ -75,7 +75,7 @@ const App = () => {
 						{/* <Route path='/products/:category' component={ProductsPage} /> */}
 
 						{productPages.map(item => (
-							<Route path={`/products/${item.slug}`}>
+							<Route path={`/products/:category_slug`}>
 								<ProductsPage title={item.title} />
 							</Route>
 						))}

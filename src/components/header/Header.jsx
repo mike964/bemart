@@ -91,8 +91,12 @@ const Header = () => {
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/cameras'>Cameras</Link>
 				</div>
-				<div className='p-2 flex-fill clickable'>Cell Phones</div>
-				<div className='p-2 flex-fill clickable'>Accessories</div>
+				<div className='p-2 flex-fill clickable'>
+					<Link to='/products/cellphones'>Cell Phones</Link>
+				</div>
+				<div className='p-2 flex-fill clickable'>
+					<Link to='/products/accessories'>Accessories</Link>
+				</div>
 				<div className='p-2 flex-fill clickable'>Gift Cards</div>
 			</div>
 		</header>

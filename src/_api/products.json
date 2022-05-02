@@ -349,6 +349,7 @@
 			"imageResolution": "679 x 679"
 		},
 		"boo": [],
+		"category": "Laptops",
 		"categories": ["Laptops"],
 		"keywords": ["apple", "macbook", "laptop"]
 	},
@@ -1669,162 +1670,6 @@
 		"deliveryMessage": "Get free shipping Free 5-8 day shipping within the U.S. when you order $25.00 of eligible items sold or fulfilled by Amazon. Or get 4-5 business-day shipping on this item for $5.99 . (Prices may vary for AK and HI.) Learn more about free shipping Friday, May 21 on orders over $25.00 shipped by Amazon. Details"
 	},
 	{
-		"title": "2020 Apple Mac Mini with Apple M1 Chip (8GB RAM, 256GB SSD Storage)",
-		"manufacturer": "Visit the Apple Store",
-		"countReview": 1134,
-		"answeredQuestions": 119,
-		"rating": "4.7 out of 5 stars",
-		"asin": "B08N5PHB83",
-		"sizeSelection": [],
-		"soldBy": "Amazon.com",
-		"fulfilledBy": "Amazon.com",
-		"sellerId": null,
-		"warehouseAvailability": "In Stock.",
-		"retailPrice": 0,
-		"price": 669,
-		"priceRange": null,
-		"shippingPrice": 0,
-		"priceShippingInformation": "",
-		"priceSaving": null,
-		"features": [
-			"Apple-designed M1 chip for a giant leap in CPU, GPU, and machine learning performance",
-			"8-core CPU packs up to 3x faster performance to fly through workflows quicker than ever*",
-			"8-core GPU with up to 6x faster graphics for graphics-intensive apps and games*",
-			"16-core Neural Engine for advanced machine learning",
-			"8GB of unified memory so everything you do is fast and fluid"
-		],
-		"images": [
-			"https://images-na.ssl-images-amazon.com/images/I/71pcTYT%2BICL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/816NiSihurL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/712XuV3lAxL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71IwG7uOCRL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71yUsA399kL._AC_SL1500_.jpg"
-		],
-		"videoeUrlList": [],
-		"productDescription": null,
-		"details": [
-			{
-				"name": "Product Dimensions",
-				"value": "7.76 x 7.76 x 1.42 inches; 3.62 Pounds"
-			},
-			{
-				"name": "Item Weight",
-				"value": "3.61 pounds"
-			},
-			{
-				"name": "Manufacturer",
-				"value": "Apple Computer"
-			},
-			{
-				"name": "ASIN",
-				"value": "B08N5PHB83"
-			},
-			{
-				"name": "Item model number",
-				"value": "MGNR3LL/A"
-			},
-			{
-				"name": "Batteries",
-				"value": "Lithium ion batteries required. (included)"
-			},
-			{
-				"name": "Date First Available",
-				"value": "November 10, 2020"
-			}
-		],
-		"minimalQuantity": "1",
-		"dealPrice": 0,
-		"salePrice": 0,
-		"reviews": [
-			{
-				"text": "Arrived and problems started after several hours trying to make it work. The Bluetooth will not connect properly, , had to use wired keyboard and mouse to make it work, then forced to use a hard wire internet cable because the Wi-Fi not work and after 3 hours on the telephone with apple support, they could not fix the HDMI socket. And to top it all I'm having to pay to return a defective product . Never in my life had so many problems with an Apple product.",
-				"date": "Reviewed in the United States on December 10, 2020",
-				"rating": "1.0 out of 5 stars",
-				"title": "what a disappointment",
-				"userName": "Alexron",
-				"url": "/gp/customer-reviews/RYHFGULT4DII8/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 256GB"]
-			},
-			{
-				"text": "While this is an excellent little CPU the real issue with this machine is that it is manufactured in a country engaged in a biological war against us, made by a company willing too attack freedom of speech and marketed by a company willing to do the same. If you are looking to buy a machine that will control your access to information this is the machine for you",
-				"date": "Reviewed in the United States on January 11, 2021",
-				"rating": "5.0 out of 5 stars",
-				"title": "Orwell would be proud",
-				"userName": "Hal O. Elledge",
-				"url": "/gp/customer-reviews/R32FN0I0ADNRXD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 256GB"]
-			},
-			{
-				"text": "This is a really fine way to get into the Apple Silicon world Apple is introducing. It is a modest machine but that is what the mini is all about. This is a new machine and OS so I am feeling charitable. I don't mind the two USB-3 ports, I deal with the limited storage by having an external 6Tb disk. The price drop is a really good sign as minis were getting pricey. I think it is a really good value for the money.",
-				"date": "Reviewed in the United States on November 27, 2020",
-				"rating": "5.0 out of 5 stars",
-				"title": "A good way to enter Apple Silicon machines",
-				"userName": "Jon Harwood",
-				"url": "/gp/customer-reviews/R3K19SHJ1LTRCP/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 256GB"]
-			},
-			{
-				"text": "First, the price point for this at $30 under retail was great, but it would have been nice to purchase the 16GB option. As a first time macOS user, the setup was quite bumpy. Rosetta seems to work great with certain \"unsupported\" applications, in some cases not expecting it to work at all, and would without any hiccups or noticeable slowness. This was the case with Runelite and enabling the GPU plugin made the experience buttery-smooth on an LG 3440x1440 IPS display. However, Firefox (without installing the beta M1 supported version) would consistently freeze and crash and it seemed to be ruled out by plugins, but even without that, certain websites wouldn't work and loading pages after each click took way too long. I experienced another bug with Discord and couldn't see its login setup screen due to what seemed like a file association or visual glitch, and I found out there's no good uninstaller option natively on macOS other than just binning applications to the trash and clearing it from there. So, I had to uninstaller a third-party app to remove all file associations when the application was installed to finally get a clean install and thankfully the Discord install worked well after that. The other downsides for me are general unsupported SOC from various companies/applications, in case I wanted to setup a VM. No eGPU support, and no RAM upgradeability, but that's a given considering the new SOC, just would have been nice to upgrade on our own (and hopefully have made design tweaks to make those upgrades easier for users). Would also have been nice to see a smaller footprint for the enclosure, since it's quite a small SOC based on images I've seen online. You may find yourself feeling like a beta tester, it can get pretty frustrating. So consider yourself warned. Hopefully companies release M1 compatible applications soon. Overall, I'm fairly satisfied and hopeful for more application support in the future. Would highly recommend it for more casual users because it seems like it would be an amazing value under that use case.",
-				"date": "Reviewed in the United States on December 4, 2020",
-				"rating": "4.0 out of 5 stars",
-				"title": "Amazing and snappy, but with caveats",
-				"userName": "Pablo V.",
-				"url": "/gp/customer-reviews/R3ODANGEKD43Q3/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 256GB"]
-			},
-			{
-				"text": "This the 3rd Mac Mini we have purchased in the last 13 years to be used as a Desktop computer by the family ( have a Macbook pro 2018 for a lap top )- this replaced the late 2014 Mac Mini which was purchased in June of 2015 was beginning to give us trouble with constant beach ball and slowing down could not properly load the Big Sur so we traded it in for the new Mac Mini M1 2020. it is a great value after getting a trade in price for the old MacMini plus the $ 100.00 drop in price by Apple . This machine is incredibly fast that is a plus point what it lacks in is I/O this unit only has 2 USB-C /Thunderbolt 4 and two USB A inputs . so took away the 5th star on account of that . this unit is still worth it !",
-				"date": "Reviewed in the United States on November 24, 2020",
-				"rating": "4.0 out of 5 stars",
-				"title": "Apple Mac Mini M1 2020",
-				"userName": "Mustafa Shah",
-				"url": "/gp/customer-reviews/RZZS7USMFGN6G/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 256GB"]
-			},
-			{
-				"text": "The reason I am not giving this 1 star is because it worked fantastic for the first half hour. Then it stopped working with my display. You had to plug it back in every half hour for it to work and then it stopped turning on so I tried to open in recovery mode and reinstall Mac OS. It would get half way through the reinstalling and would stop. I hope I just got a bad one. But for now I am going to return and I am going to wait until the next gen M1.",
-				"date": "Reviewed in the United States on December 1, 2020",
-				"rating": "2.0 out of 5 stars",
-				"title": "Hopefully just a fluke",
-				"userName": "Nived Notro",
-				"url": "/gp/customer-reviews/RIQ2NXOAN3WJI/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 512GB"]
-			},
-			{
-				"text": "The reviews were not exaggerated - this is a very nice performing computer., This is the first computer I have ever owned that is fast yet doesn't generate any heat in doing so. As of yet it has never even been warm in the almost 2 weeks I have owned it-always cold-like it's not even turned on.. I have 2 Intel Nucs that are the near equivalent of this Mini and while they are great little machines as well, they have been warm at times. Apple has figured a way to be as fast/faster than intel but not use much power in doing so. The downside of this being new technology is that software has to be written for it . In the meantime it uses emulation so older software will work with it, but is only a temporary situation. Firefox started out that way 2 weeks ago but they have already rewritten the browser now so emulation is no longer needed. Risc based processors are nothing new (they made those Dinosaur movies with them) but processors that are fast without using much power or getting hot certainly are. If this is a sign of things to come I feel sorry for Intel. I liked the way the computer performed so much I ordered a second one with larger memory and gifting this one to my fiancé .",
-				"date": "Reviewed in the United States on December 16, 2020",
-				"rating": "5.0 out of 5 stars",
-				"title": "Liked it so much , I bought a second one.",
-				"userName": "Fletch",
-				"url": "/gp/customer-reviews/R14SGZ04CSJVRY/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 512GB"]
-			},
-			{
-				"text": "My 2011 mac book pro was replaced last year with with a Dell 7590 2 in 1. I do a lot of photo editing so I went all out on that laptop. Then when I saw these were out, I just bought the base model and it works great. It works off my Dell USB-c dock perfectly if I want to swap machines. I leave the hdmi and all my peripherals plugged into the dock and hook the mini up with one cable. Even works with my Dell speaker bar. And I like that it has extra thunderbolt ports. 2 of them! I'm used to having none (1 USB-c only) the performance and price are great.",
-				"date": "Reviewed in the United States on December 1, 2020",
-				"rating": "5.0 out of 5 stars",
-				"title": "Great way to get back into a mac",
-				"userName": "R. Greene",
-				"url": "/gp/customer-reviews/R9KTUZSXAWYQT/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5PHB83",
-				"images": [],
-				"variationList": ["Capacity: 256GB"]
-			}
-		],
-		"productSpecification": [],
-		"mainImage": {
-			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71pcTYT%2BICL._AC_SX679_.jpg",
-			"imageResolution": "679 x 679"
-		},
-		"categories": []
-	},
-	{
 		"title": "Logitech HD Pro Webcam C920, Widescreen Video Calling and Recording, 1080p Camera, Desktop or Laptop Webcam",
 		"manufacturer": "Visit the Logitech Store",
 		"countReview": 22498,
@@ -2893,6 +2738,7 @@
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61zEqUsN1tL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
 		},
+		"category": ["Earbuds & Headphones"],
 		"categories": []
 	},
 	{
@@ -3940,6 +3786,7 @@
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71V7nMArbIL._AC_SX679_.jpg",
 			"imageResolution": "679 x 634"
 		},
+
 		"categories": ["Cell Phones & Accessories", "Cell Phones"]
 	},
 	{
@@ -4690,6 +4537,6 @@
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71sa8QS0UcL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
 		},
-		"categories": []
+		"categories": ["Digital Cameras", "Point & Shoot Digital Cameras"]
 	}
 ]

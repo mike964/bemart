@@ -14,15 +14,25 @@ const fake_api = (endpoint, payload) => {
 			if (!payload) {
 				data = { products }
 			} else {
-				// * payload = filters =>
+				// * payload = filters
 				// case '/products?search':
-				// * payload (filters) : {property : 'catergory' , value : 'laptops'}
-				// console.log(payload)  // {category: 'Laptops'}
-				console.log(Object.keys(payload)) // ["category"]
+				// console.log(payload)  // {brand: 'Apple'}
+				// console.log(Object.keys(payload)) // ["brand"]
 				const key = Object.keys(payload)[0]
 
 				const filteredProducts = products.filter(
 					item => item[key] === payload[key]
+				)
+
+				// console.log(filteredProducts)
+				data = { products: filteredProducts }
+			}
+			break
+		// * Get products by category
+		case '/products/category':
+			{
+				const filteredProducts = products.filter(item =>
+					item.categories.includes(payload.category)
 				)
 
 				console.log(filteredProducts)

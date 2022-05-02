@@ -28,7 +28,7 @@ import { getProduct } from '../../utils'
 import { axios_get } from '../../_api/fake_api'
 
 export const listProducts =
-	(keyword = '', pageNumber = '', filters = {}) =>
+	(keyword = '', pageNumber = '', filters = {}, byCategory) =>
 	async dispatch => {
 		try {
 			dispatch({ type: PRODUCT_LIST_REQUEST })
@@ -38,7 +38,10 @@ export const listProducts =
 			// )
 
 			// * Fetch products from fake api
-			const response = await axios_get('/products', filters)
+			const response = await axios_get(
+				byCategory ? '/products/category' : '/products',
+				filters
+			)
 			console.log(response)
 			const { products } = response.data
 
