@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom'
 const Header = () => {
 	const dispatch = useDispatch()
 
-	const userLogin = useSelector(state => state.userLogin)
-	const { userInfo } = userLogin
+	const userLogin = useSelector(state => state.auth)
+	const { user } = userLogin
 
 	const logoutHandler = () => {
 		dispatch(logout())
@@ -39,8 +39,8 @@ const Header = () => {
 									<i className='fas fa-shopping-cart'></i> Cart
 								</Nav.Link>
 							</LinkContainer>
-							{userInfo ? (
-								<NavDropdown title={userInfo.name} id='username'>
+							{user ? (
+								<NavDropdown title={user.name} id='username'>
 									<LinkContainer to='/profile'>
 										<NavDropdown.Item>Profile</NavDropdown.Item>
 									</LinkContainer>
@@ -55,7 +55,7 @@ const Header = () => {
 									</Nav.Link>
 								</LinkContainer>
 							)}
-							{userInfo && userInfo.isAdmin && (
+							{user && user.isAdmin && (
 								<NavDropdown title='Admin' id='adminmenu'>
 									<LinkContainer to='/admin/userlist'>
 										<NavDropdown.Item>Users</NavDropdown.Item>

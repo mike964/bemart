@@ -109,12 +109,12 @@ export const deleteProduct = id => async (dispatch, getState) => {
 		})
 
 		const {
-			userLogin: { userInfo },
+			userLogin: { user },
 		} = getState()
 
 		const config = {
 			headers: {
-				Authorization: `Bearer ${userInfo.token}`,
+				Authorization: `Bearer ${user.token}`,
 			},
 		}
 
@@ -145,12 +145,12 @@ export const createProduct = () => async (dispatch, getState) => {
 		})
 
 		const {
-			userLogin: { userInfo },
+			userLogin: { user },
 		} = getState()
 
 		const config = {
 			headers: {
-				Authorization: `Bearer ${userInfo.token}`,
+				Authorization: `Bearer ${user.token}`,
 			},
 		}
 
@@ -182,13 +182,13 @@ export const updateProduct = product => async (dispatch, getState) => {
 		})
 
 		const {
-			userLogin: { userInfo },
+			userLogin: { user },
 		} = getState()
 
 		const config = {
 			headers: {
 				'Content-Type': 'application/json',
-				Authorization: `Bearer ${userInfo.token}`,
+				Authorization: `Bearer ${user.token}`,
 			},
 		}
 
@@ -229,13 +229,13 @@ export const createProductReview =
 			})
 
 			const {
-				userLogin: { userInfo },
+				userLogin: { user },
 			} = getState()
 
 			const config = {
 				headers: {
 					'Content-Type': 'application/json',
-					Authorization: `Bearer ${userInfo.token}`,
+					Authorization: `Bearer ${user.token}`,
 				},
 			}
 

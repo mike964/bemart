@@ -32,8 +32,8 @@ const OrderScreen = ({ match, history }) => {
 	const orderDeliver = useSelector(state => state.orderDeliver)
 	const { loading: loadingDeliver, success: successDeliver } = orderDeliver
 
-	const userLogin = useSelector(state => state.userLogin)
-	const { userInfo } = userLogin
+	const userLogin = useSelector(state => state.auth)
+	const { user } = userLogin
 
 	if (!loading) {
 		//   Calculate prices
@@ -209,19 +209,16 @@ const OrderScreen = ({ match, history }) => {
 								</ListGroup.Item>
 							)}
 							{loadingDeliver && <Loader />}
-							{userInfo &&
-								userInfo.isAdmin &&
-								order.isPaid &&
-								!order.isDelivered && (
-									<ListGroup.Item>
-										<Button
-											type='button'
-											className='btn btn-block'
-											onClick={deliverHandler}>
-											Mark As Delivered
-										</Button>
-									</ListGroup.Item>
-								)}
+							{user && user.isAdmin && order.isPaid && !order.isDelivered && (
+								<ListGroup.Item>
+									<Button
+										type='button'
+										className='btn btn-block'
+										onClick={deliverHandler}>
+										Mark As Delivered
+									</Button>
+								</ListGroup.Item>
+							)}
 						</ListGroup>
 					</Card>
 				</Col>

@@ -35,13 +35,13 @@ const ProductListScreen = ({ history, match }) => {
 		product: createdProduct,
 	} = productCreate
 
-	const userLogin = useSelector(state => state.userLogin)
-	const { userInfo } = userLogin
+	const userLogin = useSelector(state => state.auth)
+	const { user } = userLogin
 
 	useEffect(() => {
 		dispatch({ type: PRODUCT_CREATE_RESET })
 
-		if (!userInfo || !userInfo.isAdmin) {
+		if (!userInfo || !user.isAdmin) {
 			history.push('/login')
 		}
 

@@ -24,8 +24,8 @@ const ProductScreen = ({ history, match }) => {
 	const productDetails = useSelector(state => state.productDetails)
 	const { loading, error, product } = productDetails
 
-	const userLogin = useSelector(state => state.userLogin)
-	const { userInfo } = userLogin
+	const userLogin = useSelector(state => state.auth)
+	const { user } = userLogin
 
 	const productReviewCreate = useSelector(state => state.productReviewCreate)
 	const {
@@ -176,7 +176,7 @@ const ProductScreen = ({ history, match }) => {
 											{errorProductReview}
 										</Message>
 									)}
-									{userInfo ? (
+									{user ? (
 										<Form onSubmit={submitHandler}>
 											<Form.Group controlId='rating'>
 												<Form.Label>Rating</Form.Label>

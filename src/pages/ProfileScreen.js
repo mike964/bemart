@@ -17,11 +17,13 @@ const ProfileScreen = ({ location, history }) => {
 
 	const dispatch = useDispatch()
 
-	const userDetails = useSelector(state => state.userDetails)
-	const { loading, error, user } = userDetails
+	// const userDetails = useSelector(state => state.userDetails)
+	// const { loading, error, user } = userDetails
+	const loading = false
+	const error = 'Not setup yet'
 
-	const userLogin = useSelector(state => state.userLogin)
-	const { userInfo } = userLogin
+	const userLogin = useSelector(state => state.auth)
+	const { user } = userLogin
 
 	const userUpdateProfile = useSelector(state => state.userUpdateProfile)
 	const { success } = userUpdateProfile
@@ -29,20 +31,20 @@ const ProfileScreen = ({ location, history }) => {
 	const orderListMy = useSelector(state => state.orderListMy)
 	const { loading: loadingOrders, error: errorOrders, orders } = orderListMy
 
-	useEffect(() => {
-		if (!userInfo) {
-			history.push('/login')
-		} else {
-			if (!user || !user.name || success) {
-				dispatch({ type: USER_UPDATE_PROFILE_RESET })
-				dispatch(getUserDetails('profile'))
-				dispatch(listMyOrders())
-			} else {
-				setName(user.name)
-				setEmail(user.email)
-			}
-		}
-	}, [dispatch, history, userInfo, user, success])
+	// useEffect(() => {
+	// 	if (!userInfo) {
+	// 		history.push('/login')
+	// 	} else {
+	// 		if (!user || !user.name || success) {
+	// 			dispatch({ type: USER_UPDATE_PROFILE_RESET })
+	// 			dispatch(getUserDetails('profile'))
+	// 			dispatch(listMyOrders())
+	// 		} else {
+	// 			setName(user.name)
+	// 			setEmail(user.email)
+	// 		}
+	// 	}
+	// }, [dispatch, history, userInfo, user, success])
 
 	const submitHandler = e => {
 		e.preventDefault()

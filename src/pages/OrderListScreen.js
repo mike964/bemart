@@ -12,16 +12,16 @@ const OrderListScreen = ({ history }) => {
 	const orderList = useSelector(state => state.orderList)
 	const { loading, error, orders } = orderList
 
-	const userLogin = useSelector(state => state.userLogin)
-	const { userInfo } = userLogin
+	const userLogin = useSelector(state => state.auth)
+	const { user } = userLogin
 
 	useEffect(() => {
-		if (userInfo && userInfo.isAdmin) {
+		if (user && user.isAdmin) {
 			dispatch(listOrders())
 		} else {
 			history.push('/login')
 		}
-	}, [dispatch, history, userInfo])
+	}, [dispatch, history, user])
 
 	return (
 		<>
