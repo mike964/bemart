@@ -5,11 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
-import {
-	getUserDetails,
-	updateUser,
-} from '../redux/actions/userActions'
-import { USER_UPDATE_RESET } from '../redux/constants/userConstants'
+import { getUserDetails, updateUser } from '../store/actions/userActions'
+import { USER_UPDATE_RESET } from '../store/constants/userConstants'
 
 const UserEditScreen = ({ match, history }) => {
 	const userId = match.params.id
@@ -20,14 +17,10 @@ const UserEditScreen = ({ match, history }) => {
 
 	const dispatch = useDispatch()
 
-	const userDetails = useSelector(
-		(state) => state.userDetails
-	)
+	const userDetails = useSelector(state => state.userDetails)
 	const { loading, error, user } = userDetails
 
-	const userUpdate = useSelector(
-		(state) => state.userUpdate
-	)
+	const userUpdate = useSelector(state => state.userUpdate)
 	const {
 		loading: loadingUpdate,
 		error: errorUpdate,
@@ -49,26 +42,20 @@ const UserEditScreen = ({ match, history }) => {
 		}
 	}, [dispatch, history, userId, user, successUpdate])
 
-	const submitHandler = (e) => {
+	const submitHandler = e => {
 		e.preventDefault()
-		dispatch(
-			updateUser({ _id: userId, name, email, isAdmin })
-		)
+		dispatch(updateUser({ _id: userId, name, email, isAdmin }))
 	}
 
 	return (
 		<>
-			<Link
-				to='/admin/userlist'
-				className='btn btn-light my-3'>
+			<Link to='/admin/userlist' className='btn btn-light my-3'>
 				Go Back
 			</Link>
 			<FormContainer>
 				<h1>Edit User</h1>
 				{loadingUpdate && <Loader />}
-				{errorUpdate && (
-					<Message variant='danger'>{errorUpdate}</Message>
-				)}
+				{errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
 				{loading ? (
 					<Loader />
 				) : error ? (
@@ -81,9 +68,7 @@ const UserEditScreen = ({ match, history }) => {
 								type='name'
 								placeholder='Enter name'
 								value={name}
-								onChange={(e) =>
-									setName(e.target.value)
-								}></Form.Control>
+								onChange={e => setName(e.target.value)}></Form.Control>
 						</Form.Group>
 
 						<Form.Group controlId='email'>
@@ -92,9 +77,7 @@ const UserEditScreen = ({ match, history }) => {
 								type='email'
 								placeholder='Enter email'
 								value={email}
-								onChange={(e) =>
-									setEmail(e.target.value)
-								}></Form.Control>
+								onChange={e => setEmail(e.target.value)}></Form.Control>
 						</Form.Group>
 
 						<Form.Group controlId='isadmin'>
@@ -102,9 +85,7 @@ const UserEditScreen = ({ match, history }) => {
 								type='checkbox'
 								label='Is Admin'
 								checked={isAdmin}
-								onChange={(e) =>
-									setIsAdmin(e.target.checked)
-								}></Form.Check>
+								onChange={e => setIsAdmin(e.target.checked)}></Form.Check>
 						</Form.Group>
 
 						<Button type='submit' variant='primary'>

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import SearchBox from './SearchBox'
-import { logout } from '../../redux/actions/userActions'
+import { logout } from '../../store/actions/userActions'
 import SearchInput from './SearchInput'
 import { Link } from 'react-router-dom'
 

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Paginate from '../components/Paginate'
 import Product from '../components/Product'
-import { listProducts } from '../redux/actions/productActions'
+import { listProducts } from '../store/actions/productActions'
 
 // should contain filters, title, page number chnage...
 const ProductsPage = ({ title }) => {

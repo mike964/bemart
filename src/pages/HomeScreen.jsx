@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel.jsx'
 import Meta from '../components/Meta'
-import { listProducts } from '../redux/actions/productActions'
+import { listProducts } from '../store/actions/productActions'
 import BillboardCarousel from '../components/home/BillboardCarousel.jsx'
 
 const HomeScreen = ({ match }) => {

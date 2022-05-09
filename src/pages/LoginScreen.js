@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
-import { login } from '../redux/actions/userActions'
+import { login } from '../store/actions/userActions'
 
 const LoginScreen = ({ location, history }) => {
 	const [email, setEmail] = useState('')
@@ -13,12 +13,10 @@ const LoginScreen = ({ location, history }) => {
 
 	const dispatch = useDispatch()
 
-	const userLogin = useSelector((state) => state.userLogin)
+	const userLogin = useSelector(state => state.userLogin)
 	const { loading, error, userInfo } = userLogin
 
-	const redirect = location.search
-		? location.search.split('=')[1]
-		: '/'
+	const redirect = location.search ? location.search.split('=')[1] : '/'
 
 	useEffect(() => {
 		if (userInfo) {
@@ -26,7 +24,7 @@ const LoginScreen = ({ location, history }) => {
 		}
 	}, [history, userInfo, redirect])
 
-	const submitHandler = (e) => {
+	const submitHandler = e => {
 		e.preventDefault()
 		dispatch(login(email, password))
 	}
@@ -43,9 +41,7 @@ const LoginScreen = ({ location, history }) => {
 						type='email'
 						placeholder='Enter email'
 						value={email}
-						onChange={(e) =>
-							setEmail(e.target.value)
-						}></Form.Control>
+						onChange={e => setEmail(e.target.value)}></Form.Control>
 				</Form.Group>
 
 				<Form.Group controlId='password'>
@@ -54,9 +50,7 @@ const LoginScreen = ({ location, history }) => {
 						type='password'
 						placeholder='Enter password'
 						value={password}
-						onChange={(e) =>
-							setPassword(e.target.value)
-						}></Form.Control>
+						onChange={e => setPassword(e.target.value)}></Form.Control>
 				</Form.Group>
 
 				<Button type='submit' variant='primary'>
@@ -67,12 +61,7 @@ const LoginScreen = ({ location, history }) => {
 			<Row className='py-3'>
 				<Col>
 					New Customer?{' '}
-					<Link
-						to={
-							redirect
-								? `/register?redirect=${redirect}`
-								: '/register'
-						}>
+					<Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
 						Register
 					</Link>
 				</Col>
