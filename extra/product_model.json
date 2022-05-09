@@ -1,0 +1,54 @@
+{
+	"amazonChoice": false,
+	"amazonPrime": false,
+	"asin": "B08H75RTZ8",
+	"bestSeller": false,
+	"position": {
+		"global_position": 1,
+		"page": 1,
+		"position": 1
+	},
+	"price": {
+		"before_price": 0,
+		"currency": "USD",
+		"current_price": 0,
+		"discounted": false,
+		"savings_amount": 0,
+		"savings_percent": 0
+	},
+	"reviews": {
+		"rating": 4.8,
+		"total_reviews": 4016
+	},
+	"score": 19276.8,
+	"sponsored": false,
+	"thumbnail": "https://m.media-amazon.com/images/I/51A41nLe5IL._AC_UY218_.jpg",
+	"title": "Xbox Series X",
+	"url": "https://www.amazon.com/dp/B08H75RTZ8",
+	"app_sale_price": "15.47",
+	"app_sale_price_currency": "USD",
+	"discount": "$30.00 (9%)",
+	"reviews_number": "97.8%",
+	"original_price": "14.92 USD",
+	"original_price_currency": "USD",
+	"product_detail_url": "https://www.amazon.com/dp/B08L5RJ392",
+	"product_id": "B08L5RJ392",
+	"product_small_image_urls": [
+		"https://images-na.ssl-images-amazon.com/images/I/412eUz0SUrL._AC_SR38,50_.jpg"
+	],
+	"product_main_image_url": "https://images-na.ssl-images-amazon.com/images/I/81F-QC1N5WL._AC_SL1500_.jpg",
+	"product_title": "Apple iPhone 8, 64GB, Space Gray - Fully Unlocked (Renewed)",
+	"product_video_url": "http://cloud.video.taobao.com/play/u/2675628091/p/1/e/6/t/1/270527494281.mp4",
+	"seller_information": "WAMATEK",
+	"shop_url": "",
+	"image": "https://m.media-amazon.com/images/I/61vFO3R5UNL._AC_UY218_.jpg",
+	"full_link": "https://www.amazon.com/dp/B09JQSLL92/?psc=1",
+	"prices": {
+		"current_price": 1999,
+		"previous_price": -1,
+		"currency": "$"
+	},
+	"prime": false,
+	"amazon_choice": false,
+	"out_of_stock": false
+}
