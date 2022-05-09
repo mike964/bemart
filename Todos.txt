@@ -22,3 +22,4 @@ Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 - If user not logged in pop up login dialog for user to log in 
 - Add multiple language 
 - Add multiple currency
+- Build fake authentication and private routes in UI 
