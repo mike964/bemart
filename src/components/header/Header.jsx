@@ -7,16 +7,14 @@ import SearchBox from './SearchBox'
 import { logout } from '../../store/actions/userActions'
 import SearchInput from './SearchInput'
 import { Link } from 'react-router-dom'
+import UserDropdown from './UserDropdown'
 
 const Header = () => {
+	console.log('Header..')
 	const dispatch = useDispatch()
 
-	const userLogin = useSelector(state => state.auth)
-	const { user } = userLogin
-
-	const logoutHandler = () => {
-		dispatch(logout())
-	}
+	const { user } = useSelector(state => state.auth)
+	console.log(user)
 
 	return (
 		<header>
@@ -40,14 +38,7 @@ const Header = () => {
 								</Nav.Link>
 							</LinkContainer>
 							{user ? (
-								<NavDropdown title={user.name} id='username'>
-									<LinkContainer to='/profile'>
-										<NavDropdown.Item>Profile</NavDropdown.Item>
-									</LinkContainer>
-									<NavDropdown.Item onClick={logoutHandler}>
-										Logout
-									</NavDropdown.Item>
-								</NavDropdown>
+								<UserDropdown user={user} />
 							) : (
 								<LinkContainer to='/login'>
 									<Nav.Link>
@@ -68,6 +59,8 @@ const Header = () => {
 									</LinkContainer>
 								</NavDropdown>
 							)}
+
+							<UserDropdown />
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

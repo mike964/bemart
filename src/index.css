@@ -136,3 +136,10 @@ header > .navbar {
 	color: #6a6e77;
 	font-weight: 400;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #d8d8d8;
+}
