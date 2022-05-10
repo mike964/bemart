@@ -2,8 +2,14 @@ main {
 	min-height: 80vh;
 }
 
+body {
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+}
+
 a {
-	color: #ffffff;
+	/* color: #ffffff; */
 }
 
 h3 {
@@ -150,4 +156,30 @@ header > .navbar {
 
 .gold {
 	color: gold;
+}
+
+.btn-outline-google-plus {
+	color: #dd4b39;
+	border-color: #dd4b39;
+}
+
+.btn-outline-google-plus:hover {
+	color: #fff;
+	background-color: #dd4b39;
+	border-color: #dd4b39;
+}
+
+.btn-outline-facebook {
+	color: #3c5a99;
+	border-color: #3c5a99;
+}
+.btn-outline-facebook:hover {
+	color: #fff;
+	background-color: #3c5a99;
+	border-color: #3c5a99;
+}
+
+.auth-btns a {
+	font-size: 1.2rem;
+	font-weight: 500;
 }

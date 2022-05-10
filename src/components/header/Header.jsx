@@ -3,15 +3,12 @@ import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
-import SearchBox from './SearchBox'
-import { logout } from '../../store/actions/userActions'
 import SearchInput from './SearchInput'
 import { Link } from 'react-router-dom'
 import UserDropdown from './UserDropdown'
 
 const Header = () => {
 	console.log('Header..')
-	const dispatch = useDispatch()
 
 	const { user } = useSelector(state => state.auth)
 	console.log(user)
@@ -22,7 +19,7 @@ const Header = () => {
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand className='text-light'>
-							<i class='fas fa-gem '></i> UNIMART
+							<i className='fas fa-gem '></i> UNIMART
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -68,7 +65,8 @@ const Header = () => {
 					id='nav-dropdown-dark-example'
 					className='flex-fill'
 					title='Products'
-					menuVariant='dark'>
+					// menuVariant='dark'
+				>
 					<NavDropdown.Item href='#action/3.1'>Computers</NavDropdown.Item>
 					<NavDropdown.Item href='#action/3.2'>Laptops</NavDropdown.Item>
 					<NavDropdown.Item href='#action/3.3'>Cell Phones</NavDropdown.Item>

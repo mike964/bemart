@@ -6,6 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { register } from '../store/actions/userActions'
+import SoicalBtns from '../components/auth/SoicalBtns'
 
 const RegisterScreen = ({ location, history }) => {
 	const [name, setName] = useState('')
@@ -16,9 +17,7 @@ const RegisterScreen = ({ location, history }) => {
 
 	const dispatch = useDispatch()
 
-	const userRegister = useSelector(state => state.userRegister)
-	const { loading, error, userInfo } = userRegister
-
+	const { loading, error, userInfo } = useSelector(state => state.auth)
 	const redirect = location.search ? location.search.split('=')[1] : '/'
 
 	useEffect(() => {
@@ -38,40 +37,36 @@ const RegisterScreen = ({ location, history }) => {
 
 	return (
 		<FormContainer>
-			<h1>Sign Up</h1>
+			<h1>Register user</h1>
 			{message && <Message variant='danger'>{message}</Message>}
 			{error && <Message variant='danger'>{error}</Message>}
 			{loading && <Loader />}
 			<Form onSubmit={submitHandler}>
 				<Form.Group controlId='name'>
-					<Form.Label>Name</Form.Label>
 					<Form.Control
 						type='name'
-						placeholder='Enter name'
+						placeholder='Name'
 						value={name}
 						onChange={e => setName(e.target.value)}></Form.Control>
 				</Form.Group>
 
 				<Form.Group controlId='email'>
-					<Form.Label>Email Address</Form.Label>
 					<Form.Control
 						type='email'
-						placeholder='Enter email'
+						placeholder='Email'
 						value={email}
 						onChange={e => setEmail(e.target.value)}></Form.Control>
 				</Form.Group>
 
 				<Form.Group controlId='password'>
-					<Form.Label>Password</Form.Label>
 					<Form.Control
 						type='password'
-						placeholder='Enter password'
+						placeholder='Password'
 						value={password}
 						onChange={e => setPassword(e.target.value)}></Form.Control>
 				</Form.Group>
 
 				<Form.Group controlId='confirmPassword'>
-					<Form.Label>Confirm Password</Form.Label>
 					<Form.Control
 						type='password'
 						placeholder='Confirm password'
@@ -79,10 +74,18 @@ const RegisterScreen = ({ location, history }) => {
 						onChange={e => setConfirmPassword(e.target.value)}></Form.Control>
 				</Form.Group>
 
-				<Button type='submit' variant='primary'>
-					Register
+				<Button type='submit' variant='primary' block>
+					Sign up
 				</Button>
 			</Form>
+
+			<div className='position-relative mt-4'>
+				<hr className='bg-300' />
+				<div className='divider-content-center' style={{ color: '#a4a4a4' }}>
+					or Sign up with
+				</div>
+			</div>
+			<SoicalBtns />
 
 			<Row className='py-3'>
 				<Col>

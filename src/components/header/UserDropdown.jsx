@@ -2,11 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import { useDispatch } from 'react-redux'
+import { logout } from '../../store/auth/authSlice'
+// import { logout } from '../../store/actions/userActions'
 
 const UserDropdown = ({ user }) => {
+	const dispatch = useDispatch()
+
 	console.log(user)
 	const logoutHandler = () => {
-		// dispatch(logout())
+		dispatch(logout())
 	}
 
 	return (
