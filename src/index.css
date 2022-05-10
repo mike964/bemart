@@ -3,7 +3,7 @@ main {
 }
 
 a {
-	color: #6a6e77 !important;
+	color: #ffffff;
 }
 
 h3 {
@@ -142,4 +142,12 @@ header > .navbar {
 	color: #fff;
 	text-decoration: none;
 	background-color: #d8d8d8;
+}
+
+.navbar-footer a {
+	color: rgb(52, 52, 52);
+}
+
+.gold {
+	color: gold;
 }

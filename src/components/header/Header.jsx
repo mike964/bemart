@@ -21,10 +21,8 @@ const Header = () => {
 			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand
-						// className='text-light'
-						>
-							UNIMART
+						<Navbar.Brand className='text-light'>
+							<i class='fas fa-gem '></i> UNIMART
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
