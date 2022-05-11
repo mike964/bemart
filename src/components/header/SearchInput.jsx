@@ -8,7 +8,7 @@ const SearchInput = () => {
 			className='ml-5'
 			style={{ width: '600px' }}>
 			{' '}
-			<InputGroup>
+			<InputGroup size='lg'>
 				<FormControl
 					placeholder='Search products...'
 					aria-label="Recipient's username"
