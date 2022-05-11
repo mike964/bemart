@@ -26,6 +26,7 @@ import { Switch } from 'react-router-dom'
 const App = () => {
 	// For navigation in header
 	const productPages = [
+		// products by category pages
 		{ title: 'Laptops', slug: 'laptops' },
 		{ title: 'Cell Phones', slug: 'cellphones' },
 		{ title: 'Cameras', slug: 'cameras' },
@@ -69,7 +70,7 @@ const App = () => {
 						{/* <Route path='/products/:category' component={ProductsPage} /> */}
 
 						{productPages.map(item => (
-							<Route path={`/products/:category_slug`}>
+							<Route path={`/products/:category_slug`} key={item.slug}>
 								<ProductsPage title={item.title} />
 							</Route>
 						))}

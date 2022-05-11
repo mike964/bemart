@@ -5,13 +5,19 @@ const SocialBtns = () => {
 	return (
 		<div className='row g-2 mt-2 auth-btns'>
 			<div className='col-sm-6 px-1'>
-				<Link className='btn btn-outline-google-plus btn-sm d-block' href='#'>
-					<i class='fab fa-google-plus-g' /> google
+				<Link
+					className='btn btn-outline-google-plus btn-sm d-block'
+					href='#'
+					to='/login'>
+					<i className='fab fa-google-plus-g' /> google
 				</Link>
 			</div>
 			<div className='col-sm-6 px-1'>
-				<Link className='btn btn-outline-facebook btn-sm d-block ' href='#'>
-					<i class='fab fa-facebook-square' /> facebook
+				<Link
+					className='btn btn-outline-facebook btn-sm d-block '
+					href='#'
+					to='/login'>
+					<i className='fab fa-facebook-square' /> facebook
 				</Link>
 			</div>
 		</div>

@@ -8,7 +8,7 @@ const initialState = {
 	user: user ? user : null,
 	isError: false,
 	succeeded: false,
-	isLoading: false,
+	loading: false, // when register action is pending
 	message: '',
 }
 
@@ -34,7 +34,10 @@ export const register = createAsyncThunk(
 // Login user
 export const login = createAsyncThunk('auth/login', async (user, thunkAPI) => {
 	try {
-		return await authService.login(user)
+		const x = await authService.login(user)
+		// console.log(x)  // {...user}
+		// return x
+		return { ...x, token: x._id }
 	} catch (error) {
 		const message =
 			(error.response && error.response.data && error.response.data.message) ||

@@ -5,34 +5,33 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
-import { login } from '../store/actions/userActions'
 import SocialBtns from '../components/auth/SocialBtns'
+import { login } from '../store/auth/authSlice'
 
 const LoginScreen = ({ location, history }) => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 
 	const dispatch = useDispatch()
+	// const navigate = useNavigate()   // router v6
 
-	const userLogin = useSelector(state => state.auth)
-	const { loading, error, userInfo } = userLogin
-
+	const { loading, error, user } = useSelector(state => state.auth)
 	const redirect = location.search ? location.search.split('=')[1] : '/'
 
 	useEffect(() => {
-		if (userInfo) {
+		if (user) {
 			history.push(redirect)
 		}
-	}, [history, userInfo, redirect])
+	}, [history, user, redirect])
 
 	const submitHandler = e => {
 		e.preventDefault()
-		dispatch(login(email, password))
+		dispatch(login({ email, password }))
 	}
 
 	return (
 		<FormContainer>
-			<h1>Login user</h1>
+			<h1 className='text-secondary'>Log in user</h1>
 			{error && <Message variant='danger'>{error}</Message>}
 			{loading && <Loader />}
 			<Form onSubmit={submitHandler}>

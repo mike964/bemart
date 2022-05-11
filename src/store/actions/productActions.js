@@ -25,7 +25,7 @@ import {
 import { logout } from './userActions'
 // import products from '../../_api/products.json'
 import { getProduct } from '../../utils'
-import { axios_get } from '../../_api/fake_api'
+import { axios_get } from '../../_api/fakeApi'
 
 export const listProducts =
 	(keyword = '', pageNumber = '', filters = {}, byCategory) =>

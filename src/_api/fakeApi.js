@@ -1,13 +1,13 @@
-import { users } from './_data'
+import users from './users.json'
 import products from './products'
 
 // Filter products by category
 // '/products?category=laptops'
 
-const fake_api = (endpoint, payload) => {
+const fakeApi = (endpoint, payload) => {
 	let data
 	// const laptops = [ "Macbook Air", "Macbook Pro", "Macbook 16" ];
-	const cellphones = ['iPhone Pro', 'Galaxy S10', 'HTC 9']
+	// const cellphones = ['iPhone Pro', 'Galaxy S10', 'HTC 9']
 
 	switch (endpoint) {
 		case '/products':
@@ -48,9 +48,9 @@ const fake_api = (endpoint, payload) => {
 			break
 
 		case '/login':
-			let user = users.filter(item => item.email === payload)
+			let user = users.filter(item => item.email === payload.email)
+			console.log(user)
 			data = user[0]
-			// console.log( data )
 			break
 		case '/users': // * Get logged in user details
 			let user_ = users.filter(item => item._id === payload)
@@ -61,9 +61,7 @@ const fake_api = (endpoint, payload) => {
 			// data = "No product found";
 			data = null
 	}
-
 	// console.log( Date.now() );
-
 	return data
 }
 
@@ -73,7 +71,7 @@ const axios_get = (endpoint, payload) => {
 	console.log(payload)
 	const thePromise = new Promise((resolve, reject) => {
 		// resolve(meetingDetails); // means return
-		let data = fake_api(endpoint, payload)
+		let data = fakeApi(endpoint, payload)
 		// console.log(data)
 
 		setTimeout(() => {
@@ -91,4 +89,4 @@ const axios_get = (endpoint, payload) => {
 	return thePromise
 }
 
-export { axios_get }
+export { fakeApi, axios_get }
