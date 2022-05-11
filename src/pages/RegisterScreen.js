@@ -6,7 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { register } from '../store/actions/userActions'
-import SoicalBtns from '../components/auth/SoicalBtns'
+import SocialBtns from '../components/auth/SocialBtns'
 
 const RegisterScreen = ({ location, history }) => {
 	const [name, setName] = useState('')
@@ -85,7 +85,7 @@ const RegisterScreen = ({ location, history }) => {
 					or Sign up with
 				</div>
 			</div>
-			<SoicalBtns />
+			<SocialBtns />
 
 			<Row className='py-3'>
 				<Col>

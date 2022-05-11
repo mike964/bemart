@@ -23,3 +23,4 @@ Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 - Add multiple language 
 - Add multiple currency
 - Build fake authentication and private routes in UI 
+- Auth Pages form rebuilt   done  5.10

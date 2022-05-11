@@ -6,7 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { login } from '../store/actions/userActions'
-import SoicalBtns from '../components/auth/SoicalBtns'
+import SocialBtns from '../components/auth/SocialBtns'
 
 const LoginScreen = ({ location, history }) => {
 	const [email, setEmail] = useState('')
@@ -80,6 +80,14 @@ const LoginScreen = ({ location, history }) => {
 				</button>
 			</Form>
 
+			<div className='position-relative mt-4'>
+				<hr className='bg-300' />
+				<div className='divider-content-center' style={{ color: '#a4a4a4' }}>
+					or Log in with
+				</div>
+			</div>
+			<SocialBtns />
+
 			<Row className='py-3'>
 				<Col>
 					New Customer?{' '}
@@ -88,14 +96,6 @@ const LoginScreen = ({ location, history }) => {
 					</Link>
 				</Col>
 			</Row>
-
-			<div className='position-relative mt-4'>
-				<hr className='bg-300' />
-				<div className='divider-content-center' style={{ color: '#a4a4a4' }}>
-					or Log in with
-				</div>
-			</div>
-			<SoicalBtns />
 		</FormContainer>
 	)
 }
