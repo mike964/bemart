@@ -133,9 +133,10 @@ header {
 	margin-bottom: 1.5rem;
 }
 
-/* header > .navbar {
-	padding: 1rem;
-} */
+header > .navbar {
+	/* padding: 1rem; */
+	background-color: #053f72;
+}
 
 .navbar-footer {
 	/* background-color: rgb(236, 171, 52); */
