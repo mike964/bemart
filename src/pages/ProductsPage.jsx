@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Paginate from '../components/Paginate'
-import Product from '../components/Product'
+import ProductItem from '../components/ProductItem'
 import { listProducts } from '../store/actions/productActions'
 
 // should contain filters, title, page number chnage...
@@ -57,7 +57,7 @@ const ProductsPage = ({ title }) => {
 				{products &&
 					products.map(product => (
 						<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-							<Product product={product} />
+							<ProductItem product={product} />
 						</Col>
 					))}
 			</Row>

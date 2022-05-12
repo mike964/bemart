@@ -10,7 +10,7 @@ const Product = props => {
 	// console.log(props.product.rating.slice(0, 3))
 
 	return (
-		<Card className='my-3 card-product-grid'>
+		<Card className='my-3 card-product-grid product-card'>
 			{/* <Card.Img src={product.image} variant='top' /> */}
 			<div className='img-wrap'>
 				<Link to={`/product/${product._id}`}>

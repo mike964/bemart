@@ -12,6 +12,7 @@ import {
 } from '../store/actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../store/constants/productConstants'
 
+// * Product Page
 const ProductScreen = ({ history, match }) => {
 	console.log(match.params)
 
@@ -46,7 +47,7 @@ const ProductScreen = ({ history, match }) => {
 	}, [dispatch, match, successProductReview])
 
 	const addToCartHandler = () => {
-		history.push(`/cart/${match.params.id}?qty=${qty}`)
+		// history.push(`/cart/${match.params.id}?qty=${qty}`)
 	}
 
 	const submitHandler = e => {

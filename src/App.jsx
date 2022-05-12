@@ -5,7 +5,7 @@ import Header from './components/header/Header'
 import Footer from './components/Footer'
 import HomeScreen from './pages/HomeScreen.jsx'
 import ProductScreen from './pages/ProductScreen'
-// import CartScreen from './pages/CartScreen'
+import CartScreen from './pages/CartScreen'
 import LoginScreen from './pages/LoginScreen'
 import RegisterScreen from './pages/RegisterScreen'
 // import ProfileScreen from './pages/ProfileScreen'
@@ -47,7 +47,7 @@ const App = () => {
 						<Route path='/register' component={RegisterScreen} />
 						{/* <Route path='/profile' component={ProfileScreen} /> */}
 						<Route path='/product/:id' component={ProductScreen} />
-						{/* <Route path='/cart/:id?' component={CartScreen} /> */}
+						<Route path='/cart/:id?' component={CartScreen} />
 						{/* <Route path='/admin/userlist' component={UserListScreen} /> */}
 						{/* <Route path='/admin/user/:id/edit' component={UserEditScreen} /> */}
 						{/* <Route path='/admin/productlist' component={ProductListScreen} /> */}

@@ -122,8 +122,8 @@ a.product-title {
 
 .card-product-grid:hover,
 .card.card-product-list:hover {
-	box-shadow: 0 3px 10px rgb(51 51 51 / 10%);
-	transition: 0.2s;
+	/* box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; */
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 4px 6px 0 rgba(0, 0, 0, 0.14);
 }
 
 header {

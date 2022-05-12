@@ -24,3 +24,5 @@ Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 - Build fake authentication and private routes in UI 
 - Auth Pages form rebuilt   done  5.10
 - make login work with fakeApi                              ✅ 22.5.11
+- Fix Cart functionality for ui 
+- rebuild cart reducer using redux-toolkit
