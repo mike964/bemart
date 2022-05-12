@@ -11,16 +11,16 @@ Inspired by Brad Traversy Proshop MERN project
 - Shorten product name , when hover show full detail 
 - open prudct item page when product image clicked 
 - add product to cart icon for each product in list
-- move search box out
+- move search box component out of Header
 - Search input suggestions - for ex. search iphone
-Make the search bar pro - with suggestion
+- Make the search bar pro - with suggestion
 Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 
 - Add use login as 'admin' or 'custormer'                    
 - Build Banner slice show component                           ✅ 22.4.30
-
 - If user not logged in pop up login dialog for user to log in 
 - Add multiple language 
 - Add multiple currency
 - Build fake authentication and private routes in UI 
 - Auth Pages form rebuilt   done  5.10
+- make login work with fakeApi                              ✅ 22.5.11
