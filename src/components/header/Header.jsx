@@ -23,7 +23,7 @@ const Header = () => {
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand className='text-light'>
-							<i className='fas fa-gem '></i> UNIMART
+							<i className='fas fa-gem gold'></i> UNIMART
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
