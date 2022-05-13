@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import Message from '../components/Message'
-import { addToCart, removeFromCart } from '../store/actions/cartActions'
+import { addToCart, removeFromCart } from '../store/cart/cartSlice'
+// import { addToCart, removeFromCart } from '../store/actions/cartActions'
 
 const CartScreen = ({ match, location, history }) => {
 	const productId = match.params.id
@@ -76,7 +77,7 @@ const CartScreen = ({ match, location, history }) => {
 										<Button
 											type='button'
 											variant='light'
-											onClick={() => removeFromCartHandler(item.product)}>
+											onClick={() => removeFromCartHandler(item.asin)}>
 											<i className='fas fa-trash'></i>
 										</Button>
 									</Col>

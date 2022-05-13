@@ -6,6 +6,8 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import SearchInput from './SearchInput'
 import { Link } from 'react-router-dom'
 import UserDropdown from './UserDropdown'
+import NavbarCart from './CartDropdown'
+import CartDropdown from './CartDropdown'
 
 const Header = () => {
 	console.log('Header..')
@@ -31,13 +33,16 @@ const Header = () => {
 						{/* <Route render={({ history }) => <SearchBox history={history} />} /> */}
 						<SearchInput />
 						<Nav className='ml-auto'>
-							<LinkContainer to='/cart'>
+							{/* <LinkContainer to='/cart'>
 								<Nav.Link>
 									<i className='fas fa-shopping-cart'></i> Cart
 								</Nav.Link>
-							</LinkContainer>
+							</LinkContainer> */}
+							<CartDropdown />
 							{user ? (
-								<UserDropdown user={user} />
+								<div className='px-3'>
+									<UserDropdown user={user} />
+								</div>
 							) : (
 								<LinkContainer to='/login'>
 									<Nav.Link>

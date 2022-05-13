@@ -18,13 +18,28 @@ const cartSlice = createSlice({
 				// )
 				// console.log(addedItem)
 
-				state.cartItems.push(action.payload)
+				// * Check if item already exist
+				const existItem = state.cartItems.find(
+					item => item.asin === action.payload.asin
+				)
+				// add item only if not existed
+				if (!existItem) {
+					state.cartItems.push(action.payload)
+				}
+			},
+		},
+		itemRemoved: {
+			reducer(state, action) {
+				state.cartItems = state.cartItems.filter(
+					item => item.asin !== action.payload
+				)
 			},
 		},
 	},
 })
 
 // * ACTIONS
+//-------------------------------
 export const addToCart = (id, qty) => async (dispatch, getState) => {
 	// const { data } = await axios.get(`/api/products/${id}`)
 	const data = fakeApi(`/product/id`, id)
@@ -45,6 +60,33 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
 	})
 
 	localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems))
+}
+
+export const removeFromCart = id => (dispatch, getState) => {
+	dispatch({
+		type: 'cart/itemRemoved',
+		payload: id,
+	})
+
+	localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems))
+}
+
+export const saveShippingAddress = data => dispatch => {
+	dispatch({
+		type: 'CART_SAVE_SHIPPING_ADDRESS',
+		payload: data,
+	})
+
+	localStorage.setItem('shippingAddress', JSON.stringify(data))
+}
+
+export const savePaymentMethod = data => dispatch => {
+	dispatch({
+		type: 'CART_SAVE_PAYMENT_METHOD',
+		payload: data,
+	})
+
+	localStorage.setItem('paymentMethod', JSON.stringify(data))
 }
 
 export const {
