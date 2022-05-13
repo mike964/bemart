@@ -11,6 +11,7 @@ import {
 	createProductReview,
 } from '../store/actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../store/constants/productConstants'
+import { addToCart, itemAdded } from '../store/cart/cartSlice'
 
 // * Product Page
 const ProductScreen = ({ history, match }) => {
@@ -47,7 +48,11 @@ const ProductScreen = ({ history, match }) => {
 	}, [dispatch, match, successProductReview])
 
 	const addToCartHandler = () => {
+		console.log('addToCartHandler..')
+		// * qty = quantity
 		// history.push(`/cart/${match.params.id}?qty=${qty}`)
+		// dispatch({ type: 'cart/itemAdded', payload: product.asin })
+		dispatch(addToCart(product.asin))
 	}
 
 	const submitHandler = e => {

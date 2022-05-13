@@ -31,6 +31,7 @@ import {
 } from './reducers/orderReducers'
 
 import authReducer from '../store/auth/authSlice'
+import cartSlice from './cart/cartSlice'
 
 const reducer = combineReducers({
 	productList: productListReducer,
@@ -95,7 +96,8 @@ export const store = configureStore({
 		productUpdate: productUpdateReducer,
 		productReviewCreate: productReviewCreateReducer,
 		productTopRated: productTopRatedReducer,
-		cart: cartReducer,
+		// cart: cartReducer,
+		cart: cartSlice,
 	},
 })
 

@@ -14,7 +14,7 @@ const Product = props => {
 			{/* <Card.Img src={product.image} variant='top' /> */}
 			<div className='img-wrap'>
 				<Link to={`/product/${product._id}`}>
-					<img src={product.images[0]} alt='' />
+					<img src={product.mainImage.imageUrl || product.images[0]} alt='' />
 				</Link>
 			</div>
 
