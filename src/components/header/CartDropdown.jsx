@@ -11,7 +11,10 @@ const CartDropdown = () => {
 				to='/cart'>
 				<i className='navbar-tool-icon fas fa-shopping-cart' />
 				{cartItems.length > 0 && (
-					<span className='navbar-tool-label'> {cartItems.length}</span>
+					<div className='yt-spec-icon-badge-shape__badge '>
+						{' '}
+						{cartItems.length}
+					</div>
 				)}
 			</Link>
 		</div>
