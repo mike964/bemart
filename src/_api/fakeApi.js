@@ -41,7 +41,8 @@ const fakeApi = (endpoint, payload) => {
 			break
 		case '/product/id':
 			let product = products.filter(
-				item => item._id === payload || item.asin === payload
+				// item => item._id === payload
+				item => item.asin === payload
 			)
 			// console.log( product )   // array
 			data = product[0]

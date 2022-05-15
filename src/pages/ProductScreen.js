@@ -17,6 +17,7 @@ import { addToCart, itemAdded } from '../store/cart/cartSlice'
 const ProductScreen = ({ history, match }) => {
 	console.log(match.params)
 
+	// Handle Select for quantity to add in cart
 	const [qty, setQty] = useState(1)
 	const [rating, setRating] = useState(0)
 	const [comment, setComment] = useState('')
@@ -49,10 +50,10 @@ const ProductScreen = ({ history, match }) => {
 
 	const addToCartHandler = () => {
 		console.log('addToCartHandler..')
-		// * qty = quantity
+		// * qty := quantity
 		// history.push(`/cart/${match.params.id}?qty=${qty}`)
 		// dispatch({ type: 'cart/itemAdded', payload: product.asin })
-		dispatch(addToCart(product.asin))
+		dispatch(addToCart(product.asin, qty))
 	}
 
 	const submitHandler = e => {
@@ -129,6 +130,8 @@ const ProductScreen = ({ history, match }) => {
 														value={qty}
 														onChange={e => setQty(e.target.value)}>
 														{[...Array(product.countInStock).keys()].map(x => (
+															// [...Array(product.countInStock).keys()]
+															// return : [0,1,2,3..]
 															<option key={x + 1} value={x + 1}>
 																{x + 1}
 															</option>

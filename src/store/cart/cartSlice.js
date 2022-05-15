@@ -22,9 +22,16 @@ const cartSlice = createSlice({
 				const existItem = state.cartItems.find(
 					item => item.asin === action.payload.asin
 				)
-				// add item only if not existed
+
+				// if not existed, add item
 				if (!existItem) {
 					state.cartItems.push(action.payload)
+				} else {
+					// If item already exist, replace to update qty
+					const index = state.cartItems.findIndex(
+						item => item.asin === action.payload.asin
+					)
+					state.cartItems[index] = action.payload
 				}
 			},
 		},
@@ -50,7 +57,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
 		type: 'cart/itemAdded',
 		payload: {
 			...data,
-			product: data._id,
+			product: data.asin,
 			// name: data.name,
 			// image: data.image,
 			// price: data.price,
