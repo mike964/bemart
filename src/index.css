@@ -8,24 +8,6 @@ body {
 		'Segoe UI Symbol';
 }
 
-a {
-	/* color: #ffffff; */
-}
-
-h3 {
-	padding: 1rem 0;
-}
-
-h1 {
-	font-size: 1.8rem;
-	padding: 1rem 0;
-}
-
-h2 {
-	font-size: 1.4rem;
-	padding: 0.5rem 0;
-}
-
 .rating span {
 	margin: 0.1rem;
 }
@@ -87,10 +69,10 @@ h2 {
 /* SINGEL PRODUCT ITEM */
 /* ------------------ */
 
-.card-product-grid {
+/* .card-product-grid {
 	box-shadow: 0 1px 2px rgb(51 51 51 / 7%);
 	border-radius: 0.3rem;
-}
+} */
 
 .img-wrap {
 	position: relative;
@@ -120,8 +102,7 @@ a.product-title {
 	font-weight: 300;
 }
 
-.card-product-grid:hover,
-.card.card-product-list:hover {
+.product-item-card:hover {
 	/* box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; */
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 4px 6px 0 rgba(0, 0, 0, 0.14);
 }
@@ -225,4 +206,15 @@ div.yt-spec-icon-badge-shape__badge {
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 16px;
+}
+
+.cart-plus-icon {
+	color: limegreen;
+	float: right;
+	margin: 0.4rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.cart-plus-icon:hover {
+	color: rgb(11, 156, 11);
 }

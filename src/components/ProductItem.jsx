@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 import { getProduct } from '../utils'
+import { addToCart } from '../store/cart/cartSlice'
+import { useDispatch } from 'react-redux'
+
+const CartPlus = ({ productId }) => {
+	const dispatch = useDispatch()
+
+	return (
+		<i
+			className='fas fa-cart-plus cart-plus-icon'
+			onClick={() => dispatch(addToCart(productId))}
+		/>
+	)
+}
 
 const Product = props => {
 	const product = getProduct(props.product)
 
-	// console.log(props.product.rating.slice(0, 3))
+	// handle show cart plus icon btn
+	const [showCartPlus, setShowCartPlus] = useState(false)
 
 	return (
-		<Card className='my-3 card-product-grid product-card'>
+		<Card
+			className='product-item-card my-3'
+			onMouseEnter={() => setShowCartPlus(true)}
+			onMouseLeave={() => setShowCartPlus(false)}>
 			{/* <Card.Img src={product.image} variant='top' /> */}
 			<div className='img-wrap'>
 				<Link to={`/product/${product._id}`}>
@@ -32,7 +49,10 @@ const Product = props => {
 					/>
 				</Card.Text>
 
-				<Card.Text as='h3'>${product.price}</Card.Text>
+				<p style={{ color: '#3a3457', fontSize: '1.5rem', margin: '2px' }}>
+					${product.price}{' '}
+					{showCartPlus && <CartPlus productId={product.asin} />}
+				</p>
 			</Card.Body>
 		</Card>
 	)

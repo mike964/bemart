@@ -28,3 +28,4 @@ Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 - rebuild cart reducer using redux-toolkit                  ✅
 - show cart items count in navbar in badge                  ✅ 5.14
 - Fix fake api , remove axios_get                           ✅ 5.16
+- When hover on product item card, show +cart btn           ✅ 5.16
