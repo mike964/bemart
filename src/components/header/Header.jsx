@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import UserDropdown from './UserDropdown'
 import NavbarCart from './CartDropdown'
 import CartDropdown from './CartDropdown'
+import DepartmentsDropdown from './DepartmentsDropdown'
 
 const Header = () => {
 	console.log('Header..')
@@ -72,7 +73,7 @@ const Header = () => {
 			<div className='navbar-footer d-flex container'>
 				<NavDropdown
 					id='nav-dropdown-dark-example'
-					className='flex-fill'
+					className='flex-fill department-dropdown'
 					title='Products'
 					// menuVariant='dark'
 				>
@@ -83,6 +84,7 @@ const Header = () => {
 					<NavDropdown.Divider />
 					<NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
 				</NavDropdown>
+				<DepartmentsDropdown />
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/laptops'>Laptops</Link>
 				</div>

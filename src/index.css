@@ -218,3 +218,14 @@ div.yt-spec-icon-badge-shape__badge {
 .cart-plus-icon:hover {
 	color: rgb(11, 156, 11);
 }
+
+.department-dropdown .dropdown-menu {
+	display: none;
+}
+.department-dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu {
+	display: block;
+}

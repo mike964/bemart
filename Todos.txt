@@ -8,13 +8,13 @@ Inspired by Brad Traversy Proshop MERN project
 - Fix single product page                                     ✅
 - Fix produt item cards length, in home page                  ✅
 - Fix pagination, make pagination work                        ✅
-- Shorten product name , when hover show full detail 
-- open prudct item page when product image clicked 
-- add product to cart icon for each product in list
+- Shorten product name , when hover show full detail           
+- open prudct item page when product image clicked            ✅ 
 - move search box component out of Header
 - Search input suggestions - for ex. search iphone
 - Make the search bar pro - with suggestion
-Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
+ - Add user.config object : 
+{preferred_currency , favorite_products : [], ...}
 
 - Add use login as 'admin' or 'custormer'                    
 - Build Banner slice show component                         ✅ 22.4.30
@@ -22,10 +22,13 @@ Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 - Add multiple language 
 - Add multiple currency
 - Build fake authentication and private routes in UI 
-- Auth Pages form rebuilt   done  5.10
+- Auth Pages form rebuilt                                   ✅ 5.10
 - make login work with fakeApi                              ✅ 22.5.11
 - Fix Cart functionality for ui (crud)                      ✅
 - rebuild cart reducer using redux-toolkit                  ✅
 - show cart items count in navbar in badge                  ✅ 5.14
 - Fix fake api , remove axios_get                           ✅ 5.16
 - When hover on product item card, show +cart btn           ✅ 5.16
+- Change page loading style
+- Build multistep process for checkout 
+- Open Navbar dropdown on hover
