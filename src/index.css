@@ -225,7 +225,14 @@ div.yt-spec-icon-badge-shape__badge {
 .department-dropdown:hover .dropdown-menu {
 	display: block;
 }
-
-.dropdown-menu {
+.department-dropdown .dropdown-menu {
+	display: none;
+}
+.department-dropdown:hover .dropdown-menu {
 	display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
 }

@@ -25,6 +25,15 @@ const CartDropdown = () => {
 					</div>
 				)}
 			</Link>
+
+			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
+				<Link className='dropdown-item' href='#'>
+					Computers
+				</Link>
+				<Link className='dropdown-item' href='#action/3.2'>
+					Laptops
+				</Link>
+			</div>
 		</div>
 	)
 }

@@ -6,7 +6,6 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import SearchInput from './SearchInput'
 import { Link } from 'react-router-dom'
 import UserDropdown from './UserDropdown'
-import NavbarCart from './CartDropdown'
 import CartDropdown from './CartDropdown'
 import DepartmentsDropdown from './DepartmentsDropdown'
 
@@ -64,26 +63,12 @@ const Header = () => {
 									</LinkContainer>
 								</NavDropdown>
 							)}
-
 							<UserDropdown />
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
 			<div className='navbar-footer d-flex container'>
-				<NavDropdown
-					id='nav-dropdown-dark-example'
-					className='flex-fill department-dropdown'
-					title='Products'
-					// menuVariant='dark'
-				>
-					<NavDropdown.Item href='#action/3.1'>Computers</NavDropdown.Item>
-					<NavDropdown.Item href='#action/3.2'>Laptops</NavDropdown.Item>
-					<NavDropdown.Item href='#action/3.3'>Cell Phones</NavDropdown.Item>
-					<NavDropdown.Item href='#action/3.3'>Accessories</NavDropdown.Item>
-					<NavDropdown.Divider />
-					<NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
-				</NavDropdown>
 				<DepartmentsDropdown />
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/laptops'>Laptops</Link>
