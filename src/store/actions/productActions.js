@@ -25,7 +25,7 @@ import {
 import { logout } from './userActions'
 // import products from '../../_api/products.json'
 import { getProduct } from '../../utils'
-import { axios_get } from '../../_api/fakeApi'
+import fakeApi from '../../_api/fakeApi'
 
 export const listProducts =
 	(keyword = '', pageNumber = '', filters = {}, byCategory) =>
@@ -38,7 +38,7 @@ export const listProducts =
 			// )
 
 			// * Fetch products from fake api
-			const response = await axios_get(
+			const response = await fakeApi(
 				byCategory ? '/products/category' : '/products',
 				filters
 			)
@@ -81,7 +81,7 @@ export const listProductDetails = id => async dispatch => {
 		// 	return item._id === id || item.asin === id
 		// })
 
-		const response = await axios_get('/product/id', id)
+		const response = await fakeApi('/product/id', id)
 		console.log(response)
 
 		const product = getProduct(response.data)

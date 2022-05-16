@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { fakeApi } from '../../_api/fakeApi'
+import fakeApi from '../../_api/fakeApi'
 
 const API_URL = '/api/users/'
 

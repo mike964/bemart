@@ -4,10 +4,23 @@ import products from './products'
 // Filter products by category
 // '/products?category=laptops'
 
-const fakeApi = (endpoint, payload) => {
+const makePromise = x => {
+	const promise_ = new Promise((resolve, reject) => {
+		setTimeout(() => {
+			if (x !== null) {
+				resolve({ data: x })
+				// * putting data inside {} to mimic axios requests
+			} else {
+				reject(new Error('No data to return!'))
+			}
+		}, 900)
+	})
+	return promise_
+}
+
+export default function fakeApi(endpoint, payload) {
 	let data
 	// const laptops = [ "Macbook Air", "Macbook Pro", "Macbook 16" ];
-	// const cellphones = ['iPhone Pro', 'Galaxy S10', 'HTC 9']
 
 	switch (endpoint) {
 		case '/products':
@@ -63,31 +76,7 @@ const fakeApi = (endpoint, payload) => {
 			data = null
 	}
 	// console.log( Date.now() );
-	return data
+	return makePromise(data)
 }
 
-const axios_get = (endpoint, payload) => {
-	console.log('--- fake api: axios_get')
-	console.log(endpoint)
-	console.log(payload)
-	const thePromise = new Promise((resolve, reject) => {
-		// resolve(meetingDetails); // means return
-		let data = fakeApi(endpoint, payload)
-		// console.log(data)
-
-		setTimeout(() => {
-			if (data) {
-				resolve({ data })
-				// * putting data inside {} to mimic axios requests
-			} else {
-				reject(new Error('No data to return!'))
-			}
-		}, 800)
-	})
-
-	// const result = await thePromise();   // TypeError: thePromise is not a function
-	// return result;
-	return thePromise
-}
-
-export { fakeApi, axios_get }
+// export { fakeApi  }

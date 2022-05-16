@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fakeApi } from '../../_api/fakeApi'
+import fakeApi from '../../_api/fakeApi'
 
 const initialState = { cartItems: [], shippingAddress: {} }
 
@@ -49,7 +49,7 @@ const cartSlice = createSlice({
 //-------------------------------
 export const addToCart = (id, qty) => async (dispatch, getState) => {
 	// const { data } = await axios.get(`/api/products/${id}`)
-	const data = fakeApi(`/product/id`, id)
+	const { data } = await fakeApi(`/product/id`, id)
 	console.log(data)
 
 	dispatch({

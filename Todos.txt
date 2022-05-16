@@ -17,13 +17,14 @@ Inspired by Brad Traversy Proshop MERN project
 Add user.config = {preferred_currency : iqd-usd , favorite_products : [], ...}
 
 - Add use login as 'admin' or 'custormer'                    
-- Build Banner slice show component                           ✅ 22.4.30
-- If user not logged in pop up login dialog for user to log in 
+- Build Banner slice show component                         ✅ 22.4.30
+- If user not logged in pop up login dialog  
 - Add multiple language 
 - Add multiple currency
 - Build fake authentication and private routes in UI 
 - Auth Pages form rebuilt   done  5.10
 - make login work with fakeApi                              ✅ 22.5.11
-- Fix Cart functionality for ui (crud)
-- rebuild cart reducer using redux-toolkit
-- show cart items count in navbar in badge
+- Fix Cart functionality for ui (crud)                      ✅
+- rebuild cart reducer using redux-toolkit                  ✅
+- show cart items count in navbar in badge                  ✅ 5.14
+- Fix fake api , remove axios_get                           ✅ 5.16

@@ -38,7 +38,7 @@ const CartScreen = ({ match, location, history }) => {
 				) : (
 					<ListGroup variant='flush'>
 						{cartItems.map(item => (
-							<CartListItem item={item} />
+							<CartListItem item={item} key={item.asin} />
 						))}
 					</ListGroup>
 				)}
