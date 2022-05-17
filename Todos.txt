@@ -29,6 +29,7 @@ Inspired by Brad Traversy Proshop MERN project
 - show cart items count in navbar in badge                  ✅ 5.14
 - Fix fake api , remove axios_get                           ✅ 5.16
 - When hover on product item card, show +cart btn           ✅ 5.16
+- show cart items in navbar cart dropdown                   ✅ 5.17
 - Change page loading style
 - Build multistep process for checkout 
 - Open Navbar dropdown on hover

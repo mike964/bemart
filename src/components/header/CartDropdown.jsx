@@ -27,12 +27,22 @@ const CartDropdown = () => {
 			</Link>
 
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
-				<Link className='dropdown-item' href='#'>
-					Computers
-				</Link>
-				<Link className='dropdown-item' href='#action/3.2'>
-					Laptops
-				</Link>
+				{cartItems.length > 0 ? (
+					<>
+						{cartItems.map(item => (
+							<span className='dropdown-item'>
+								{(item.title || item.name).slice(0, 32)}..
+							</span>
+						))}
+						<div className='dropdown-item text-center'>
+							<Link className='text-success  ' to='/cart'>
+								View Cart
+							</Link>
+						</div>
+					</>
+				) : (
+					<span className='dropdown-item'>Cart is empty</span>
+				)}
 			</div>
 		</div>
 	)

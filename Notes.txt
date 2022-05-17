@@ -60,4 +60,8 @@ https://rapidapi.com/axesso/api/axesso-amazon-data-service1/
 
 
 22.4.30
-Tomorrow Start working on Search functionality. also add authentication with redux create slice 
+Tomorrow : 
+Start working on Search functionality. also add authentication with redux create slice 
+
+22.5.17 , 1am
+Tomorrow : Work on product search in fakeApi and UI
