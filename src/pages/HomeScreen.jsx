@@ -10,11 +10,17 @@ import ProductCarousel from '../components/ProductCarousel.jsx'
 import Meta from '../components/Meta'
 import { listProducts } from '../store/actions/productActions'
 import BillboardCarousel from '../components/home/BillboardCarousel.jsx'
+import { useParams } from 'react-router-dom'
 
-const HomeScreen = ({ match }) => {
-	const keyword = match.params.keyword
+// const HomeScreen = ({ match }) => {
+const HomeScreen = () => {
+	// const keyword = match.params.keyword
+	const params = useParams()
+	const { keyword } = useParams()
+	console.log(useParams())
 
-	const pageNumber = match.params.pageNumber || 1
+	// const pageNumber = match.params.pageNumber || 1
+	const pageNumber = params.pageNumber || 1
 
 	const dispatch = useDispatch()
 
@@ -23,7 +29,7 @@ const HomeScreen = ({ match }) => {
 
 	useEffect(() => {
 		dispatch(listProducts(keyword, pageNumber))
-		console.log(pageNumber)
+		// console.log(pageNumber)
 	}, [dispatch, keyword, pageNumber])
 
 	return (

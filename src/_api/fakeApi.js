@@ -19,13 +19,27 @@ const makePromise = x => {
 }
 
 export default function fakeApi(endpoint, payload) {
+	console.log('__fakeApi')
+	console.log('endpoint: ' + endpoint)
+	console.log('payload: ' + payload)
 	let data
 	// const laptops = [ "Macbook Air", "Macbook Pro", "Macbook 16" ];
 
 	switch (endpoint) {
 		case '/products':
-			if (!payload) {
+			if (!payload || !payload.keyword) {
 				data = { products }
+			} else if (payload.keyword) {
+				// * Search products
+
+				const { keyword } = payload
+				console.log(keyword)
+				const filteredProducts = products.filter(item => {
+					return item.title.toLowerCase().indexOf(keyword.toLowerCase()) !== -1
+				})
+
+				console.log(filteredProducts)
+				data = { products: filteredProducts }
 			} else {
 				// * payload = filters
 				// case '/products?search':

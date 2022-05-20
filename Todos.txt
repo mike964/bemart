@@ -33,3 +33,5 @@ Inspired by Brad Traversy Proshop MERN project
 - Change page loading style
 - Build multistep process for checkout 
 - Open Navbar dropdown on hover
+- 5:19 I was sick 😷🤕🤒
+- Add search by product.title in fake Api                   ✅ 5.20

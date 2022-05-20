@@ -37,7 +37,7 @@ const ProductsPage = ({ title }) => {
 	useEffect(() => {
 		let x = getDetails(slug)
 		setPageDetails(x)
-		dispatch(listProducts(1, 1, { category: x.category }, true))
+		dispatch(listProducts(1, 1, x.category))
 		// dispatch(listProducts(1, 1, { category }))
 	}, [slug, dispatch])
 
