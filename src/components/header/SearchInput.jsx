@@ -33,7 +33,7 @@ const SearchInput = () => {
 					onChange={e => setKeyword(e.target.value)}
 				/>
 				<InputGroup.Append>
-					<Button variant='warning'>
+					<Button variant='warning' type='submit'>
 						<i className='fa fa-search' aria-hidden='true' />
 					</Button>
 				</InputGroup.Append>

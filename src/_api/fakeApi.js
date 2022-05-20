@@ -18,17 +18,35 @@ const makePromise = x => {
 	return promise_
 }
 
+// build response object for products with pagination
+const makeProductsResponse = (filteredProducts, pageNumber) => {
+	let sliceStart = pageNumber * 12 - 12
+	return {
+		// products,
+		products: filteredProducts.slice(sliceStart, sliceStart + 12),
+		pages: filteredProducts ? Math.ceil(filteredProducts.length / 12) : 2,
+		page: pageNumber,
+	}
+}
+
 export default function fakeApi(endpoint, payload) {
 	console.log('__fakeApi')
 	console.log('endpoint: ' + endpoint)
 	console.log('payload: ' + payload)
-	let data
+	let data = {}
+	// let sliceStart = payload.pageNumber * 12 - 12
 	// const laptops = [ "Macbook Air", "Macbook Pro", "Macbook 16" ];
 
 	switch (endpoint) {
 		case '/products':
 			if (!payload || !payload.keyword) {
-				data = { products }
+				// data = {
+				// 	// products,
+				// 	products: products.slice(sliceStart, sliceStart + 12),
+				// 	pages: products ? Math.ceil(products.length / 12) : 2,
+				// 	page: payload.pageNumber,
+				// }
+				data = makeProductsResponse(products, payload.pageNumber)
 			} else if (payload.keyword) {
 				// * Search products
 
@@ -39,7 +57,8 @@ export default function fakeApi(endpoint, payload) {
 				})
 
 				console.log(filteredProducts)
-				data = { products: filteredProducts }
+				// data = { products: filteredProducts }
+				data = makeProductsResponse(filteredProducts, payload.pageNumber)
 			} else {
 				// * payload = filters
 				// case '/products?search':
@@ -52,7 +71,7 @@ export default function fakeApi(endpoint, payload) {
 				)
 
 				// console.log(filteredProducts)
-				data = { products: filteredProducts }
+				data = makeProductsResponse(filteredProducts, payload.pageNumber)
 			}
 			break
 		// * Get products by category
@@ -62,8 +81,8 @@ export default function fakeApi(endpoint, payload) {
 					item.categories.includes(payload.category)
 				)
 
-				console.log(filteredProducts)
-				data = { products: filteredProducts }
+				// console.log(filteredProducts)
+				data = makeProductsResponse(filteredProducts, payload.pageNumber)
 			}
 			break
 		case '/product/id':

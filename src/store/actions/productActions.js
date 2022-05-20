@@ -49,20 +49,10 @@ export const listProducts =
 			)
 
 			console.log(response)
-			const { products } = response.data
-
-			let x = pageNumber * 12 - 12
-
-			// const data = { products, pages: 2, page: 1 }
-			const data = {
-				products: products.slice(x, x + 12),
-				pages: products ? Math.ceil(products.length / 12) : 2,
-				page: pageNumber,
-			}
 
 			dispatch({
 				type: PRODUCT_LIST_SUCCESS,
-				payload: data,
+				payload: response.data,
 			})
 		} catch (error) {
 			dispatch({
