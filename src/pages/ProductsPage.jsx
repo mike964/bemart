@@ -7,21 +7,22 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
 import ProductItem from '../components/ProductItem'
-import { listProducts } from '../store/actions/productActions'
+import { listProductsByCategory } from '../store/actions/productActions'
 
-// * Show products by Category / Department
+// * Show products by Category/Department
 // should contain filters, title, page number change...
 const ProductsPage = ({ title }) => {
-	let { category_slug: slug } = useParams()
+	let { category, pageNumber } = useParams()
 	const dispatch = useDispatch()
 
 	const [pageDetails, setPageDetails] = useState({})
 
-	console.log(slug)
+	console.log(useParams())
+	// {keyword: 'laptops', pageNumber: '2'}
 
 	// * Get page details
-	function getDetails(slug) {
-		switch (slug) {
+	function getDetails(category) {
+		switch (category) {
 			case 'laptops':
 				return { title: 'Laptops', category: 'Laptops' }
 			case 'cellphones':
@@ -39,15 +40,15 @@ const ProductsPage = ({ title }) => {
 	const { loading, error, products, page, pages } = productList
 
 	useEffect(() => {
-		let x = getDetails(slug)
+		let x = getDetails(category)
 		setPageDetails(x)
-		dispatch(listProducts(1, 1, x.category))
+		dispatch(listProductsByCategory(x.category, pageNumber))
 		// dispatch(listProducts(1, 1, { category }))
-	}, [slug, dispatch])
+	}, [dispatch, category, pageNumber])
 
-	useEffect(() => {
-		console.log('ProductsPage mounted.')
-	}, [])
+	// useEffect(() => {
+	// 	console.log('ProductsPage mounted.')
+	// }, [])
 
 	// if (loading) return <Loader />
 	if (error) return <Message variant='danger'>{error}</Message>
@@ -76,7 +77,7 @@ const ProductsPage = ({ title }) => {
 				) : (
 					products &&
 					products.map(product => (
-						<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+						<Col key={product.asin} sm={12} md={6} lg={4} xl={3}>
 							<ProductItem product={product} />
 						</Col>
 					))
@@ -84,7 +85,12 @@ const ProductsPage = ({ title }) => {
 			</div>
 
 			{!loading && (
-				<Paginate pages={4} page={1} keyword={'category'} className='my-2' />
+				<Paginate
+					pages={pages}
+					page={page}
+					//  keyword={'products'}
+					link={category}
+				/>
 			)}
 		</div>
 	)

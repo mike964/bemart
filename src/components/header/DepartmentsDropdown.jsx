@@ -22,12 +22,12 @@ const DepartmentsDropdown = () => {
 	// 		title='Departments'
 	// 		// menuVariant='dark'
 	// 	>
-	// 		<NavDropdown.Item href='#action/3.1'>Computers</NavDropdown.Item>
-	// 		<NavDropdown.Item href='#action/3.2'>Laptops</NavDropdown.Item>
-	// 		<NavDropdown.Item href='#action/3.3'>Cell Phones</NavDropdown.Item>
-	// 		<NavDropdown.Item href='#action/3.3'>Accessories</NavDropdown.Item>
+	// 		<NavDropdown.Item to='#action/3.1'>Computers</NavDropdown.Item>
+	// 		<NavDropdown.Item to='#action/3.2'>Laptops</NavDropdown.Item>
+	// 		<NavDropdown.Item to='#action/3.3'>Cell Phones</NavDropdown.Item>
+	// 		<NavDropdown.Item to='#action/3.3'>Accessories</NavDropdown.Item>
 	// 		<NavDropdown.Divider />
-	// 		<NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
+	// 		<NavDropdown.Item to='#action/3.4'>Separated link</NavDropdown.Item>
 	// 	</NavDropdown>
 	// )
 
@@ -35,7 +35,7 @@ const DepartmentsDropdown = () => {
 		<div className='nav-item dropdown flex-fill '>
 			<span
 				className='nav-link '
-				href='#'
+				to='#'
 				id='navbarDropdown'
 				role='button'
 				data-toggle='dropdown'
@@ -43,20 +43,20 @@ const DepartmentsDropdown = () => {
 				Departments <i className='fas fa-angle-down m-1' />
 			</span>
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
-				<Link className='dropdown-item' href='#'>
+				<Link className='dropdown-item' to='#'>
 					Computers
 				</Link>
-				<Link className='dropdown-item' href='#action/3.2'>
+				<Link className='dropdown-item' to='#action/3.2'>
 					Laptops
 				</Link>
-				<Link className='dropdown-item' href='#action/3.3'>
+				<Link className='dropdown-item' to='#action/3.3'>
 					Cell Phones
 				</Link>
-				<Link className='dropdown-item' href='#action/3.3'>
+				<Link className='dropdown-item' to='#action/3.3'>
 					Accessories
 				</Link>
 				<NavDropdown.Divider />
-				<Link className='dropdown-item' href='#action/3.4'>
+				<Link className='dropdown-item' to='#action/3.4'>
 					Separated link
 				</Link>
 			</div>

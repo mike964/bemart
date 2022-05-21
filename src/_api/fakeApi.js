@@ -20,11 +20,14 @@ const makePromise = x => {
 
 // build response object for products with pagination
 const makeProductsResponse = (filteredProducts, pageNumber) => {
-	let sliceStart = pageNumber * 12 - 12
+	let itemsPerPage = 8
+	let sliceStart = pageNumber * itemsPerPage - itemsPerPage
 	return {
 		// products,
-		products: filteredProducts.slice(sliceStart, sliceStart + 12),
-		pages: filteredProducts ? Math.ceil(filteredProducts.length / 12) : 2,
+		products: filteredProducts.slice(sliceStart, sliceStart + itemsPerPage),
+		pages: filteredProducts
+			? Math.ceil(filteredProducts.length / itemsPerPage)
+			: 2,
 		page: pageNumber,
 	}
 }
@@ -32,7 +35,8 @@ const makeProductsResponse = (filteredProducts, pageNumber) => {
 export default function fakeApi(endpoint, payload) {
 	console.log('__fakeApi')
 	console.log('endpoint: ' + endpoint)
-	console.log('payload: ' + payload)
+	console.log('payload: ')
+	console.log(payload)
 	let data = {}
 	// let sliceStart = payload.pageNumber * 12 - 12
 	// const laptops = [ "Macbook Air", "Macbook Pro", "Macbook 16" ];
@@ -40,12 +44,6 @@ export default function fakeApi(endpoint, payload) {
 	switch (endpoint) {
 		case '/products':
 			if (!payload || !payload.keyword) {
-				// data = {
-				// 	// products,
-				// 	products: products.slice(sliceStart, sliceStart + 12),
-				// 	pages: products ? Math.ceil(products.length / 12) : 2,
-				// 	page: payload.pageNumber,
-				// }
 				data = makeProductsResponse(products, payload.pageNumber)
 			} else if (payload.keyword) {
 				// * Search products
@@ -81,7 +79,7 @@ export default function fakeApi(endpoint, payload) {
 					item.categories.includes(payload.category)
 				)
 
-				// console.log(filteredProducts)
+				console.log(filteredProducts)
 				data = makeProductsResponse(filteredProducts, payload.pageNumber)
 			}
 			break

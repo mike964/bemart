@@ -45,7 +45,7 @@ const HomeScreen = () => {
 					Go Back
 				</Link>
 			)}
-			<h1>Latest Products</h1>
+			<h1>{!keyword ? 'Latest Products' : 'Search Result'}</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (
@@ -60,11 +60,14 @@ const HomeScreen = () => {
 								</Col>
 							))}
 					</Row>
+					{/* Only when Search, show pagination */}
+					{/* { keyword && ( */}
 					<Paginate
 						pages={pages}
 						page={page}
 						keyword={keyword ? keyword : ''}
 					/>
+					{/* )} */}
 				</>
 			)}
 		</>

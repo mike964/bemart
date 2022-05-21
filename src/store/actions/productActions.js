@@ -28,7 +28,7 @@ import { getProduct } from '../../utils'
 import fakeApi from '../../_api/fakeApi'
 
 export const listProducts =
-	(keyword = '', pageNumber = '', category) =>
+	(keyword = '', pageNumber = '') =>
 	// keyword used for search
 	async dispatch => {
 		try {
@@ -39,16 +39,40 @@ export const listProducts =
 			// )
 
 			// * Fetch products from fake api
-			const response = await fakeApi(
-				category ? '/products/category' : '/products',
-				{
-					keyword,
-					pageNumber,
-					category,
-				}
-			)
+			const response = await fakeApi('/products', {
+				keyword,
+				pageNumber,
+			})
 
-			console.log(response)
+			console.log(response.data)
+
+			dispatch({
+				type: PRODUCT_LIST_SUCCESS,
+				payload: response.data,
+			})
+		} catch (error) {
+			dispatch({
+				type: PRODUCT_LIST_FAIL,
+				payload:
+					error.response && error.response.data.message
+						? error.response.data.message
+						: error.message,
+			})
+		}
+	}
+
+export const listProductsByCategory =
+	(category = '', pageNumber = 1) =>
+	async dispatch => {
+		try {
+			dispatch({ type: PRODUCT_LIST_REQUEST })
+
+			const response = await fakeApi('/products/category', {
+				pageNumber,
+				category,
+			})
+
+			console.log(response.data)
 
 			dispatch({
 				type: PRODUCT_LIST_SUCCESS,

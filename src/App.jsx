@@ -61,16 +61,21 @@ const App = () => {
 						/> */}
 						{/* <Route path='/admin/orderlist' component={OrderListScreen} /> */}
 						<Route path='/search/:keyword' component={HomeScreen} exact />
+						{/* <Route path='/products/:keyword' component={HomeScreen} exact /> */}
 						<Route path='/page/:pageNumber' component={HomeScreen} exact />
 						<Route
 							path='/search/:keyword/page/:pageNumber'
 							component={HomeScreen}
 						/>
+						<Route
+							path='/products/:keyword/page/:pageNumber'
+							component={ProductsPage}
+						/>
 						{/* Added by me */}
 						{/* <Route path='/products/:category' component={ProductsPage} /> */}
 
 						{productPages.map(item => (
-							<Route path={`/products/:category_slug`} key={item.slug}>
+							<Route path={`/products/:category`} key={item.slug}>
 								<ProductsPage title={item.title} />
 							</Route>
 						))}
