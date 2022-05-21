@@ -66,19 +66,20 @@ const App = () => {
 						<Route
 							path='/search/:keyword/page/:pageNumber'
 							component={HomeScreen}
+							exact
 						/>
-						<Route
-							path='/products/:keyword/page/:pageNumber'
-							component={ProductsPage}
-						/>
-						{/* Added by me */}
-						{/* <Route path='/products/:category' component={ProductsPage} /> */}
 
 						{productPages.map(item => (
-							<Route path={`/products/:category`} key={item.slug}>
+							<Route path={`/products/:category`} key={item.slug} exact>
 								<ProductsPage title={item.title} />
 							</Route>
 						))}
+
+						<Route
+							path='/products/:category/page/:pageNumber'
+							component={ProductsPage}
+							exact
+						/>
 
 						<Route path='/' component={HomeScreen} exact />
 					</Switch>

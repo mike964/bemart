@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Pagination, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
+import { LinkContainer } from 'react-router-bootstrap'
 import { useParams } from 'react-router-dom'
 import FiltersSidebar from '../components/FiltersSidebar'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import Paginate from '../components/Paginate'
 import ProductItem from '../components/ProductItem'
 import { listProductsByCategory } from '../store/actions/productActions'
 
 // * Show products by Category/Department
 // should contain filters, title, page number change...
-const ProductsPage = ({ title }) => {
+const ProductsPage = () => {
 	let { category, pageNumber } = useParams()
 	const dispatch = useDispatch()
 
@@ -84,13 +84,22 @@ const ProductsPage = ({ title }) => {
 				)}
 			</div>
 
-			{!loading && (
-				<Paginate
-					pages={pages}
-					page={page}
-					//  keyword={'products'}
-					link={category}
-				/>
+			{!loading && pages > 1 && (
+				<Pagination className='justify-content-center'>
+					{[...Array(pages).keys()].map(x => {
+						// x starts from 0
+						let number = x + 1
+						return (
+							<LinkContainer
+								key={number}
+								to={`/products/${category}/page/${number}`}>
+								<Pagination.Item active={number === page}>
+									{number}
+								</Pagination.Item>
+							</LinkContainer>
+						)
+					})}
+				</Pagination>
 			)}
 		</div>
 	)

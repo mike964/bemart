@@ -35,4 +35,4 @@ Inspired by Brad Traversy Proshop MERN project
 - Open Navbar dropdown on hover
 - 5:19 I was sick 😷🤕🤒
 - Add search by product.title in fake Api                   ✅ 5.20
-- Fix Pagination for UI and fake api
+- Fix Pagination for UI and fake api                        ✅ 5.22 
