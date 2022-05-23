@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import Header from './components/header/Header'
-import Footer from './components/Footer'
+import Footer from './components/footer/Footer'
 import HomeScreen from './pages/HomeScreen.jsx'
 import ProductScreen from './pages/ProductScreen'
 import CartScreen from './pages/CartScreen'
@@ -66,6 +66,13 @@ const App = () => {
 						<Route
 							path='/search/:keyword/page/:pageNumber'
 							component={HomeScreen}
+							exact
+						/>
+
+						<Route path='/products' component={ProductsPage} exact />
+						<Route
+							path='/products/page/:pageNumber'
+							component={ProductsPage}
 							exact
 						/>
 

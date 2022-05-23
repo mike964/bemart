@@ -45,13 +45,21 @@ const HomeScreen = () => {
 					Go Back
 				</Link>
 			)}
-			<h1>{!keyword ? 'Latest Products' : 'Search Result'}</h1>
+			{/* <h2>{!keyword ? 'Latest Products' : 'Search Result'}</h2> */}
 			{loading ? (
 				<Loader />
 			) : error ? (
 				<Message variant='danger'>{error}</Message>
 			) : (
 				<>
+					<div className='d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4'>
+						<h2 className='h3 mb-0 pt-3 me-2'>Latest products</h2>
+						<div className='pt-3'>
+							<Link className=' ' to='/products'>
+								More products <i className='fas fa-angle-right' />{' '}
+							</Link>
+						</div>
+					</div>
 					<Row>
 						{products &&
 							products.map(product => (
@@ -61,13 +69,13 @@ const HomeScreen = () => {
 							))}
 					</Row>
 					{/* Only when Search, show pagination */}
-					{/* { keyword && ( */}
-					<Paginate
-						pages={pages}
-						page={page}
-						keyword={keyword ? keyword : ''}
-					/>
-					{/* )} */}
+					{keyword && (
+						<Paginate
+							pages={pages}
+							page={page}
+							keyword={keyword ? keyword : ''}
+						/>
+					)}
 				</>
 			)}
 		</>

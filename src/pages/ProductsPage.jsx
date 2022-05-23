@@ -7,7 +7,10 @@ import FiltersSidebar from '../components/FiltersSidebar'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import ProductItem from '../components/ProductItem'
-import { listProductsByCategory } from '../store/actions/productActions'
+import {
+	listProducts,
+	listProductsByCategory,
+} from '../store/actions/productActions'
 
 // * Show products by Category/Department
 // should contain filters, title, page number change...
@@ -42,7 +45,9 @@ const ProductsPage = () => {
 	useEffect(() => {
 		let x = getDetails(category)
 		setPageDetails(x)
-		dispatch(listProductsByCategory(x.category, pageNumber))
+		if (!category) dispatch(listProducts('', pageNumber || 1))
+		else dispatch(listProductsByCategory(x.category, pageNumber))
+
 		// dispatch(listProducts(1, 1, { category }))
 	}, [dispatch, category, pageNumber])
 
@@ -92,7 +97,11 @@ const ProductsPage = () => {
 						return (
 							<LinkContainer
 								key={number}
-								to={`/products/${category}/page/${number}`}>
+								to={
+									category
+										? `/products/${category}/page/${number}`
+										: `/products/page/${number}`
+								}>
 								<Pagination.Item active={number === page}>
 									{number}
 								</Pagination.Item>

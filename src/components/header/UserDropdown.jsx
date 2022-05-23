@@ -18,18 +18,28 @@ const UserDropdown = ({ user }) => {
 		<>
 			{user && (
 				<>
-					<NavDropdown title={user.name} id='username'>
-						<LinkContainer to='/profile'>
-							<NavDropdown.Item>Profile</NavDropdown.Item>
-						</LinkContainer>
-						<LinkContainer to='/profile'>
-							<NavDropdown.Item>Settings</NavDropdown.Item>
-						</LinkContainer>
-						<NavDropdown.Divider />
-						<NavDropdown.Item onClick={logoutHandler}>
-							Logout <i className='fas fa-sign-out-alt'></i>
-						</NavDropdown.Item>
-					</NavDropdown>
+					<div className='nav-item dropdown flex-fill '>
+						<div
+							className='nav-link '
+							style={{ fontSize: '1.2rem' }}
+							to='#'
+							role='button'
+							data-toggle='dropdown'>
+							{user.name} <i className='fas fa-user ' />
+						</div>
+						<div className='dropdown-menu'>
+							<Link className='dropdown-item' to='/profile'>
+								Profile
+							</Link>
+							<LinkContainer to='/profile'>
+								<NavDropdown.Item>Settings</NavDropdown.Item>
+							</LinkContainer>
+							<NavDropdown.Divider />
+							<NavDropdown.Item onClick={logoutHandler}>
+								Logout <i className='fas fa-sign-out-alt'></i>
+							</NavDropdown.Item>
+						</div>
+					</div>
 				</>
 			)}
 		</>

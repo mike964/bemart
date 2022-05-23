@@ -33,7 +33,7 @@ const DepartmentsDropdown = () => {
 
 	return (
 		<div className='nav-item dropdown flex-fill '>
-			<span
+			<div
 				className='nav-link '
 				to='#'
 				id='navbarDropdown'
@@ -41,7 +41,7 @@ const DepartmentsDropdown = () => {
 				data-toggle='dropdown'
 				aria-expanded='false'>
 				Departments <i className='fas fa-angle-down m-1' />
-			</span>
+			</div>
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
 				<Link className='dropdown-item' to='#'>
 					Computers
