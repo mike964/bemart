@@ -7,6 +7,7 @@ import FiltersSidebar from '../components/FiltersSidebar'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import ProductItem from '../components/ProductItem'
+import Toolbar from '../components/Toolbar'
 import {
 	listProducts,
 	listProductsByCategory,
@@ -19,6 +20,7 @@ const ProductsPage = () => {
 	const dispatch = useDispatch()
 
 	const [pageDetails, setPageDetails] = useState({})
+	const [viewMode, setViewMode] = useState('grid') // grid by default
 
 	console.log(useParams())
 	// {keyword: 'laptops', pageNumber: '2'}
@@ -60,33 +62,29 @@ const ProductsPage = () => {
 
 	return (
 		<div>
-			<div className='d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom'>
-				<h2>{pageDetails.title}</h2>
-				<div className='btn-toolbar mb-2 mb-md-0'>
-					<div className='btn-group mr-2'>
-						<button className='btn btn-sm btn-outline-secondary'>Share</button>
-						<button className='btn btn-sm btn-outline-secondary'>Export</button>
-					</div>
-					<button className='btn btn-sm btn-outline-secondary dropdown-toggle'>
-						<i className='far fa-calendar-alt' /> This week
-					</button>
-				</div>
-			</div>
+			<h2>{pageDetails.title}</h2>
+			<Toolbar setViewMode={setViewMode} />
 
 			<div className='row mb-3'>
-				{/* <div className='col-md-2 d-none d-md-block bg-light sidebar'>
-						<FiltersSidebar />
-					</div> */}
-				{loading ? (
-					<Loader />
-				) : (
-					products &&
-					products.map(product => (
-						<Col key={product.asin} sm={12} md={6} lg={4} xl={3}>
-							<ProductItem product={product} />
-						</Col>
-					))
-				)}
+				{/* <FiltersSidebar /> */}
+				<div className='col-lg-88'>
+					{/* Products Grid */}
+					<div className='row mx-n2'>
+						{products.map(product => (
+							<Col
+								key={product.asin}
+								sm={6}
+								md={4}
+								lg={viewMode === 'grid' ? 3 : 12}
+								className='px-2 '>
+								<ProductItem
+									product={product}
+									grid={viewMode === 'grid' ? true : false}
+								/>
+							</Col>
+						))}
+					</div>
+				</div>
 			</div>
 
 			{!loading && pages > 1 && (

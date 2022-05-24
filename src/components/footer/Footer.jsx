@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
@@ -76,14 +76,16 @@ const Footer = () => {
 					<div className='row pb-2'>
 						<div className='col-md-6 text-center text-md-start mb-4'>
 							<div className='text-nowrap mb-4'>
-								<a className='d-inline-block align-middle mt-n1 me-3' href='#'>
+								<Link
+									className='d-inline-block align-middle mt-n1 me-3'
+									href='#'>
 									<img
 										className='d-block'
 										src='img/footer-logo-light.png'
 										width={117}
 										alt='Cartzilla'
 									/>
-								</a>
+								</Link>
 								<div className='btn-group dropdown disable-autohide'>
 									<button
 										className='btn btn-outline-light border-light btn-sm dropdown-toggle px-2'
@@ -99,7 +101,7 @@ const Footer = () => {
 									</button>
 									<ul className='dropdown-menu my-1'>
 										<li className='dropdown-item'>
-											<select className='form-select form-select-sm'>
+											<select className='form-control form-control-sm'>
 												<option value='usd'>$ USD</option>
 												<option value='eur'>€ EUR</option>
 												<option value='ukp'>£ UKP</option>
@@ -107,7 +109,7 @@ const Footer = () => {
 											</select>
 										</li>
 										<li>
-											<a className='dropdown-item pb-1' href='#'>
+											<Link className='dropdown-item pb-1' href='#'>
 												<img
 													className='me-2'
 													src='img/flags/fr.png'
@@ -115,10 +117,10 @@ const Footer = () => {
 													alt='Français'
 												/>
 												Français
-											</a>
+											</Link>
 										</li>
 										<li>
-											<a className='dropdown-item pb-1' href='#'>
+											<Link className='dropdown-item pb-1' href='#'>
 												<img
 													className='me-2'
 													src='img/flags/de.png'
@@ -126,10 +128,10 @@ const Footer = () => {
 													alt='Deutsch'
 												/>
 												Deutsch
-											</a>
+											</Link>
 										</li>
 										<li>
-											<a className='dropdown-item' href='#'>
+											<Link className='dropdown-item' href='#'>
 												<img
 													className='me-2'
 													src='img/flags/it.png'
@@ -137,7 +139,7 @@ const Footer = () => {
 													alt='Italiano'
 												/>
 												Italiano
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -145,60 +147,60 @@ const Footer = () => {
 							<div className='widget widget-links widget-light'>
 								<ul className='widget-list d-flex flex-wrap justify-content-center justify-content-md-start'>
 									<li className='widget-list-item me-4'>
-										<a className='widget-list-link' href='#'>
+										<Link className='widget-list-link' href='#'>
 											Outlets
-										</a>
+										</Link>
 									</li>
 									<li className='widget-list-item me-4'>
-										<a className='widget-list-link' href='#'>
+										<Link className='widget-list-link' href='#'>
 											Affiliates
-										</a>
+										</Link>
 									</li>
 									<li className='widget-list-item me-4'>
-										<a className='widget-list-link' href='#'>
+										<Link className='widget-list-link' href='#'>
 											Support
-										</a>
+										</Link>
 									</li>
 									<li className='widget-list-item me-4'>
-										<a className='widget-list-link' href='#'>
+										<Link className='widget-list-link' href='#'>
 											Privacy
-										</a>
+										</Link>
 									</li>
 									<li className='widget-list-item me-4'>
-										<a className='widget-list-link' href='#'>
+										<Link className='widget-list-link' href='#'>
 											Terms of use
-										</a>
+										</Link>
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div className='col-md-6 text-center text-md-end mb-4'>
 							<div className='mb-3'>
-								<a
+								<Link
 									className='btn-social bs-light bs-twitter ms-2 mb-2'
 									href='#'>
 									<i className='ci-twitter' />
-								</a>
-								<a
+								</Link>
+								<Link
 									className='btn-social bs-light bs-facebook ms-2 mb-2'
 									href='#'>
 									<i className='ci-facebook' />
-								</a>
-								<a
+								</Link>
+								<Link
 									className='btn-social bs-light bs-instagram ms-2 mb-2'
 									href='#'>
 									<i className='ci-instagram' />
-								</a>
-								<a
+								</Link>
+								<Link
 									className='btn-social bs-light bs-pinterest ms-2 mb-2'
 									href='#'>
 									<i className='ci-pinterest' />
-								</a>
-								<a
+								</Link>
+								<Link
 									className='btn-social bs-light bs-youtube ms-2 mb-2'
 									href='#'>
 									<i className='ci-youtube' />
-								</a>
+								</Link>
 							</div>
 							<img
 								className='d-inline-block'
@@ -210,13 +212,13 @@ const Footer = () => {
 					</div>
 					<div className='pb-4 fs-xs text-light opacity-50 text-center text-md-start'>
 						© All rights reserved. Made by{' '}
-						<a
+						<Link
 							className='text-light'
 							href='https://createx.studio/'
 							target='_blank'
 							rel='noopener'>
 							Createx Studio
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

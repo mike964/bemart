@@ -38,3 +38,10 @@ Inspired by Brad Traversy Proshop MERN project
 - Fix Pagination for UI and fake api                        ✅ 5.22 
 - Filters 
 - Currency toggle - usd_iqd 
+
+
+
+# NOTES 
+--------------------
+22.5.24
+Idea : instead of filters sidebar , build show hide horizontal filterBar
