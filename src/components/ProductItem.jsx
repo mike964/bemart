@@ -24,7 +24,7 @@ const Product = ({ product: product_, grid }) => {
 
 	return (
 		<Card
-			className='product-item-card my-3'
+			className='product-item-card '
 			onMouseEnter={() => setShowCartPlus(true)}
 			onMouseLeave={() => setShowCartPlus(false)}>
 			{/* <Card.Img src={product.image} variant='top' /> */}
@@ -43,7 +43,7 @@ const Product = ({ product: product_, grid }) => {
 							</Link>
 						</div>
 					</div>
-					<div className='col'>
+					<div className={`col ${grid ? '' : 'pt-3'}`}>
 						<Link to={`/product/${product._id}`} className='product-title'>
 							<div className='card-title'>
 								<strong>{product.name}</strong>

@@ -38,7 +38,8 @@ Inspired by Brad Traversy Proshop MERN project
 - Fix Pagination for UI and fake api                        ✅ 5.22 
 - Filters 
 - Currency toggle - usd_iqd 
-
+- best seller , latest products slider, Hot deals, loader
+- company logos slider
 
 
 # NOTES 

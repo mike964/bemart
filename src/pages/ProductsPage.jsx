@@ -62,21 +62,29 @@ const ProductsPage = () => {
 
 	return (
 		<div>
-			<h2>{pageDetails.title}</h2>
-			<Toolbar setViewMode={setViewMode} />
+			<div className='row'>
+				<div className='col-md-3'>
+					<h3>{pageDetails.title}</h3>
+				</div>
+				<div className='col-md-9'>
+					<Toolbar setViewMode={setViewMode} />
+				</div>
+			</div>
 
-			<div className='row mb-3'>
-				{/* <FiltersSidebar /> */}
-				<div className='col-lg-88'>
-					{/* Products Grid */}
-					<div className='row mx-n2'>
+			<div className='row mb-3 mx-n2'>
+				{/* Products Grid */}
+				<div className='col-md-3'>
+					<FiltersSidebar />
+				</div>
+				<div className='col'>
+					<div className='row'>
 						{products.map(product => (
 							<Col
 								key={product.asin}
-								sm={6}
-								md={4}
-								lg={viewMode === 'grid' ? 3 : 12}
-								className='px-2 '>
+								sm={12}
+								md={6}
+								lg={viewMode === 'grid' ? 4 : 12}
+								className={viewMode === 'grid' ? 'mb-4' : 'mb-2'}>
 								<ProductItem
 									product={product}
 									grid={viewMode === 'grid' ? true : false}
