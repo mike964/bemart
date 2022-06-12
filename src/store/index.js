@@ -11,6 +11,7 @@ import {
 
 import authReducer from '../store/auth/authSlice'
 import cartSlice from './cart/cartSlice'
+import filtersSlice from './filters/filtersSlice'
 
 // * USING REDUX Toolkit
 export const store = configureStore({
@@ -25,6 +26,7 @@ export const store = configureStore({
 		productTopRated: productTopRatedReducer,
 		// cart: cartReducer,
 		cart: cartSlice,
+		filters: filtersSlice,
 	},
 })
 

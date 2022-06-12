@@ -99,7 +99,11 @@
 				"variationList": ["Style: WiFi", "Size: 64GB", "Color: Space Gray"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "Apple",
+			"operating system": "Mac OS",
+			"processor": "Apple M1"
+		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/719UcXKzXHL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -180,7 +184,11 @@
 		"dealPrice": 0,
 		"salePrice": 0,
 		"reviews": [],
-		"specs": [],
+		"specs": {
+			"brand": "Apple",
+			"operating system": "Mac OS",
+			"processor": "Apple M1"
+		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61LNnZPoKPS._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -291,7 +299,11 @@
 				"variationList": ["Capacity: 256GB", "Color: Silver"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "Apple",
+			"operating system": "Mac OS",
+			"processor": "Apple M1"
+		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71jG%2Be7roXL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -356,7 +368,7 @@
 				"value": "15.6 Inches"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "4.1 GHz apple_ci5"
 			},
 			{
@@ -400,7 +412,7 @@
 				"value": "8 Hours"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "Acer"
 			},
 			{
@@ -412,7 +424,7 @@
 				"value": "AN515-54-5812"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "Windows 10 Home"
 			},
 			{
@@ -523,7 +535,11 @@
 				"variationList": ["Style: Notebook only"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "Acer",
+			"operating system": "Windows",
+			"processor": "Intel Core i5-9300H"
+		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71s1LRpaprL._AC_SX679_.jpg",
 			"imageResolution": "679 x 537"
@@ -535,7 +551,7 @@
 			"Laptops",
 			"Traditional Laptops"
 		],
-		"keywords": ["apple"]
+		"keywords": ["Acer"]
 	},
 	{
 		"title": "Lenovo Flex 5 14\" 2-in-1 Laptop, 14.0\" FHD (1920 x 1080) Touch Display, AMD Ryzen 5 4500U Processor, 16GB DDR4, 256GB SSD, AMD Radeon Graphics, Digital Pen Included, Win 10, 81X20005US, Graphite Grey",
@@ -593,7 +609,7 @@
 				"value": "1920 x 1080 Pixels"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "2.1 GHz ryzen_5"
 			},
 			{
@@ -633,7 +649,7 @@
 				"value": "10 Hours"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "Lenovo"
 			},
 			{
@@ -645,7 +661,7 @@
 				"value": "81X20005US"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "Windows 10"
 			},
 			{
@@ -754,7 +770,11 @@
 				"variationList": ["Style: Notebook only"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "Lenovo",
+			"operating system": "Windows",
+			"processor": "AMD Ryzen 5 4500U"
+		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81AbJXWCxXL._AC_SX679_.jpg",
 			"imageResolution": "679 x 509"
@@ -816,7 +836,7 @@
 				"value": "1920 x 1080"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "1.1 GHz celeron_n4020"
 			},
 			{
@@ -844,7 +864,7 @@
 				"value": "2"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "ASUS"
 			},
 			{
@@ -856,7 +876,7 @@
 				"value": "L510MA-DS04"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "Windows 10 Home"
 			},
 			{
@@ -963,7 +983,7 @@
 				"text": "Before returning the product for slow speed, BE SURE TO UPDATE WINDOWS WITH THE WINDOWS UPDATER IN THE LAPTOP!! You Asus will then operate at a very nice speed!",
 				"date": "Reviewed in the United States on February 13, 2021",
 				"rating": "5.0 out of 5 stars",
-				"title": "Be Sure To Run The Windows Operating System Updater!!",
+				"title": "Be Sure To Run The Windows operating system Updater!!",
 				"userName": "B. Guidry",
 				"url": "/gp/customer-reviews/R35SUM9YYMUOQU/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08XB41YVQ",
 				"images": [],
@@ -986,7 +1006,11 @@
 				]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "ASUS",
+			"operating system": "Windows",
+			"processor": "Intel Celeron N4020"
+		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71ehzrGUO7L._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -1468,7 +1492,7 @@
 				"value": "7050-01-615-7793"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "Logitech"
 			},
 			{
@@ -1641,7 +1665,7 @@
 				"value": "3840 X 1080 Pixels"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "SAMSUNG"
 			},
 			{
@@ -1801,7 +1825,7 @@
 				"value": "2560 x 1080 Pixels"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "LG"
 			},
 			{
@@ -1950,7 +1974,7 @@
 				"value": "2560 x 1440 Pixels"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "LG"
 			},
 			{
@@ -2157,437 +2181,6 @@
 			"imageResolution": "679 x 679"
 		},
 		"categories": []
-	},
-	{
-		"title": "Sony - FE 50mm F1.8 Standard Lens (SEL50F18F/2)",
-		"manufacturer": "Visit the Sony Store",
-		"countReview": 3744,
-		"answeredQuestions": 209,
-		"rating": "4.6 out of 5 stars",
-		"asin": "B07XBX32GR",
-		"sizeSelection": [],
-		"soldBy": "Amazon.com",
-		"fulfilledBy": "Amazon.com",
-		"sellerId": null,
-		"warehouseAvailability": "In Stock.",
-		"retailPrice": 248,
-		"price": 198,
-		"countInStock": 2,
-		"priceRange": null,
-		"shippingPrice": 0,
-		"priceShippingInformation": "",
-		"priceSaving": "You Save: $50.00 (20%)",
-		"features": [
-			"Large F1. 8 maximum aperture enables beautiful defocusing effects",
-			"7-blade circular aperture creates beautiful defocused bokeh",
-			"Compact, lightweight design Ideal for full-frame e-mount cameras",
-			"Aspherical element controls spherical aberration and coma",
-			"Double-gauss configuration suppresses field curvature & distortion"
-		],
-		"images": [
-			"https://images-na.ssl-images-amazon.com/images/I/81SQ4kH%2BFnL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81SOTxf9GAL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81goX6MAt-L._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/61rzChIHevL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71ZlAc9hJLL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/812NrhOeuFL._AC_SL1500_.jpg"
-		],
-		"videoeUrlList": [],
-		"description": "This 50mm Full-frame E-mount Fast Prime Lens offers a focal length that is perfect for portraiture and a range of other subjects. A bright F1. 8 maximum aperture, 7-blade circular aperture and aspherical element deliver impressive image quality with beautifully defocused background bokeh, all in a surprisingly compact and lightweight package.Minimum focus distance: 0.45 m (1.48 ft)",
-		"details": [
-			{
-				"name": "Product Dimensions",
-				"value": "4.09 x 3.4 x 4.69 inches"
-			},
-			{
-				"name": "Item Weight",
-				"value": "10.4 ounces"
-			},
-			{
-				"name": "ASIN",
-				"value": "B07XBX32GR"
-			},
-			{
-				"name": "Item model number",
-				"value": "SEL50F18F/2"
-			},
-			{
-				"name": "Customer Reviews",
-				"value": "4.6 out of 5 stars 3,744 ratings 4.6 out of 5 stars"
-			},
-			{
-				"name": "Best Sellers Rank",
-				"value": "#8 in SLR Camera Lenses"
-			},
-			{
-				"name": "Date First Available",
-				"value": "September 3, 2019"
-			},
-			{
-				"name": "Manufacturer",
-				"value": "Sony"
-			}
-		],
-		"minimalQuantity": "1",
-		"dealPrice": 0,
-		"salePrice": 0,
-		"reviews": [
-			{
-				"text": "Works great with A7. For the price, you can't beat it. Before you whine about the performance, put the current firmware on both your camera and lens (as of this writing, that would be 3.20 and .2 respectively), and then go into the settings and enable Phase Detect. AF is fast up to F4, after that the camera needs more time to hunt. For someone like me coming from a Canon 40 2.8 STM w/Commlite adapter, this is not a big deal, and is still way faster than any adapted lens. Corners are soft and hazy wide-open. In any case, 99.9% of the time your audience is going to marvel at how blurred the background is, while the other .1% is measuring the bokeh balls with a caliper for uniformity. Who cares? It's a portrait lens, for crying out loud. Stop-down if it bothers you. Beyond F5.6, this lens is sharp as nails and produces landscape scenes with stunning detail. This lens is light-weight. I can see myself traveling with just this lens. It's a 50mm lens, it produces beautiful images on the A7, and most importantly, it doesn't cost half the price of the A7. Believe me, nobody is going to look at your image shot with this lens and say , \"Aha! You didn't shoot this with the $900 Zeiss!\".",
-				"date": "Reviewed in the United States on October 13, 2016",
-				"rating": "5.0 out of 5 stars",
-				"title": "Works great with A7",
-				"userName": "Suntoryjim",
-				"url": "/gp/customer-reviews/R3U4YY143QTM2B/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07XBX32GR",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/719D+SOuXVL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71QqifVJluL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71eQv20Ev1L._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71mcYjupmUL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/81IN8Ge2GOL._SY88.jpg"
-				],
-				"variationList": ["Style: Lens only"]
-			},
-			{
-				"text": "For the price you really don't have another native lens option. As others have stated the auto-focus on this lens is probably the worst of any native FE mount lens. First it uses a DC motor, so lots of pulsing to focus. Also the motor is fairly audible so not the best choice in video. For the price the image quality is excellent. Bokeh is smooth and non distracting. The lens design is some what of a 'classic' so it is more susceptible to flare than many modern lenses. I have actually found using this in continuous autofocus increases the usability of the focus greatly. For some reason single focus loves to hunt and give up in low contrast situations when the continuous does a much better job. Video auto focus is a lot better than you would expect, but I would say it's critical that you have an external mic or you might pick up clicks from the DC motor. I recently received my A7III with Sony's newest focusing technology and the same issues remain, and the lens is at the latest firmware (3).",
-				"date": "Reviewed in the United States on April 17, 2018",
-				"rating": "3.0 out of 5 stars",
-				"title": "Auto-focus on this lens is probably the worst of any native FE lens, but it's still a buy",
-				"userName": "Amazon Customer",
-				"url": "/gp/customer-reviews/R2KSD9H5VR9ZEX/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07XBX32GR",
-				"images": [],
-				"variationList": ["Style: Lens only"]
-			},
-			{
-				"text": "I returned this lens, because the AF is actually as bad as everyone says it is. I compared it directly to my 30+ year old minolta 50mm 1.7 mounted on an LA-EA4 adapter on my A7ii camera. The Minolta focused faster indoors. That is ridiculous. This lens is an embarrassment for Sony. I wish they made something under $500 before stepping up to the Ziess. The 85mm 1.8 is a masterpiece and sells for $600, so Sony just needs to put that focusing tech into a 50. Meanwhile, if you are looking for a cheap prime, I would recommend the samyang 35mm 2.8. It is super small and only 85 grams, it focuses faster than this lens and is often on sale for about the same price. If you keep the subject centered and can crop, you won't get the same DOF, but with more responsive AF you will have more keepers when trying to keep up with moving subjects or lower light. Until Sony makes a better version of this lens under $500, I will stick with a pair of 35mm and 85mm FE lenses that can be acquired new, on sale, for about $820. If you need this focal length, the 55mm 1.8 is the only AF option. Otherwise, pick up an older fast manual focus nifty 50 and a cheap adapter, and you will probably have better results than this clunker of a 50mm.",
-				"date": "Reviewed in the United States on April 24, 2018",
-				"rating": "3.0 out of 5 stars",
-				"title": "because the AF is actually as bad as everyone says it is",
-				"userName": "David C.",
-				"url": "/gp/customer-reviews/R1SGU9ED2PTTV/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07XBX32GR",
-				"images": [],
-				"variationList": ["Style: Lens only"]
-			}
-		],
-		"specs": [],
-		"mainImage": {
-			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81SQ4kH%2BFnL._AC_SX679_.jpg",
-			"imageResolution": "679 x 503"
-		},
-		"categories": [
-			"Electronics",
-			"Camera & Photo",
-			"Lenses",
-			"Camera Lenses",
-			"SLR Camera Lenses"
-		],
-		"currency": null,
-		"acKeywordLink": "sony 50mm",
-		"deliveryMessage": "Friday, May 21 Details"
-	},
-	{
-		"title": "Intel Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)",
-		"manufacturer": "Visit the Intel Store",
-		"countReview": 1909,
-		"answeredQuestions": 57,
-		"rating": "4.9 out of 5 stars",
-		"asin": "B086ML4XSB",
-		"sizeSelection": [],
-		"soldBy": "Amazon.com",
-		"fulfilledBy": "Amazon.com",
-		"sellerId": null,
-		"warehouseAvailability": "Available to ship in 1-2 days.",
-		"retailPrice": 387,
-		"price": 321.76,
-		"countInStock": 3,
-		"priceRange": null,
-		"shippingPrice": 0,
-		"priceShippingInformation": "",
-		"priceSaving": "You Save: $65.24 (17%)",
-		"features": [
-			"8 Cores / 16 Threads",
-			"Socket type LGA 1200",
-			"Up to 5.1 GHz unlocked",
-			"Compatible with Intel 400 series chipset based motherboards",
-			"Intel Turbo Boost Max Technology 3.0 support",
-			"Intel Optane Memory support"
-		],
-		"images": [
-			"https://images-na.ssl-images-amazon.com/images/I/71P3chRzgNL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71NMEbc22LL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81gXREHrUUL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71fghXFre1L._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/718jrrXhGvL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81sBTMCCL2L._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71GnKVzz-uL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71FgNYqXiRL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81qkaAF%2BRXL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81xPjYpi7rL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71Vvn-23KdL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71gD6Z7DzaL._AC_SL1500_.jpg"
-		],
-		"videoeUrlList": [
-			"https://d2y5sgsy8bbmb8.cloudfront.net/510dc3da-54d0-41c3-8d2f-97dc4f50c5eb/default.jobtemplate.mp4.480.mp4",
-			"https://d2y5sgsy8bbmb8.cloudfront.net/684f6685-dfe8-484d-b7b8-f4e6c8ded8a9/default.jobtemplate.mp4.480.mp4"
-		],
-		"description": null,
-		"details": [
-			{
-				"name": "Processor",
-				"value": "3.8 GHz core_i7"
-			},
-			{
-				"name": "Brand",
-				"value": "Intel"
-			},
-			{
-				"name": "Item model number",
-				"value": "BX8070110700K"
-			},
-			{
-				"name": "Item Weight",
-				"value": "2.82 ounces"
-			},
-			{
-				"name": "Product Dimensions",
-				"value": "7.09 x 6.3 x 3.94 inches"
-			},
-			{
-				"name": "Item Dimensions LxWxH",
-				"value": "7.09 x 6.3 x 3.94 inches"
-			},
-			{
-				"name": "Processor Brand",
-				"value": "Intel"
-			},
-			{
-				"name": "Processor Count",
-				"value": "8"
-			},
-			{
-				"name": "Manufacturer",
-				"value": "Intel"
-			},
-			{
-				"name": "ASIN",
-				"value": "B086ML4XSB"
-			},
-			{
-				"name": "Date First Available",
-				"value": "May 20, 2020"
-			},
-			{
-				"name": "Customer Reviews",
-				"value": "4.9 out of 5 stars 1,909 ratings 4.9 out of 5 stars"
-			},
-			{
-				"name": "Best Sellers Rank",
-				"value": "#10 in Computer CPU Processors"
-			}
-		],
-		"minimalQuantity": "1",
-		"dealPrice": 0,
-		"salePrice": 0,
-		"reviews": [
-			{
-				"text": "I waited too long to switch back to the FPS king. This chip is amazing. I missed you Intel. The PC world is weird. Always chasing $50 savings. Too many games have CPU bottlenecks. I debated hard between just buying a 3700x to replace my 2700x versus the hard MB/CPU upgrade to Intel. But AMD had left me frustrated. My 2700x was never maxed out and I couldn’t tell what was bottleknecking me. The 3700x didn’t promise much higher clock speeds so I wasn’t sure if an upgrade would help. I play Rust on 1440p and my GPU and CPU would sit at 60% utilization or less with frames only around 70fps. First test with the 10700k stock and I’m at 135fps, max graphic settings. My GPU is now pumping out 99% utilization and the game feels amazing. This chip runs cool on stock. Idk where all the bad thermal predictions came from, but it didn’t happen. Haven’t even OC’d it yet and honestly I may not need to until I upgrade off of my 2080super. But that’s not happening any time soon. I’m hitting 144fps on 1440p max settings now in every FPS game and that was the goal. Thank you Intel, you nailed this one. The 9th gen had some cost/heat issues and that made me give AMD a try and I’m glad to be back! For anyone choosing a card. The 10700k is the sweet spot for gaming and streaming. If you only game, I think the 10600k is a cheaper but same performance. I don’t see any need for the 10900k.",
-				"date": "Reviewed in the United States on June 5, 2020",
-				"rating": "5.0 out of 5 stars",
-				"title": "The FPS Gaming/Streaming King",
-				"userName": "Michael",
-				"url": "/gp/customer-reviews/RKE6QHJS1ZBWY/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086ML4XSB",
-				"images": [],
-				"variationList": ["Style: Processor Only"]
-			},
-			{
-				"text": "Yeah I know, Ryzens are cheaper, and out perform the Intel chips in everything... except clocks. As a gamer, I want the highest single core speed possible, 16 threads instead of 32? Whatever, I don't need that many for my uses, lol. I don't upgrade often, and until now I was still running my trusty 4790k, which still can hold it's own pretty well, but now with the 10700k, the 1080 isn't bottlenecked by my CPU any more, and it's VERY noticeable in certain games I normally saw slight issues. Should you upgrade 9th gen, or even 8th gen to 10th gen? Honestly, probably not. But if you're say, a few of more generations behind now, it's a worthy upgrade. Yes it's an upgraded 9900k, but that's still really good for ~$400! (pic included just because I find it hilarious how absurdly big the Noctua D15 cooler is) 1 MONTH UPDATE: So yeah it's just shy of a month using it and it's been a beast. I haven't messed with clocks at all since the built in boosts do the job fine, especially paired with the D15 keeping it nice and cool. Haven't gone above 60c in full load yet. 8 MONTH UPDATE: Still going strong! Was able to snag a 3080 from MicroCenter in September, so my build is now complete, and the 3080/10700k combo is beasting through anything I put in front of it. PC Build: CPU: i7-10700k CPUC: Noctua NH-D15 Chromax MOBO: MSI Z490-A PRO RAM: 32GB (4x8GB) HyperX Fury DDR4 3200 GPU: EVGA RTX 3080 XC3 Ultra PSU: Seasonic Focus Plus Gold 750w DRIVES: 250GB Samsung 970 EVO Plus M.2, 1TB Seagate SSHD, 2TB Samsung 860 Evo SSD, 4TB WD Black HDD",
-				"date": "Reviewed in the United States on June 6, 2020",
-				"rating": "5.0 out of 5 stars",
-				"title": "Gaming Chip. 4790k to this.",
-				"userName": "BK",
-				"url": "/gp/customer-reviews/RCFR8M9O9QZ6V/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086ML4XSB",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/712IN8-4D6L._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/918jIB27i2L._SY88.jpg"
-				],
-				"variationList": ["Style: Processor Only"]
-			},
-			{
-				"text": "Upgraded from an i5 6500 to this i7-10700k and wow has it made a difference. No more stutters in games and a huge FPS gain. Lookup benchmarks for more performance stats. Was originally worried about temps as most reviews said 10th gen Intels are running hot. I have a Noctua NH-U12S cooling this without issues (not overclocked). CPU does heat up immensely in Warzone where a 3-4 hour gaming session has temperatures in the mid 70s c. Pubg, dota 2, and escape from tarkov this CPU only heats up to high 50's to low 60's which is better than I expected. I personally won't overclock this until I invest in a better air cooler or aio. Will update this review as I complete testing and benchmarks.",
-				"date": "Reviewed in the United States on May 29, 2020",
-				"rating": "5.0 out of 5 stars",
-				"title": "Great CPU",
-				"userName": "Thomas",
-				"url": "/gp/customer-reviews/R1VNOYSPR76PM3/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086ML4XSB",
-				"images": [],
-				"variationList": ["Style: Processor Only"]
-			}
-		],
-		"specs": [],
-		"mainImage": {
-			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71P3chRzgNL._AC_SX679_.jpg",
-			"imageResolution": "679 x 785"
-		},
-		"categories": [
-			"Electronics",
-			"Computers & Accessories",
-			"Computer Components",
-			"Internal Components",
-			"CPU Processors"
-		]
-	},
-	{
-		"title": "AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor",
-		"manufacturer": "Visit the AMD Store",
-		"countReview": 2372,
-		"answeredQuestions": 85,
-		"rating": "4.8 out of 5 stars",
-		"asin": "B0815XFSGK",
-		"sizeSelection": [],
-		"soldBy": "Amazon.com",
-		"fulfilledBy": "Amazon.com",
-		"sellerId": null,
-		"warehouseAvailability": "In Stock.",
-		"retailPrice": 449,
-		"price": 421.05,
-		"countInStock": 3,
-		"priceRange": null,
-		"shippingPrice": 0,
-		"priceShippingInformation": "",
-		"priceSaving": "You Save: $27.95 (6%)",
-		"features": [
-			"AMD's fastest 8 core processor for mainstream desktop, with 16 procesing threads",
-			"Can deliver elite 100+ FPS performance in the world's most popular games",
-			"Cooler not included, high-performance cooler recommended",
-			"4.7 GHz Max Boost, unlocked for overclocking, 36 MB of cache, DDR-3200 support",
-			"For the advanced Socket AM4 platform, can support PCIe 4.0 on X570 and B550 motherboards"
-		],
-		"images": [
-			"https://images-na.ssl-images-amazon.com/images/I/61DYLoyNRWL._AC_SL1384_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/610Rt4BtEWL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/61YofZTWZoS._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81ciJn85chL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81bEvvz3HnL._AC_SL1500_.jpg"
-		],
-		"videoeUrlList": [],
-		"description": "Be unstoppable with the unprecedented speed of the world’s best desktop processors. AMD Ryzen 5000 Series processors deliver the ultimate in high performance, whether you’re playing the latest games, designing the next skyscraper or crunching scientific data. With AMD Ryzen, you’re always in the lead.",
-		"details": [
-			{
-				"name": "Processor",
-				"value": "4.7 GHz amd_ryzen_7"
-			},
-			{
-				"name": "Brand",
-				"value": "AMD"
-			},
-			{
-				"name": "Series",
-				"value": "AMD Ryzen 7 5800X"
-			},
-			{
-				"name": "Item model number",
-				"value": "AMD Ryzen 7 5800X"
-			},
-			{
-				"name": "Item Weight",
-				"value": "2.8 ounces"
-			},
-			{
-				"name": "Product Dimensions",
-				"value": "1.57 x 1.57 x 0.24 inches"
-			},
-			{
-				"name": "Item Dimensions LxWxH",
-				"value": "1.57 x 1.57 x 0.24 inches"
-			},
-			{
-				"name": "Color",
-				"value": "Black"
-			},
-			{
-				"name": "Processor Brand",
-				"value": "AMD"
-			},
-			{
-				"name": "Processor Count",
-				"value": "8"
-			},
-			{
-				"name": "Manufacturer",
-				"value": "AMD"
-			},
-			{
-				"name": "ASIN",
-				"value": "B0815XFSGK"
-			},
-			{
-				"name": "Date First Available",
-				"value": "November 5, 2020"
-			},
-			{
-				"name": "Customer Reviews",
-				"value": "4.8 out of 5 stars 2,372 ratings 4.8 out of 5 stars"
-			},
-			{
-				"name": "Best Sellers Rank",
-				"value": "#1 in Computer CPU Processors"
-			}
-		],
-		"minimalQuantity": "1",
-		"dealPrice": 0,
-		"salePrice": 0,
-		"reviews": [
-			{
-				"text": "Great processor. A huge step up for AMD. This should finally start to scare Intel. Is a hot cpu so make sure you pair it with a quality cooler. For some reason the decided the best way to send a 500 dollar pc part was using a bubble envelope and nothing else. And you can see the result. Hope it works when I finally get my hands on the other parts.",
-				"date": "Reviewed in the United States on November 30, 2020",
-				"rating": "1.0 out of 5 stars",
-				"title": "Why would you ship a CPU in a bubble envelope with no protection?",
-				"userName": "Robert Hughes",
-				"url": "/gp/customer-reviews/R2Y31ZPRIJCFD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0815XFSGK",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/811i7-06GSL._SY88.jpg"
-				],
-				"variationList": []
-			},
-			{
-				"text": "Pros - This is a great CPU with Single-core performance that surpasses any intel competitor and multi-core performance that smashes most of the competition. It's incredibly energy efficient for the performance gains and has great thermals. *Upgrading from a I5-2500K, everything I can think of doing is smoother and more responsive. Your milage may vary. Neutral - Does not come with an in box cooler for those of you wondering. Suprised there wasn't a wraith prism pairing with this 800x generation considering the thermal performance but you'd be better off using am aftermarket cooler regardless. *Paired mine with a Cooler master ML240RGB and my max load temp was 74°C before stabilizing at 64°C in a case with 'OK' ventilation under max load (CPU-Z stress test). *Only my memory and Infinity fabric were OC'd. Cons - Now we come to the two elephants in the room. 1. You gotta be lucky to even get the chance to buy one. Whilst this didn't sell out as fast as the 900x and 950x. It did sell out faster than the 600x and I have not seen it back in stock yet. 11/11/20 2. This processor is a little overpriced compared to it's siblings that flank it. ● 5600x has 6C/12T, 35Mb cache and is priced at $299. ● 5800x has 8C/16T, 36Mb cache and is priced at $447? *2 more cores, 4 more threads and 1 Mb more cache for $150 price increase? Ok. ●5900X 12C/24T, 64Mb cache and is priced at $547. **4 more cores, 8 more threads and double the cache for $100 more???? TLDR Great CPU, $50 over priced. If you can afford it (or even purchase it in the first place) Buy a 5900x as it's a better value. If not, save a $150 and buy a 5600x. Identical performance in games and not too far off in production work loads.",
-				"date": "Reviewed in the United States on November 11, 2020",
-				"rating": "4.0 out of 5 stars",
-				"title": "Great CPU, Slightly Overpriced to it's siblings",
-				"userName": "Damien Marshall",
-				"url": "/gp/customer-reviews/R1IC1GQPM08DX0/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0815XFSGK",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/71j9PUGUjyL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71lRVNi9dfL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/817vZvcjj6L._SY88.jpg"
-				],
-				"variationList": []
-			},
-			{
-				"text": "At the time of writing this CPU has only been 'available' for about 2 weeks and I'll admit I got very lucky in getting one on launch day. Most will probably find this hard to find until demand/supply stabilize but if you're fortunate like me here are some things I have found so far: This CPU is a top performer at it's tier. There's a plethora of data at this point in benchmarks about the Ryzen 5000 series and they seem to outscore most of the Intel competitors easily, as well as against the previous Ryzen 3000 series line. Personally I don't think this alone is a great reason to buy this product currently but I will expand later on value, my previous setup was an 8700K and I felt this 'worth' the upgrade for me personally. I use it on a near exclusive gaming PC, with some occasional video rendering and I can see improvement across the board. I play most games at 1440p however, and vs my old 8700k I can tell you the performance gain on average is probably less than 5%. In rendering and workstation benchmarks its much more, to be expected with core count increase. This CPU in my system tends to run HOT. At least hotter than I expected @ 105W TDP. I'm on a MSI Tomahawk x570 with an Arctic Liquid Cooler 2 280mm AIO, and with stock settings stress testing I'm reaching 75 C quickly, sometimes maxing at 85 C depending on the task. I've checked my mounting and I don't think there is an issue. My system is using a Phanteks P500A with high airflow as well. I've found examples of others reporting this as well online, and it seems exclusive to the 5800x currently. I've done some extended stress testing and it doesn't seem to thermal throttle so I'm not too worried, while gaming it peaks around 68 C. Overall I've had zero stability problems or crashes so far which is better than expected as AMD has been known in recent years as a problematic launch platform with driver/BIOS issues. Hopefully this stays the same! In terms of value this is probably not worth it to most who are interested. The 5600x is (for now) the value/performance king of the new series and the 5900x has notable advantages for only $100 more. I think there is still fantastic value in the R5 3600 as well, especially since it can be occasionally had for around $175. If the price of the 5800x drops to $400 or less in the future it will be become a much more compelling purchase. Consider that this is also the end of the line (supposedly) for the AM4 platform. I think you can make a reasonable argument for 10th Gen Intel due to a potential next gen upgrade capability but who knows if it will be worth the wait. TL;DR: Top performer, value questionable, warm running Ryzen CPU. I'm an enthusiast who wanted to buy into this series before we even knew it was capable, most will find this unnecessary for mid-high tier 1440/4k gaming. *EDIT* - For those who are interested, I've done more temperature and benchmark and found that enabling ECO Mode in AMD Ryzen Master software is a fantastic way to mitigate high temps. It seems to drop the total power draw from 145w (PBO/OC mode enabled) to about 88w, maintains the same Single-Core score in Cinebench and has virtually no effect on gaming. Heavy multi-core workloads suffer to the tune of about 10% i.e. Cinebench, Handbrake encoding, etc. This is now my default setting, I've noticed CPU intense games dip a little, but still higher performing than my old 8700K and temps on average are 20% less. This is now my default setting as odd as that sounds, maintains my fan/pump speeds much lower and therefore quieter and for 90% of the 1440p gaming I see no performance effect. Maybe this will be improved with further BIOS updates but for now this seems to be the safest option.",
-				"date": "Reviewed in the United States on November 20, 2020",
-				"rating": "4.0 out of 5 stars",
-				"title": "8 Core King - *EDIT* Eco Mode",
-				"userName": "Patrick G.",
-				"url": "/gp/customer-reviews/R3TJTVSCLJAMTN/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0815XFSGK",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/91lbZtwR-nL._SY88.jpg"
-				],
-				"variationList": []
-			}
-		],
-		"specs": [],
-		"mainImage": {
-			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61DYLoyNRWL._AC_SX679_.jpg",
-			"imageResolution": "679 x 583"
-		},
-		"categories": [
-			"Electronics",
-			"Computers & Accessories",
-			"Computer Components",
-			"Internal Components",
-			"CPU Processors"
-		]
 	},
 	{
 		"title": "Nokia 225 | Unlocked | 4G Cell Phone | Black",
@@ -3447,7 +3040,7 @@
 			"Internal specss: 4GB DDR4 on-board memory (1 slot available); 128GB NVMe solid-state drive storage (1 hard drive bay available) to store your files and media",
 			"Acer's Purified.Voice technology, features enhanced digital signal processing to cancel out background noise, improve speech accuracy and far-field pickup, which not only makes calls clearer, but makes talking to Alexa easier than before.",
 			"With Alexa Show Mode, you can use your PC as a full-screen interactive experience that features rich visuals and lets you talk to Alexa from across the room.",
-			"Secure Operating System: Windows 11 Home in S mode comes with advanced security features built right in, like protections against phishing and malicious software so you don't have to think twice when navigating to a new webpage or downloading an app"
+			"Secure operating system: Windows 11 Home in S mode comes with advanced security features built right in, like protections against phishing and malicious software so you don't have to think twice when navigating to a new webpage or downloading an app"
 		],
 		"images": [
 			"https://m.media-amazon.com/images/I/7189iXimfWL._AC_SL1500_.jpg",
@@ -3489,7 +3082,7 @@
 				"value": "‎1920 x 1080"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "‎3.5 GHz ryzen_3"
 			},
 			{
@@ -3529,7 +3122,7 @@
 				"value": "‎10 Hours"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "‎Acer"
 			},
 			{
@@ -3541,7 +3134,7 @@
 				"value": "‎NX.ABRAA.007"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "‎Windows"
 			},
 			{
@@ -3652,7 +3245,11 @@
 				"variationList": ["CPU: AMD Ryzen 3 3000-Series", "Style: Laptop Only"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "Acer",
+			"operating system": "Windows",
+			"processor": "AMD Ryzen 3 3350U"
+		},
 		"mainImage": {
 			"imageUrl": "https://m.media-amazon.com/images/I/7189iXimfWL._AC_SX679_.jpg",
 			"imageResolution": "679 x 489"
@@ -3788,7 +3385,11 @@
 				"variationList": []
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "Apple",
+			"operating system": "Mac OS",
+			"processor": "Apple M1"
+		},
 		"mainImage": {
 			"imageUrl": "https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -3858,7 +3459,7 @@
 				"value": "‎1920 x 1080 Pixels"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "‎3.3 GHz core_i7"
 			},
 			{
@@ -3898,7 +3499,7 @@
 				"value": "‎2"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "‎MSI"
 			},
 			{
@@ -3914,7 +3515,7 @@
 				"value": "‎PC"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "‎Windows 10 Home"
 			},
 			{
@@ -4035,7 +3636,11 @@
 				"variationList": ["Color: Carbon Gray"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "MSI",
+			"operating system": "Windows",
+			"processor": "Intel Core i7-11375H"
+		},
 		"mainImage": {
 			"imageUrl": "https://m.media-amazon.com/images/I/71p3Ygm14wL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -4047,8 +3652,6 @@
 			"Laptops",
 			"Traditional Laptops"
 		],
-		"currency": null,
-		"acKeywordLink": null,
 		"deliveryMessage": null,
 		"rentPrice": 0.0,
 		"usedPrice": 0.0,
@@ -4100,7 +3703,7 @@
 				"value": "‎1440x900 Pixels"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "‎1.8 GHz core_i5_family"
 			},
 			{
@@ -4136,7 +3739,7 @@
 				"value": "‎12 Hours"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "‎Apple"
 			},
 			{
@@ -4152,7 +3755,7 @@
 				"value": "‎Mac"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "‎MAC OS X"
 			},
 			{
@@ -4294,7 +3897,11 @@
 				"variationList": ["Capacity: 2015 Model 256GB", "Color: Silver"]
 			}
 		],
-		"specs": [],
+		"specs": {
+			"brand": "MSI",
+			"operating system": "Mac OS",
+			"processor": "Intel Core i5-11375H"
+		},
 		"mainImage": {
 			"imageUrl": "https://m.media-amazon.com/images/I/91wYB53Y4aL._AC_SX679_.jpg",
 			"imageResolution": "679 x 679"
@@ -4460,6 +4067,11 @@
 			"512GB NVMe SSD | 8GB DDR4 RAM | Windows 10 Home",
 			"Gigabit Wave 2 Wi-Fi 5 (802.11ac)"
 		],
+		"specs": {
+			"brand": "ASUS",
+			"operating system": "Windows",
+			"processor": "AMD Ryzen 7 3750H"
+		},
 		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/81hvy0QbcPL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/81gK08T6tYL._AC_SL1500_.jpg",
@@ -4483,7 +4095,7 @@
 				"value": "‎1920 x 1080 Pixels"
 			},
 			{
-				"name": "Processor",
+				"name": "processor",
 				"value": "‎4 GHz amd_ryzen_7"
 			},
 			{
@@ -4527,7 +4139,7 @@
 				"value": "‎2"
 			},
 			{
-				"name": "Brand",
+				"name": "brand",
 				"value": "‎ASUS"
 			},
 			{
@@ -4543,7 +4155,7 @@
 				"value": "‎PC"
 			},
 			{
-				"name": "Operating System",
+				"name": "operating system",
 				"value": "‎Windows 10 Home"
 			},
 			{

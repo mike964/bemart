@@ -12,6 +12,7 @@ import {
 	listProducts,
 	listProductsByCategory,
 } from '../store/actions/productActions'
+import { selectFilteredProducts } from '../store/reducers/productReducers'
 
 // * Show products by Category/Department
 // should contain filters, title, page number change...
@@ -41,8 +42,13 @@ const ProductsPage = () => {
 		}
 	}
 
-	const productList = useSelector(state => state.productList)
-	const { loading, error, products, page, pages } = productList
+	const { loading, error, products, page, pages } = useSelector(
+		state => state.productList
+	)
+	const { brands } = useSelector(state => state.filters)
+
+	const filteredProducts = selectFilteredProducts(products, brands)
+	console.log(filteredProducts)
 
 	useEffect(() => {
 		let x = getDetails(category)
@@ -78,7 +84,7 @@ const ProductsPage = () => {
 				</div>
 				<div className='col'>
 					<div className='row'>
-						{products.map(product => (
+						{filteredProducts.map(product => (
 							<Col
 								key={product.asin}
 								sm={12}

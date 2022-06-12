@@ -1,20 +1,29 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { brandFilterChanged } from '../store/filters/filtersSlice'
 import FilterItem from './FilterItem'
 
 const FiltersSidebar = () => {
+	const dispatch = useDispatch()
+
+	const { brands } = useSelector(state => state.filters)
+
+	const onBrandChange = (brand, changeType) =>
+		dispatch(brandFilterChanged(brand, changeType))
+
 	return (
 		<aside className='  order-lg-1 order-2'>
 			<form action='action_page.php'>
 				{/* widget-categories */}
 				<div className='border-bottom mb-3'>
 					<h6 className='widget-title border-left mb-3'>Brand</h6>
-					<FilterItem label='Apple' />
-					<FilterItem label='MSI' />
-					<FilterItem label='ASUS' />
-					<FilterItem label='Lenovo' />
-					<FilterItem label='ACER' />
+					<FilterItem label='apple' onChange={onBrandChange} />
+					<FilterItem label='msi' onChange={onBrandChange} />
+					<FilterItem label='asus' onChange={onBrandChange} />
+					<FilterItem label='lenovo' onChange={onBrandChange} />
+					<FilterItem label='acer' onChange={onBrandChange} />
 				</div>
 
 				<div className='border-bottom  mb-3'>
