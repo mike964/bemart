@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { useParams } from 'react-router-dom'
 import FiltersSidebar from '../components/FiltersSidebar'
-import Loader from '../components/Loader'
+// import Loader from '../components/Loader'
 import Message from '../components/Message'
 import ProductItem from '../components/ProductItem'
 import Toolbar from '../components/Toolbar'
@@ -47,7 +47,10 @@ const ProductsPage = () => {
 	)
 	const { brands } = useSelector(state => state.filters)
 
-	const filteredProducts = selectFilteredProducts(products, brands)
+	// const filteredProducts = selectFilteredProducts(products, brands)
+	// const filteredProducts = selectFilteredProducts(store.getState())
+	const filteredProducts = useSelector(selectFilteredProducts)
+
 	console.log(filteredProducts)
 
 	useEffect(() => {

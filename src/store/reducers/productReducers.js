@@ -131,7 +131,7 @@ export const productTopRatedReducer = (state = { products: [] }, action) => {
 	}
 }
 
-export const selectFilteredProducts = (products, brands) => {
+export const selectFilteredProducts_ = (products, brands) => {
 	// const brands = ['apple', 'asus']
 
 	if (!brands.length) return products
@@ -141,3 +141,16 @@ export const selectFilteredProducts = (products, brands) => {
 		item => brands.includes(item.specs.brand.toLowerCase())
 	)
 }
+
+export const selectFilteredProducts = createSelector(
+	state => state.productList.products,
+	state => state.filters.brands,
+	(products, brands) => {
+		if (!brands.length) return products // return all
+		else
+			return products.filter(item =>
+				brands.includes(item.specs.brand.toLowerCase())
+			)
+		// products => producst   // return all
+	}
+)

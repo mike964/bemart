@@ -16,7 +16,7 @@ const initialState = {
 	status: StatusFilters.All,
 	colors: [],
 	brands: [],
-	...laptopFilters,
+	// ...laptopFilters,
 }
 
 const filtersSlice = createSlice({
