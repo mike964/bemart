@@ -20,10 +20,11 @@ const FilterItem = ({ label, onChange }) => {
 		<Form.Group className='mb-2' controlId={label}>
 			<Form.Check
 				type='checkbox'
-				label={label ? label.toUpperCase() : 'no-label'}
+				label={label ? label : 'no-label'}
 				onChange={handleChange}
 				name={label}
 				value={isChecked}
+				className='capitalize'
 			/>
 		</Form.Group>
 	)

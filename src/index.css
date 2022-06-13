@@ -332,3 +332,7 @@ div.yt-spec-icon-badge-shape__badge {
 	font-size: 0.875rem;
 	font-weight: normal;
 }
+
+.capitalize {
+	text-transform: capitalize;
+}

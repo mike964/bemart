@@ -1,14 +1,11 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import { brandFilterChanged } from '../store/filters/filtersSlice'
 import FilterItem from './FilterItem'
 
 const FiltersSidebar = () => {
 	const dispatch = useDispatch()
-
-	const { brands } = useSelector(state => state.filters)
 
 	const onBrandChange = (brand, changeType) =>
 		dispatch(brandFilterChanged(brand, changeType))
