@@ -6,16 +6,19 @@ export const StatusFilters = {
 	Completed: 'completed',
 }
 
-const laptopFilters = {
-	Brand: '',
-	OS: '',
-	Processor: '',
-}
+// const laptopFilters = {
+// 	Brand: '',
+// 	OS: '',
+// 	Processor: '',
+// }
 
 const initialState = {
 	status: StatusFilters.All,
 	colors: [],
 	brands: [],
+	oSystems: [], // operating systems (windows, mac os, chrome os)
+	processors: [],
+	screens: [], // 14, 15~15.9  , 16+
 	// ...laptopFilters,
 }
 
@@ -29,16 +32,16 @@ const filtersSlice = createSlice({
 		brandFilterChanged: {
 			reducer(state, action) {
 				let { brand, changeType } = action.payload
-				const { brands } = state
+
 				switch (changeType) {
 					case 'added': {
-						if (!brands.includes(brand)) {
-							brands.push(brand)
+						if (!state.brands.includes(brand)) {
+							state.brands.push(brand)
 						}
 						break
 					}
 					case 'removed': {
-						state.brands = brands.filter(
+						state.brands = state.brands.filter(
 							existingColor => existingColor !== brand
 						)
 						break
@@ -53,9 +56,36 @@ const filtersSlice = createSlice({
 				}
 			},
 		},
+		osFilterChanged: {
+			reducer(state, action) {
+				let { os, changeType } = action.payload
+
+				switch (changeType) {
+					case 'added': {
+						if (!state.oSystems.includes(os)) {
+							state.oSystems.push(os)
+						}
+						break
+					}
+					case 'removed': {
+						state.oSystems = state.oSystems.filter(
+							existingColor => existingColor !== os
+						)
+						break
+					}
+					default:
+						return
+				}
+			},
+			prepare(os, changeType) {
+				return {
+					payload: { os, changeType },
+				}
+			},
+		},
 	},
 })
 
-export const { brandFilterChanged, statusFilterChanged } = filtersSlice.actions
+export const { brandFilterChanged, osFilterChanged } = filtersSlice.actions
 
 export default filtersSlice.reducer

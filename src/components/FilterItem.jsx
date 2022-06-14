@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
 
-const FilterItem = ({ label, onChange }) => {
+const FilterItem = ({ name, label, onChange }) => {
 	const [isChecked, setIsChecked] = useState(false)
 
 	const handleChange = () => {
 		setIsChecked(!isChecked)
 		const changeType = isChecked ? 'removed' : 'added'
-		onChange(label, changeType)
+		onChange(name, changeType)
 
 		// ACTION
 		//     type :"filters/brandFilterChanged"
@@ -17,12 +17,12 @@ const FilterItem = ({ label, onChange }) => {
 	}
 
 	return (
-		<Form.Group className='mb-2' controlId={label}>
+		<Form.Group className='mb-2' controlId={name}>
 			<Form.Check
 				type='checkbox'
-				label={label ? label : 'no-label'}
+				label={label ? label : name}
 				onChange={handleChange}
-				name={label}
+				name={name}
 				value={isChecked}
 				className='capitalize'
 			/>

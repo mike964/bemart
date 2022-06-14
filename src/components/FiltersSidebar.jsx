@@ -1,7 +1,9 @@
 import React from 'react'
-import { Form } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
-import { brandFilterChanged } from '../store/filters/filtersSlice'
+import {
+	brandFilterChanged,
+	osFilterChanged,
+} from '../store/filters/filtersSlice'
 import FilterItem from './FilterItem'
 
 const FiltersSidebar = () => {
@@ -9,37 +11,39 @@ const FiltersSidebar = () => {
 
 	const onBrandChange = (brand, changeType) =>
 		dispatch(brandFilterChanged(brand, changeType))
+	const onOsChange = (os, changeType) =>
+		dispatch(osFilterChanged(os, changeType))
 
 	return (
 		<aside className='  order-lg-1 order-2'>
 			<form action='action_page.php'>
 				{/* widget-categories */}
 				<div className='border-bottom mb-3'>
-					<h6 className='widget-title border-left mb-3'>Brand</h6>
-					<FilterItem label='apple' onChange={onBrandChange} />
-					<FilterItem label='msi' onChange={onBrandChange} />
-					<FilterItem label='asus' onChange={onBrandChange} />
-					<FilterItem label='lenovo' onChange={onBrandChange} />
-					<FilterItem label='acer' onChange={onBrandChange} />
+					<h6 className='widget-title mb-3'>Brand</h6>
+					<FilterItem name='apple' onChange={onBrandChange} />
+					<FilterItem name='msi' label='MSI' onChange={onBrandChange} />
+					<FilterItem name='asus' onChange={onBrandChange} />
+					<FilterItem name='lenovo' onChange={onBrandChange} />
+					<FilterItem name='acer' onChange={onBrandChange} />
 				</div>
 
 				<div className='border-bottom  mb-3'>
-					<h6 className='widget-title border-left mb-3'>Operating System</h6>
-					<Form.Group className='mb-2' controlId='formBasicCheckbox'>
-						<Form.Check type='checkbox' label='Windows' />
-					</Form.Group>
-					<Form.Group className='mb-2' controlId='formBasicCheckbox'>
-						<Form.Check type='checkbox' label='Mac OS' />
-					</Form.Group>
-					<FilterItem label='Chrome OS' />
+					<h6 className='widget-title mb-3'>Operating System</h6>
+					<FilterItem name='windows' onChange={onOsChange} />
+					<FilterItem name='mac os' label='Mac OS' onChange={onOsChange} />
+					<FilterItem
+						name='chrome os'
+						label='Chrome OS'
+						onChange={onOsChange}
+					/>
 				</div>
 
 				<div className='mb-3'>
-					<h6 className='widget-title border-left mb-3'>Processor</h6>
-					<FilterItem label='Intel Core i7' />
-					<FilterItem label='Intel Core i5' />
-					<FilterItem label='Intel Core i3' />
-					<FilterItem label='Apple M1' />
+					<h6 className='widget-title mb-3'>Processor</h6>
+					<FilterItem name='intel core i7' label='Intel Core i7' />
+					<FilterItem name='intel core i5' label='Intel Core i5' />
+					<FilterItem name='intel core i3' label='Intel Core i3' />
+					<FilterItem name='apple m1' label='Apple M1' />
 				</div>
 			</form>
 		</aside>

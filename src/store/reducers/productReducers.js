@@ -131,6 +131,7 @@ export const productTopRatedReducer = (state = { products: [] }, action) => {
 	}
 }
 
+// no selector used
 export const selectFilteredProducts_ = (products, brands) => {
 	// const brands = ['apple', 'asus']
 	if (!brands.length) return products
@@ -140,15 +141,26 @@ export const selectFilteredProducts_ = (products, brands) => {
 	)
 }
 
+// selector used
 export const selectFilteredProducts = createSelector(
 	state => state.productList.products,
 	state => state.filters,
+	// Output selector: receives both values
 	(products, filters) => {
-		if (filters.brands.length === 0) return products // return all
-		else
-			return products.filter(item =>
-				filters.brands.includes(item.specs.brand.toLowerCase())
-			)
+		const { brands, oSystems } = filters
+		// return all
+		// if (filters.brands.length === 0) return products
+
+		return products.filter(item => {
+			// return filters.brands.includes(item.specs.brand.toLowerCase())
+			const brandMatches =
+				brands.length === 0 || brands.includes(item.specs.brand.toLowerCase())
+
+			const osMatches =
+				oSystems.length === 0 || oSystems.includes(item.specs.os.toLowerCase())
+
+			return brandMatches && osMatches
+		})
 		// products => producst   // return all
 	}
 )

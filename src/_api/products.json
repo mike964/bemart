@@ -101,7 +101,7 @@
 		],
 		"specs": {
 			"brand": "Apple",
-			"operating system": "Mac OS",
+			"os": "Mac OS",
 			"processor": "Apple M1"
 		},
 		"mainImage": {
@@ -186,7 +186,7 @@
 		"reviews": [],
 		"specs": {
 			"brand": "Apple",
-			"operating system": "Mac OS",
+			"os": "Mac OS",
 			"processor": "Apple M1"
 		},
 		"mainImage": {
@@ -301,7 +301,7 @@
 		],
 		"specs": {
 			"brand": "Apple",
-			"operating system": "Mac OS",
+			"os": "Mac OS",
 			"processor": "Apple M1"
 		},
 		"mainImage": {
@@ -424,7 +424,7 @@
 				"value": "AN515-54-5812"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "Windows 10 Home"
 			},
 			{
@@ -537,7 +537,7 @@
 		],
 		"specs": {
 			"brand": "Acer",
-			"operating system": "Windows",
+			"os": "Windows",
 			"processor": "Intel Core i5-9300H"
 		},
 		"mainImage": {
@@ -661,7 +661,7 @@
 				"value": "81X20005US"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "Windows 10"
 			},
 			{
@@ -772,7 +772,7 @@
 		],
 		"specs": {
 			"brand": "Lenovo",
-			"operating system": "Windows",
+			"os": "Windows",
 			"processor": "AMD Ryzen 5 4500U"
 		},
 		"mainImage": {
@@ -876,7 +876,7 @@
 				"value": "L510MA-DS04"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "Windows 10 Home"
 			},
 			{
@@ -1008,7 +1008,7 @@
 		],
 		"specs": {
 			"brand": "ASUS",
-			"operating system": "Windows",
+			"os": "Windows",
 			"processor": "Intel Celeron N4020"
 		},
 		"mainImage": {
@@ -2912,7 +2912,7 @@
 				"value": "‎NX.ABRAA.007"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "‎Windows"
 			},
 			{
@@ -3025,7 +3025,7 @@
 		],
 		"specs": {
 			"brand": "Acer",
-			"operating system": "Windows",
+			"os": "Windows",
 			"processor": "AMD Ryzen 3 3350U"
 		},
 		"mainImage": {
@@ -3165,7 +3165,7 @@
 		],
 		"specs": {
 			"brand": "Apple",
-			"operating system": "Mac OS",
+			"os": "Mac OS",
 			"processor": "Apple M1"
 		},
 		"mainImage": {
@@ -3293,7 +3293,7 @@
 				"value": "‎PC"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "‎Windows 10 Home"
 			},
 			{
@@ -3416,7 +3416,7 @@
 		],
 		"specs": {
 			"brand": "MSI",
-			"operating system": "Windows",
+			"os": "Windows",
 			"processor": "Intel Core i7-11375H"
 		},
 		"mainImage": {
@@ -3533,7 +3533,7 @@
 				"value": "‎Mac"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "‎MAC OS X"
 			},
 			{
@@ -3677,7 +3677,7 @@
 		],
 		"specs": {
 			"brand": "Apple",
-			"operating system": "Mac OS",
+			"os": "Mac OS",
 			"processor": "Intel Core i5-11375H"
 		},
 		"mainImage": {
@@ -3847,7 +3847,7 @@
 		],
 		"specs": {
 			"brand": "ASUS",
-			"operating system": "Windows",
+			"os": "Windows",
 			"processor": "AMD Ryzen 7 3750H"
 		},
 		"imageUrlList": [
@@ -3933,7 +3933,7 @@
 				"value": "‎PC"
 			},
 			{
-				"name": "operating system",
+				"name": "os",
 				"value": "‎Windows 10 Home"
 			},
 			{
