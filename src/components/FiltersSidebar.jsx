@@ -15,7 +15,7 @@ const FiltersSidebar = () => {
 		dispatch(osFilterChanged(os, changeType))
 
 	return (
-		<aside className='  order-lg-1 order-2'>
+		<aside className='filters-sidebar  '>
 			<form action='action_page.php'>
 				{/* widget-categories */}
 				<div className='border-bottom mb-3'>

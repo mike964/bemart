@@ -74,7 +74,7 @@ const ProductsPage = () => {
 	if (error) return <Message variant='danger'>{error}</Message>
 
 	return (
-		<div>
+		<div className='page'>
 			<div className='row'>
 				<div className='col-md-3'>
 					<h3>{pageDetails.title}</h3>
@@ -91,7 +91,7 @@ const ProductsPage = () => {
 				</div>
 
 				<div className='col'>
-					<div className='row'>
+					<div className='row bg-white'>
 						{filteredProducts.map(product => (
 							<Col
 								key={product.asin}

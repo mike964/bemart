@@ -33,7 +33,7 @@ const HomeScreen = () => {
 	}, [dispatch, keyword, pageNumber])
 
 	return (
-		<>
+		<div className='home-page'>
 			<Meta />
 			{!keyword ? (
 				// <ProductCarousel />
@@ -60,7 +60,7 @@ const HomeScreen = () => {
 							</Link>
 						</div>
 					</div>
-					<Row>
+					<Row className=' bg-white'>
 						{products &&
 							products.map(product => (
 								<Col
@@ -84,7 +84,7 @@ const HomeScreen = () => {
 					)}
 				</>
 			)}
-		</>
+		</div>
 	)
 }
 

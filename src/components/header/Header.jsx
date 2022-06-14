@@ -25,7 +25,7 @@ const Header = () => {
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand className='text-light'>
-							<i className='fas fa-gem gold'></i> UNIMART
+							<i className='fas fa-gem gold'></i> BEMART
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -71,6 +71,12 @@ const Header = () => {
 			<div className='navbar-footer d-flex container'>
 				<DepartmentsDropdown />
 				<div className='p-2 flex-fill clickable'>
+					<Link to='/products/laptops'>Best sellers</Link>
+				</div>
+				<div className='p-2 flex-fill clickable'>
+					<Link to='/products/laptops'>Best Deals</Link>
+				</div>
+				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/laptops'>Laptops</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
@@ -82,7 +88,6 @@ const Header = () => {
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/accessories'>Accessories</Link>
 				</div>
-				<div className='p-2 flex-fill clickable'>Gift Cards</div>
 			</div>
 		</header>
 	)
