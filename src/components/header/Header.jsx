@@ -74,10 +74,10 @@ const Header = () => {
 					<Link to='/products/laptops'>Laptops</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products/cameras'>Cameras</Link>
+					<Link to='/products/cellphones'>Cell Phones</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products/cellphones'>Cell Phones</Link>
+					<Link to='/products/cameras'>Cameras</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/accessories'>Accessories</Link>

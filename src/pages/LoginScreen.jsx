@@ -31,7 +31,9 @@ const LoginScreen = ({ location, history }) => {
 
 	return (
 		<FormContainer>
-			<h1 className='text-secondary'>Log in user</h1>
+			<div className='mb-3'>
+				<h3 className='text-secondary'>Log in user</h3>
+			</div>
 			{error && <Message variant='danger'>{error}</Message>}
 			{loading && <Loader />}
 			<Form onSubmit={submitHandler}>
@@ -95,6 +97,11 @@ const LoginScreen = ({ location, history }) => {
 					</Link>
 				</Col>
 			</Row>
+			<div className='p-3'>
+				<p className='font-weight-light'>
+					Use 'tim@mail.com' and '123' as password
+				</p>
+			</div>
 		</FormContainer>
 	)
 }

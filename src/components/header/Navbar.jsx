@@ -18,7 +18,7 @@ const Navbar = () => {
 			<Container>
 				<LinkContainer to='/'>
 					<Navbar.Brand className='text-light'>
-						<i className='fas fa-gem gold'></i> UNIMART
+						<i className='fas fa-gem gold'></i> ETMART
 					</Navbar.Brand>
 				</LinkContainer>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />

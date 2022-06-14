@@ -139,22 +139,25 @@ body {
 	border-radius: 0.3rem;
 } */
 
-.img-wrap {
-	position: relative;
+.card-img {
+	/* position: relative; */
 	text-align: center;
 	overflow: hidden;
-	display: block;
+	/* display: block; */
 	height: 220px;
 	/* border: 1px solid green; */
 	/* border-bottom: 1px solid rgb(219, 219, 219); */
-	padding: 1.2rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.img-wrap img {
+.card-img img {
 	/* height: 100%; */
-	max-height: 100%;
+	max-height: 200px;
+	/* max-height: 100%; */
 	max-width: 100%;
-	width: auto;
 }
 
 .card-title {
@@ -165,6 +168,10 @@ a.product-title {
 	color: rgb(101, 100, 106);
 	font-size: 16px;
 	font-weight: 300;
+}
+
+.card-body {
+	padding: 1rem;
 }
 
 .product-item-card:hover {

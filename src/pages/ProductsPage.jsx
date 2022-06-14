@@ -22,6 +22,7 @@ const ProductsPage = () => {
 
 	const [pageDetails, setPageDetails] = useState({})
 	const [viewMode, setViewMode] = useState('grid') // grid by default
+	const [showSidebar, setShowSidebar] = useState(false) // show fitlers sidebar
 
 	console.log(useParams())
 	// {keyword: 'laptops', pageNumber: '2'}
@@ -59,6 +60,9 @@ const ProductsPage = () => {
 		if (!category) dispatch(listProducts('', pageNumber || 1))
 		else dispatch(listProductsByCategory(x.category, pageNumber))
 
+		if (category === 'laptops') setShowSidebar(true)
+		else setShowSidebar(false)
+
 		// dispatch(listProducts(1, 1, { category }))
 	}, [dispatch, category, pageNumber])
 
@@ -82,9 +86,10 @@ const ProductsPage = () => {
 
 			<div className='row mb-3 mx-n2'>
 				{/* Products Grid */}
-				<div className='col-md-3'>
-					<FiltersSidebar />
+				<div className={showSidebar ? 'col-md-3' : 'col-2'}>
+					{showSidebar && <FiltersSidebar />}
 				</div>
+
 				<div className='col'>
 					<div className='row'>
 						{filteredProducts.map(product => (

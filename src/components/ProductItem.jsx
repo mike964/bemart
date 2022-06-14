@@ -31,19 +31,19 @@ const Product = ({ product: product_, grid }) => {
 			{/* <span>{grid ? 'Grid' : 'List'}</span> */}
 			{/* <span className='badge badge-danger'>New</span> */}
 
-			<div className={`card-body ${!grid && 'p-0'}`}>
-				<div className='row'>
-					<div className={grid ? 'col-12' : 'col-4'}>
-						<div className='img-wrap'>
-							<Link to={`/product/${product._id}`}>
-								<img
-									src={product.mainImage.imageUrl || product.images[0]}
-									alt=''
-								/>
-							</Link>
-						</div>
+			<div className='row'>
+				<div className={grid ? 'col-12' : 'col-4'}>
+					<div className='card-img'>
+						<Link to={`/product/${product._id}`}>
+							<img
+								src={product.mainImage.imageUrl || product.images[0]}
+								alt=''
+							/>
+						</Link>
 					</div>
-					<div className={`col ${grid ? '' : 'pt-3'}`}>
+				</div>
+				<div className='col'>
+					<div className={`card-body ${grid ? '' : 'pt-3'}`}>
 						<Link to={`/product/${product._id}`} className='product-title'>
 							<div className='card-title'>
 								<strong>{product.name}</strong>
