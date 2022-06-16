@@ -14,7 +14,7 @@ const CartDropdown = () => {
 	)
 
 	return (
-		<div className='navbar-tool dropdown'>
+		<div className='navbar-tool dropdown mx-2'>
 			<Link
 				className='navbar-tool-icon-box bg-secosndary dropdown-toggle'
 				to='/cart'>

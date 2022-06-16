@@ -15,32 +15,16 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 ))
 
 const DepartmentsDropdown = () => {
-	// return (
-	// 	<NavDropdown
-	// 		id='nav-dropdown-dark-example'
-	// 		className='flex-fill department-dropdown'
-	// 		title='Departments'
-	// 		// menuVariant='dark'
-	// 	>
-	// 		<NavDropdown.Item to='#action/3.1'>Computers</NavDropdown.Item>
-	// 		<NavDropdown.Item to='#action/3.2'>Laptops</NavDropdown.Item>
-	// 		<NavDropdown.Item to='#action/3.3'>Cell Phones</NavDropdown.Item>
-	// 		<NavDropdown.Item to='#action/3.3'>Accessories</NavDropdown.Item>
-	// 		<NavDropdown.Divider />
-	// 		<NavDropdown.Item to='#action/3.4'>Separated link</NavDropdown.Item>
-	// 	</NavDropdown>
-	// )
-
 	return (
 		<div className='nav-item dropdown flex-fill '>
 			<div
-				className='nav-link '
+				className='nav-link  dropdown-toggle'
 				to='#'
 				id='navbarDropdown'
 				role='button'
 				data-toggle='dropdown'
 				aria-expanded='false'>
-				Departments <i className='fas fa-angle-down m-1' />
+				Departments
 			</div>
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
 				<Link className='dropdown-item' to='#'>
@@ -52,7 +36,10 @@ const DepartmentsDropdown = () => {
 				<Link className='dropdown-item' to='#action/3.3'>
 					Cell Phones
 				</Link>
-				<Link className='dropdown-item' to='#action/3.3'>
+				<Link className='dropdown-item' to='/products/cameras'>
+					Cameras
+				</Link>
+				<Link className='dropdown-item' to='/products/accessories'>
 					Accessories
 				</Link>
 				<NavDropdown.Divider />

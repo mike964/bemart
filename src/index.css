@@ -188,13 +188,14 @@ header {
 	/* border-bottom: #d7d2da 2px solid; */
 	background-color: #fff;
 	border-bottom: #dddee0 1px solid;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 
 header > .navbar {
 	/* padding: 1rem; */
 	/* background-color: #04224e; */
 	background-color: #052057;
+	/* background-color: #193474; */
 }
 
 .navbar-footer {
@@ -360,4 +361,11 @@ div.yt-spec-icon-badge-shape__badge {
 
 .page {
 	padding: 1rem;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	background-color: #dbdfe0;
 }

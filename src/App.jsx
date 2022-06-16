@@ -37,7 +37,7 @@ const App = () => {
 			<Header />
 			{/* <Navbar2 /> */}
 			<main className='pyy-3'>
-				<Container className='bg-white '>
+				<Container className='bg-white'>
 					<Switch>
 						{/* <Route path='/order/:id' component={OrderScreen} /> */}
 						{/* <Route path='/shipping' component={ShippingScreen} /> */}

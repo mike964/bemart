@@ -4,7 +4,8 @@ import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 import { getProduct } from '../utils'
 import { addToCart } from '../store/cart/cartSlice'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { getCurrencyIcon } from '../store/settingsSlice'
 
 const CartPlus = ({ productId }) => {
 	const dispatch = useDispatch()
@@ -18,9 +19,36 @@ const CartPlus = ({ productId }) => {
 
 const Product = ({ product: product_, grid }) => {
 	const product = getProduct(product_)
+	const { currency } = useSelector(state => state.settings)
 
 	// handle show cart plus icon btn
 	const [showCartPlus, setShowCartPlus] = useState(false)
+
+	const getProductPrice = (priceInDollar, selectedCurrency) => {
+		switch (selectedCurrency) {
+			case 'usd':
+				return priceInDollar
+			case 'gbp':
+				return (priceInDollar * 0.83).toFixed(2)
+			case 'eur':
+				return (priceInDollar * 0.95).toFixed(2)
+			default:
+				return ''
+		}
+	}
+
+	const getCurrencySign = cur => {
+		switch (cur) {
+			case 'usd':
+				return <span>$ </span>
+			case 'gbp':
+				return <span>&#8356; </span>
+			case 'eur':
+				return <span>&euro; </span>
+			default:
+				return ''
+		}
+	}
 
 	return (
 		<Card
@@ -56,9 +84,9 @@ const Product = ({ product: product_, grid }) => {
 								text={`${product.numReviews} reviews`}
 							/>
 
-							<p
-								style={{ color: '#3a3457', fontSize: '1.5rem', margin: '2px' }}>
-								${product.price}{' '}
+							<p style={{ color: '#3a3457', fontSize: '1.2rem' }}>
+								{getCurrencySign(currency)}
+								{getProductPrice(product.price, currency)}{' '}
 								{showCartPlus && <CartPlus productId={product.asin} />}
 							</p>
 						</div>
