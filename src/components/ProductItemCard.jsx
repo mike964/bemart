@@ -5,7 +5,6 @@ import Rating from './Rating'
 import { getProduct } from '../utils'
 import { addToCart } from '../store/cart/cartSlice'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCurrencyIcon } from '../store/settingsSlice'
 
 const CartPlus = ({ productId }) => {
 	const dispatch = useDispatch()
@@ -17,7 +16,12 @@ const CartPlus = ({ productId }) => {
 	)
 }
 
-const Product = ({ product: product_, grid }) => {
+const ProductItemCard = ({
+	product: product_,
+	grid,
+	showRating,
+	clickable,
+}) => {
 	const product = getProduct(product_)
 	const { currency } = useSelector(state => state.settings)
 
@@ -62,12 +66,19 @@ const Product = ({ product: product_, grid }) => {
 			<div className='row'>
 				<div className={grid ? 'col-12' : 'col-4'}>
 					<div className='card-img'>
-						<Link to={`/product/${product._id}`}>
+						{clickable ? (
+							<Link to={`/product/${product._id}`}>
+								<img
+									src={product.mainImage.imageUrl || product.images[0]}
+									alt=''
+								/>
+							</Link>
+						) : (
 							<img
 								src={product.mainImage.imageUrl || product.images[0]}
 								alt=''
 							/>
-						</Link>
+						)}
 					</div>
 				</div>
 				<div className='col'>
@@ -97,4 +108,4 @@ const Product = ({ product: product_, grid }) => {
 	)
 }
 
-export default Product
+export default ProductItemCard

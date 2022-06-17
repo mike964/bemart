@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import FiltersSidebar from '../components/FiltersSidebar'
 // import Loader from '../components/Loader'
 import Message from '../components/Message'
-import ProductItem from '../components/ProductItem'
+import ProductItem from '../components/ProductItemCard'
 import Toolbar from '../components/Toolbar'
 import {
 	listProducts,

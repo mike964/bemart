@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
-import Product from '../components/ProductItem.jsx'
+import Product from '../components/ProductItemCard.jsx'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
@@ -11,6 +11,7 @@ import Meta from '../components/Meta'
 import { listProducts } from '../store/actions/productActions'
 import BillboardCarousel from '../components/home/BillboardCarousel.jsx'
 import { useParams } from 'react-router-dom'
+import ProductsSlider from '../components/ProductSlider.jsx'
 
 // const HomeScreen = ({ match }) => {
 const HomeScreen = () => {
@@ -37,7 +38,7 @@ const HomeScreen = () => {
 			<Meta />
 			{!keyword ? (
 				// <ProductCarousel />
-				<div className='row mb-3'>
+				<div className='row mb-5'>
 					<div className='col p-0'>
 						<BillboardCarousel />
 					</div>
@@ -54,15 +55,25 @@ const HomeScreen = () => {
 				<Message variant='danger'>{error}</Message>
 			) : (
 				<>
-					<div className='d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4'>
-						<h2 className='h3 mb-0 pt-3 me-2'>Latest products</h2>
+					<div className='mb-3'>
+						<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
+							<h4>Most Wished</h4>
+						</div>
+						<div className='row'>
+							<div className='col'>
+								<ProductsSlider products={products} />
+							</div>
+						</div>
+					</div>
+					<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
+						<h4>Latest products</h4>
 						<div className='pt-3'>
 							<Link className=' ' to='/products'>
 								More products <i className='fas fa-angle-right' />{' '}
 							</Link>
 						</div>
 					</div>
-					<Row className=' bg-white'>
+					<Row>
 						{products &&
 							products.map(product => (
 								<Col
@@ -76,6 +87,7 @@ const HomeScreen = () => {
 								</Col>
 							))}
 					</Row>
+
 					{/* Only when Search, show pagination */}
 					{keyword && (
 						<Paginate

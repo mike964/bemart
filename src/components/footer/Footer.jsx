@@ -86,63 +86,6 @@ const Footer = () => {
 										alt='Cartzilla'
 									/>
 								</Link>
-								<div className='btn-group dropdown disable-autohide'>
-									<button
-										className='btn btn-outline-light border-light btn-sm dropdown-toggle px-2'
-										type='button'
-										data-bs-toggle='dropdown'>
-										<img
-											className='me-2'
-											src='img/flags/en.png'
-											width={20}
-											alt='English'
-										/>
-										Eng / $
-									</button>
-									<ul className='dropdown-menu my-1'>
-										<li className='dropdown-item'>
-											<select className='form-control form-control-sm'>
-												<option value='usd'>$ USD</option>
-												<option value='eur'>€ EUR</option>
-												<option value='ukp'>£ UKP</option>
-												<option value='jpy'>¥ JPY</option>
-											</select>
-										</li>
-										<li>
-											<Link className='dropdown-item pb-1' href='#'>
-												<img
-													className='me-2'
-													src='img/flags/fr.png'
-													width={20}
-													alt='Français'
-												/>
-												Français
-											</Link>
-										</li>
-										<li>
-											<Link className='dropdown-item pb-1' href='#'>
-												<img
-													className='me-2'
-													src='img/flags/de.png'
-													width={20}
-													alt='Deutsch'
-												/>
-												Deutsch
-											</Link>
-										</li>
-										<li>
-											<Link className='dropdown-item' href='#'>
-												<img
-													className='me-2'
-													src='img/flags/it.png'
-													width={20}
-													alt='Italiano'
-												/>
-												Italiano
-											</Link>
-										</li>
-									</ul>
-								</div>
 							</div>
 							<div className='widget widget-links widget-light'>
 								<ul className='widget-list d-flex flex-wrap justify-content-center justify-content-md-start'>
@@ -212,13 +155,9 @@ const Footer = () => {
 					</div>
 					<div className='pb-4 fs-xs text-light opacity-50 text-center text-md-start'>
 						© All rights reserved. Made by{' '}
-						<Link
-							className='text-light'
-							href='https://createx.studio/'
-							target='_blank'
-							rel='noopener'>
-							Createx Studio
-						</Link>
+						<a className='text-light' href='https://github.com/mike964'>
+							Kemal Emin
+						</a>
 					</div>
 				</div>
 			</div>

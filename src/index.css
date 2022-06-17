@@ -145,7 +145,7 @@ body {
 	text-align: center;
 	overflow: hidden;
 	/* display: block; */
-	height: 220px;
+	height: 200px;
 	/* border: 1px solid green; */
 	/* border-bottom: 1px solid rgb(219, 219, 219); */
 	padding: 1rem;
@@ -156,9 +156,10 @@ body {
 
 .card-img img {
 	/* height: 100%; */
-	max-height: 200px;
+	max-height: 180px;
 	/* max-height: 100%; */
-	max-width: 100%;
+	/* max-width: 100%; */
+	max-width: 180px;
 }
 
 .card-title {
@@ -368,4 +369,14 @@ div.yt-spec-icon-badge-shape__badge {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	background-color: #dbdfe0;
+}
+
+/* Slider Custom Style */
+.slick-prev:before,
+.slick-next:before {
+	font-family: 'slick';
+	font-size: 20px;
+	line-height: 1;
+	opacity: 0.9;
+	color: #b1cbe4 !important;
 }

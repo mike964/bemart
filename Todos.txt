@@ -37,9 +37,8 @@ Inspired by Brad Traversy Proshop MERN project
 - Add search by product.title in fake Api                   ✅ 5.20
 - Fix Pagination for UI and fake api                        ✅ 5.22 
 - Filters - done after so much struggle                     ✅ 6.14
-- Currency toggle - usd_iqd 
-- best seller , latest products slider, Hot deals
-- Top Brands logos slider
+- Currency toggle - usd_iqd                                 ✅ 6.16 
+- Top Brands logos slider                                   ✅ 6.17 
 - loader when fitlers change
 
 

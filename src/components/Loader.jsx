@@ -3,7 +3,7 @@ import { Spinner } from 'react-bootstrap'
 
 const Loader = () => {
 	return (
-		<div style={{ width: '100px', margin: '5rem auto' }}>
+		<div className='p-5' style={{ width: '100px', margin: '5rem auto' }}>
 			<Spinner
 				animation='border'
 				role='status'
