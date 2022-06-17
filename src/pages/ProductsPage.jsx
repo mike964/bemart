@@ -76,7 +76,7 @@ const ProductsPage = () => {
 	return (
 		<div className='page'>
 			<div className='row'>
-				<div className='col-md-3'>
+				<div className='col-md-3 pl-5'>
 					<h3>{pageDetails.title}</h3>
 				</div>
 				<div className='col-md-9'>

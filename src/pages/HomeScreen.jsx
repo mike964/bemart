@@ -55,23 +55,28 @@ const HomeScreen = () => {
 				<Message variant='danger'>{error}</Message>
 			) : (
 				<>
-					<div className='mb-3'>
-						<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
-							<h4>Most Wished</h4>
-						</div>
-						<div className='row'>
-							<div className='col'>
-								<ProductsSlider products={products} />
+					{!keyword && (
+						<div className='mb-3'>
+							<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
+								<h4>Best Sellers</h4>
+							</div>
+							<div className='row'>
+								<div className='col'>
+									<ProductsSlider products={products} />
+								</div>
 							</div>
 						</div>
-					</div>
+					)}
+
 					<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
-						<h4>Latest products</h4>
-						<div className='pt-3'>
-							<Link className=' ' to='/products'>
-								More products <i className='fas fa-angle-right' />{' '}
-							</Link>
-						</div>
+						<h4> {keyword ? 'Search Result' : 'Latest Products'} </h4>
+						{!keyword && (
+							<div className='p-2'>
+								<Link className=' ' to='/products'>
+									More products <i className='fas fa-angle-right' />{' '}
+								</Link>
+							</div>
+						)}
 					</div>
 					<Row>
 						{products &&

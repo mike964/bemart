@@ -79,8 +79,18 @@ export default function fakeApi(endpoint, payload) {
 					item.categories.includes(payload.category)
 				)
 
-				console.log(filteredProducts)
+				// console.log(filteredProducts)
 				data = makeProductsResponse(filteredProducts, payload.pageNumber)
+			}
+			break
+		// pick random products to show in best sellers product slide show
+		case '/products/bestsellers':
+			{
+				// shuffledArray = array.sort((a, b) => 0.5 - Math.random());
+				const products_ = [...products]
+				const productsShuffled = products_.sort((a, b) => 0.5 - Math.random())
+
+				data = makeProductsResponse(productsShuffled.slice(1, 8), 1)
 			}
 			break
 		case '/product/id':

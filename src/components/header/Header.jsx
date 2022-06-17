@@ -72,10 +72,10 @@ const Header = () => {
 			<div className='navbar-footer d-flex container'>
 				<DepartmentsDropdown />
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products/laptops'>Best Sellers</Link>
+					<Link to='/products'>Best Sellers</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products/laptops'>Hot Deals</Link>
+					<Link to='/products'>Hot Deals</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/laptops'>Laptops</Link>
