@@ -78,20 +78,22 @@ const HomeScreen = () => {
 							</div>
 						)}
 					</div>
-					<Row className='bg-white'>
-						{products &&
-							products.map(product => (
-								<Col
-									key={product._id}
-									sm={12}
-									md={6}
-									lg={4}
-									xl={3}
-									className='mb-4'>
-									<Product product={product} grid />
-								</Col>
-							))}
-					</Row>
+					{!loading && (
+						<Row className='bg-white'>
+							{products &&
+								products.map(product => (
+									<Col
+										key={product._id}
+										sm={12}
+										md={6}
+										lg={4}
+										xl={3}
+										className='mb-4'>
+										<Product product={product} grid />
+									</Col>
+								))}
+						</Row>
+					)}
 
 					{/* Only when Search, show pagination */}
 					{keyword && (

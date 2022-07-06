@@ -30,7 +30,7 @@ const LoginScreen = ({ location, history }) => {
 		dispatch(login({ email, password }))
 	}
 	return (
-		<div className='row '>
+		<div className='auth-page page' style={{ background: '#f6f6f6' }}>
 			<div className='auth-form-container'>
 				<div className='mb-3'>
 					<h3 className='text-secondary'>Log in user</h3>
