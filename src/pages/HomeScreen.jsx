@@ -34,7 +34,7 @@ const HomeScreen = () => {
 	}, [dispatch, keyword, pageNumber])
 
 	return (
-		<div className='home-page'>
+		<div className='container home-page'>
 			<Meta />
 			{!keyword ? (
 				// <ProductCarousel />
@@ -78,7 +78,7 @@ const HomeScreen = () => {
 							</div>
 						)}
 					</div>
-					<Row>
+					<Row className='bg-white'>
 						{products &&
 							products.map(product => (
 								<Col

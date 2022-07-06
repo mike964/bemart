@@ -7,6 +7,7 @@ import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import SocialBtns from '../components/auth/SocialBtns'
 import { login } from '../store/auth/authSlice'
+import AuthForm from '../components/auth/AuthForm'
 
 const LoginScreen = ({ location, history }) => {
 	const [email, setEmail] = useState('')
@@ -28,88 +29,41 @@ const LoginScreen = ({ location, history }) => {
 		e.preventDefault()
 		dispatch(login({ email, password }))
 	}
-
 	return (
 		<div className='row '>
-			<div className='col-lg-8 m-auto pt-3'>
-				<FormContainer>
-					<div className='mb-3'>
-						<h3 className='text-secondary'>Log in user</h3>
+			<div className='auth-form-container'>
+				<div className='mb-3'>
+					<h3 className='text-secondary'>Log in user</h3>
+				</div>
+				{error && <Message variant='danger'>{error}</Message>}
+				{loading && <Loader />}
+				{/* Login form */}
+				<div className='x'>
+					<AuthForm />
+				</div>
+
+				<div className='position-relative mt-4'>
+					<hr className='bg-300' />
+					<div className='divider-content-center' style={{ color: '#a4a4a4' }}>
+						or Log in with
 					</div>
-					{error && <Message variant='danger'>{error}</Message>}
-					{loading && <Loader />}
-					<Form onSubmit={submitHandler}>
-						<Form.Group controlId='email'>
-							<Form.Control
-								type='email'
-								placeholder='Enter email'
-								value={email}
-								onChange={e => setEmail(e.target.value)}></Form.Control>
-						</Form.Group>
+				</div>
+				<SocialBtns />
 
-						<Form.Group controlId='password'>
-							<Form.Control
-								type='password'
-								placeholder='Password'
-								value={password}
-								onChange={e => setPassword(e.target.value)}></Form.Control>
-						</Form.Group>
-
-						<div className='row flex-between-center mb-3'>
-							<div className='col-auto'>
-								<div className='form-check mb-0'>
-									<input
-										className='form-check-input'
-										type='checkbox'
-										id='card-checkbox'
-										defaultChecked='checked'
-									/>
-									<label
-										className='form-check-label mb-0'
-										htmlFor='card-checkbox'>
-										Remember me
-									</label>
-								</div>
-							</div>
-							<div className='col-auto'>
-								<a
-									className='fs--1'
-									href='../../../pages/authentication/card/forgot-password.html'>
-									Forgot Password?
-								</a>
-							</div>
-						</div>
-
-						<button className='btn btn-primary btn-block' type='submit'>
-							Sign in
-						</button>
-					</Form>
-
-					<div className='position-relative mt-4'>
-						<hr className='bg-300' />
-						<div
-							className='divider-content-center'
-							style={{ color: '#a4a4a4' }}>
-							or Log in with
-						</div>
-					</div>
-					<SocialBtns />
-
-					<Row className='py-3'>
-						<Col>
-							New Customer?{' '}
-							<Link
-								to={redirect ? `/register?redirect=${redirect}` : '/register'}>
-								Register
-							</Link>
-						</Col>
-					</Row>
-					<div className='p-3'>
-						<p className='font-weight-light'>
-							Use 'tim@mail.com' and '123' as password
-						</p>
-					</div>
-				</FormContainer>
+				<Row className='py-3'>
+					<Col>
+						New Customer?{' '}
+						<Link
+							to={redirect ? `/register?redirect=${redirect}` : '/register'}>
+							Register
+						</Link>
+					</Col>
+				</Row>
+				<div className='p-3'>
+					<p className='font-weight-light'>
+						Use 'tim@mail.com' and '123' as password
+					</p>
+				</div>
 			</div>
 		</div>
 	)

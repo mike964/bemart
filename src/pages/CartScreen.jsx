@@ -28,7 +28,7 @@ const CartScreen = ({ match, location, history }) => {
 	}
 
 	return (
-		<div className='x'>
+		<div className='container'>
 			<div className='mb-3'>
 				<h3>Shopping Cart</h3>
 			</div>

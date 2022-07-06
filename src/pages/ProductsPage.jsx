@@ -74,7 +74,7 @@ const ProductsPage = () => {
 	if (error) return <Message variant='danger'>{error}</Message>
 
 	return (
-		<div className='page'>
+		<div className='container'>
 			<div className='row'>
 				<div className='col-md-3 pl-5'>
 					<h3>{pageDetails.title}</h3>

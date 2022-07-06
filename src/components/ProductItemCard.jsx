@@ -56,7 +56,7 @@ const ProductItemCard = ({
 
 	return (
 		<Card
-			className='product-item-card '
+			className='product-item-card m-1'
 			onMouseEnter={() => setShowCartPlus(true)}
 			onMouseLeave={() => setShowCartPlus(false)}>
 			{/* <Card.Img src={product.image} variant='top' /> */}

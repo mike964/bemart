@@ -71,7 +71,7 @@ body {
 	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 		'Segoe UI Symbol';
-	background-color: #eaeded;
+	background-color: #f3f3f3;
 }
 
 .rating span {
@@ -179,6 +179,9 @@ a.product-title {
 	padding: 0.5rem 1rem;
 }
 
+.product-item-card {
+	min-height: 344px;
+}
 .product-item-card:hover {
 	/* box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; */
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 4px 6px 0 rgba(0, 0, 0, 0.14);
@@ -379,4 +382,13 @@ div.yt-spec-icon-badge-shape__badge {
 	line-height: 1;
 	opacity: 0.9;
 	color: #b1cbe4 !important;
+}
+
+.auth-form-container {
+	background-color: white;
+	min-width: 400px;
+	padding: 1.8rem;
+	margin: 1.4rem auto;
+	border-radius: 0.6rem;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }

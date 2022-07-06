@@ -37,73 +37,67 @@ const RegisterScreen = ({ location, history }) => {
 
 	return (
 		<div className='row '>
-			<div className='col-lg-8 m-auto pt-3'>
-				<FormContainer>
-					<div className='mb-3'>
-						<h3 className='text-secondary'>Register new user</h3>
+			<div className='auth-form-container'>
+				<div className='mb-3'>
+					<h3 className='text-secondary'>Register new user</h3>
+				</div>
+				{message && <Message variant='danger'>{message}</Message>}
+				{error && <Message variant='danger'>{error}</Message>}
+				{loading && <Loader />}
+				<Form onSubmit={submitHandler}>
+					<Form.Group controlId='name'>
+						<Form.Control
+							type='name'
+							placeholder='Name'
+							value={name}
+							onChange={e => setName(e.target.value)}></Form.Control>
+					</Form.Group>
+
+					<Form.Group controlId='email'>
+						<Form.Control
+							type='email'
+							placeholder='Email'
+							value={email}
+							onChange={e => setEmail(e.target.value)}></Form.Control>
+					</Form.Group>
+
+					<Form.Group controlId='password'>
+						<Form.Control
+							type='password'
+							placeholder='Password'
+							value={password}
+							onChange={e => setPassword(e.target.value)}></Form.Control>
+					</Form.Group>
+
+					<Form.Group controlId='confirmPassword'>
+						<Form.Control
+							type='password'
+							placeholder='Confirm password'
+							value={confirmPassword}
+							onChange={e => setConfirmPassword(e.target.value)}></Form.Control>
+					</Form.Group>
+
+					<Button type='submit' variant='primary' block>
+						Sign up
+					</Button>
+				</Form>
+
+				<div className='position-relative mt-4'>
+					<hr className='bg-300' />
+					<div className='divider-content-center' style={{ color: '#a4a4a4' }}>
+						or Sign up with
 					</div>
-					{message && <Message variant='danger'>{message}</Message>}
-					{error && <Message variant='danger'>{error}</Message>}
-					{loading && <Loader />}
-					<Form onSubmit={submitHandler}>
-						<Form.Group controlId='name'>
-							<Form.Control
-								type='name'
-								placeholder='Name'
-								value={name}
-								onChange={e => setName(e.target.value)}></Form.Control>
-						</Form.Group>
+				</div>
+				<SocialBtns />
 
-						<Form.Group controlId='email'>
-							<Form.Control
-								type='email'
-								placeholder='Email'
-								value={email}
-								onChange={e => setEmail(e.target.value)}></Form.Control>
-						</Form.Group>
-
-						<Form.Group controlId='password'>
-							<Form.Control
-								type='password'
-								placeholder='Password'
-								value={password}
-								onChange={e => setPassword(e.target.value)}></Form.Control>
-						</Form.Group>
-
-						<Form.Group controlId='confirmPassword'>
-							<Form.Control
-								type='password'
-								placeholder='Confirm password'
-								value={confirmPassword}
-								onChange={e =>
-									setConfirmPassword(e.target.value)
-								}></Form.Control>
-						</Form.Group>
-
-						<Button type='submit' variant='primary' block>
-							Sign up
-						</Button>
-					</Form>
-
-					<div className='position-relative mt-4'>
-						<hr className='bg-300' />
-						<div
-							className='divider-content-center'
-							style={{ color: '#a4a4a4' }}>
-							or Sign up with
-						</div>
-					</div>
-					<SocialBtns />
-
-					<Row className='py-3'>
-						<Col>
-							Have an Account?{' '}
-							<Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
-								Login
-							</Link>
-						</Col>
-					</Row>
-				</FormContainer>
+				<Row className='py-3'>
+					<Col>
+						Have an Account?{' '}
+						<Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
+							Login
+						</Link>
+					</Col>
+				</Row>
 			</div>
 		</div>
 	)
