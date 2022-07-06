@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { login } from '../../store/auth/authSlice'
 
 // This form is used both for login and logout (sign in - sign up)
-const AuthForm = ({
-	email,
-	password,
-	submitHandler,
-	setEmail,
-	setPassword,
-}) => {
+const AuthForm = () => {
+	const [email, setEmail] = useState('')
+	const [password, setPassword] = useState('')
+
+	const dispatch = useDispatch()
+	// const navigate = useNavigate()   // router v6
+
+	const submitHandler = e => {
+		e.preventDefault()
+		dispatch(login({ email, password }))
+	}
+
 	return (
 		<Form onSubmit={submitHandler}>
 			<Form.Group controlId='email'>
