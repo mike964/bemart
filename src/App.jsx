@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import HomeScreen from './pages/HomeScreen.jsx'
@@ -32,10 +32,10 @@ const App = () => {
 	]
 
 	return (
-		<Router>
+		<BrowserRouter>
 			<Header />
 			{/* <Navbar2 /> */}
-			<main className='pyy-3'>
+			<main className='x'>
 				<Switch>
 					{/* <Route path='/order/:id' component={OrderScreen} /> */}
 					{/* <Route path='/shipping' component={ShippingScreen} /> */}
@@ -58,9 +58,9 @@ const App = () => {
 							component={ProductEditScreen}
 						/> */}
 					{/* <Route path='/admin/orderlist' component={OrderListScreen} /> */}
-					<Route path='/search/:keyword' component={HomeScreen} exact />
+					<Route path='/search/:keyword' component={HomeScreen} />
 					{/* <Route path='/products/:keyword' component={HomeScreen} exact /> */}
-					<Route path='/page/:pageNumber' component={HomeScreen} exact />
+					<Route path='/page/:pageNumber' component={HomeScreen} />
 					<Route
 						path='/search/:keyword/page/:pageNumber'
 						component={HomeScreen}
@@ -68,14 +68,10 @@ const App = () => {
 					/>
 
 					<Route path='/products' component={ProductsPage} exact />
-					<Route
-						path='/products/page/:pageNumber'
-						component={ProductsPage}
-						exact
-					/>
+					<Route path='/products/page/:pageNumber' component={ProductsPage} />
 
 					{productPages.map(item => (
-						<Route path={`/products/:category`} key={item.slug} exact>
+						<Route path={`/products/:category`} key={item.slug}>
 							<ProductsPage title={item.title} />
 						</Route>
 					))}
@@ -87,10 +83,11 @@ const App = () => {
 					/>
 
 					<Route path='/' component={HomeScreen} exact />
+					<Route path='/bemart' component={HomeScreen} />
 				</Switch>
 			</main>
 			<Footer />
-		</Router>
+		</BrowserRouter>
 	)
 }
 

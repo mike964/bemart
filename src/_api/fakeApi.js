@@ -20,7 +20,7 @@ const makePromise = x => {
 
 // build response object for products with pagination
 const makeProductsResponse = (filteredProducts, pageNumber) => {
-	let itemsPerPage = 8
+	let itemsPerPage = 12
 	let sliceStart = pageNumber * itemsPerPage - itemsPerPage
 	return {
 		// products,

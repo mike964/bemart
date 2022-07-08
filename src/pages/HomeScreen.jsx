@@ -49,62 +49,58 @@ const HomeScreen = () => {
 				</Link>
 			)}
 			{/* <h2>{!keyword ? 'Latest Products' : 'Search Result'}</h2> */}
-			{loading ? (
-				<Loader />
-			) : error ? (
-				<Message variant='danger'>{error}</Message>
-			) : (
-				<>
-					{!keyword && (
-						<div className='mb-3'>
-							<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
-								<h4>Best Sellers</h4>
-							</div>
-							<div className='row'>
-								<div className='col'>
-									<ProductsSlider products={products} />
-								</div>
+			{loading && <Loader />}
+			{error && <Message variant='danger'>{error}</Message>}
+			<>
+				{!keyword && (
+					<div className='mb-3'>
+						<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
+							<h4>Best Sellers</h4>
+						</div>
+						<div className='row'>
+							<div className='col'>
+								<ProductsSlider products={products} />
 							</div>
 						</div>
-					)}
-
-					<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
-						<h4> {keyword ? 'Search Result' : 'Latest Products'} </h4>
-						{!keyword && (
-							<div className='p-2'>
-								<Link className=' ' to='/products'>
-									More products <i className='fas fa-angle-right' />{' '}
-								</Link>
-							</div>
-						)}
 					</div>
-					{!loading && (
-						<Row className='bg-white'>
-							{products &&
-								products.map(product => (
-									<Col
-										key={product._id}
-										sm={12}
-										md={6}
-										lg={4}
-										xl={3}
-										className='mb-4'>
-										<Product product={product} grid />
-									</Col>
-								))}
-						</Row>
-					)}
+				)}
 
-					{/* Only when Search, show pagination */}
-					{keyword && (
-						<Paginate
-							pages={pages}
-							page={page}
-							keyword={keyword ? keyword : ''}
-						/>
+				<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
+					<h4> {keyword ? 'Search Result' : 'Latest Products'} </h4>
+					{!keyword && (
+						<div className='p-2'>
+							<Link className=' ' to='/products'>
+								More products <i className='fas fa-angle-right' />{' '}
+							</Link>
+						</div>
 					)}
-				</>
-			)}
+				</div>
+				{!loading && (
+					<Row className='bg-white'>
+						{products &&
+							products.map(product => (
+								<Col
+									key={product._id}
+									sm={12}
+									md={6}
+									lg={4}
+									xl={3}
+									className='mb-4'>
+									<Product product={product} grid />
+								</Col>
+							))}
+					</Row>
+				)}
+
+				{/* Only when Search, show pagination */}
+				{keyword && (
+					<Paginate
+						pages={pages}
+						page={page}
+						keyword={keyword ? keyword : ''}
+					/>
+				)}
+			</>
 		</div>
 	)
 }

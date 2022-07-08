@@ -3,7 +3,7 @@
 	"proxy": "http://127.0.0.1:5000",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://mike964.github.io/et-store",
+	"homepage": "https://mike964.github.io/bemart",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.8.1",
 		"@testing-library/jest-dom": "^4.2.4",

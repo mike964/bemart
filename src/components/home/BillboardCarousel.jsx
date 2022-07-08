@@ -4,11 +4,37 @@ import { Carousel } from 'react-bootstrap'
 const BillboardCarousel = () => {
 	// Images to show in billboard
 	const billboardItems = [
-		{ id: '1', link: ' ', image: 'images/billboard/banner-1.png' },
-		{ id: '2', link: ' ', image: 'images/billboard/banner-2.png' },
-		{ id: '3', link: ' ', image: 'images/billboard/banner-3.png' },
-		{ id: '4', link: ' ', image: 'images/billboard/banner-4.png' },
-		{ id: '5', link: ' ', image: 'images/billboard/banner-5.png' },
+		// src={process.env.PUBLIC_URL + `/assets/img/projects/${id}.png`}
+		{
+			id: '1',
+			link: ' ',
+			image: process.env.PUBLIC_URL + '/assets/billboard/banner-1.png',
+		},
+		{
+			id: '2',
+			link: ' ',
+			image: process.env.PUBLIC_URL + '/assets/billboard/banner-2.png',
+		},
+		{
+			id: '3',
+			link: ' ',
+			image: process.env.PUBLIC_URL + '/assets/billboard/banner-3.png',
+		},
+		{
+			id: '4',
+			link: ' ',
+			image: process.env.PUBLIC_URL + '/assets/billboard/banner-4.png',
+		},
+		{
+			id: '5',
+			link: ' ',
+			image: process.env.PUBLIC_URL + '/assets/billboard/banner-5.png',
+		},
+		{
+			id: '5',
+			link: ' ',
+			image: process.env.PUBLIC_URL + '/assets/billboard/banner-6.png',
+		},
 	]
 
 	// <img src='images/billboard/banner-1.jpeg' alt='banner' />
