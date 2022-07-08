@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
-import Product from '../components/ProductItemCard.jsx'
+import ProductItem from '../components/ProductItemCard.jsx'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
@@ -88,7 +88,7 @@ const HomeScreen = () => {
 								lg={4}
 								xl={3}
 								className='mb-4'>
-								<Product product={product} grid />
+								<ProductItem product={product} grid clickable />
 							</Col>
 						))}
 					</Row>

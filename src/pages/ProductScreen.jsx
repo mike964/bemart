@@ -67,7 +67,7 @@ const ProductScreen = ({ history, match }) => {
 	}
 
 	return (
-		<>
+		<div className='container'>
 			<Link className='btn btn-light my-3' to='/'>
 				Go Back
 			</Link>
@@ -245,7 +245,7 @@ const ProductScreen = ({ history, match }) => {
 					</Row>
 				</>
 			)}
-		</>
+		</div>
 	)
 }
 

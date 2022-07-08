@@ -56,7 +56,7 @@ const ProductSlider = ({ title, url }) => {
 									<Product
 										product={product}
 										grid
-										clickable={false}
+										clickable={true}
 										key={product.asin}
 									/>
 								))}
