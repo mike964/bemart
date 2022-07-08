@@ -27,13 +27,13 @@ const DepartmentsDropdown = () => {
 				Departments
 			</div>
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
-				<Link className='dropdown-item' to='#'>
-					Computers
+				<Link className='dropdown-item' to='/products/laptops'>
+					Computers & Tablets
 				</Link>
-				<Link className='dropdown-item' to='#action/3.2'>
+				<Link className='dropdown-item' to='/products/laptops'>
 					Laptops
 				</Link>
-				<Link className='dropdown-item' to='#action/3.3'>
+				<Link className='dropdown-item' to='/products/cellphones'>
 					Cell Phones
 				</Link>
 				<Link className='dropdown-item' to='/products/cameras'>
@@ -42,10 +42,10 @@ const DepartmentsDropdown = () => {
 				<Link className='dropdown-item' to='/products/accessories'>
 					Accessories
 				</Link>
-				<NavDropdown.Divider />
+				{/* <NavDropdown.Divider />
 				<Link className='dropdown-item' to='#action/3.4'>
 					Separated link
-				</Link>
+				</Link> */}
 			</div>
 		</div>
 	)

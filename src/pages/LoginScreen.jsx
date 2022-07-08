@@ -17,6 +17,7 @@ const LoginScreen = ({ location, history }) => {
 	// const navigate = useNavigate()   // router v6
 
 	const { loading, error, user } = useSelector(state => state.auth)
+	// const loading = true
 	const redirect = location.search ? location.search.split('=')[1] : '/'
 
 	useEffect(() => {
