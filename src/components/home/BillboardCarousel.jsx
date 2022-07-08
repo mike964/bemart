@@ -31,7 +31,7 @@ const BillboardCarousel = () => {
 			image: process.env.PUBLIC_URL + '/assets/billboard/banner-5.png',
 		},
 		{
-			id: '5',
+			id: '6',
 			link: ' ',
 			image: process.env.PUBLIC_URL + '/assets/billboard/banner-6.png',
 		},
@@ -42,7 +42,7 @@ const BillboardCarousel = () => {
 	// Render carousel items
 	const renderBillboardItems = () => {
 		return billboardItems.map(item => (
-			<Carousel.Item>
+			<Carousel.Item key={item.id}>
 				<img
 					className='d-block w-100'
 					src={item.image}

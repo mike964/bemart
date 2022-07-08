@@ -6,7 +6,6 @@ import Product from '../components/ProductItemCard.jsx'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
-import ProductCarousel from '../components/ProductCarousel.jsx'
 import Meta from '../components/Meta'
 import { listProducts } from '../store/actions/productActions'
 import BillboardCarousel from '../components/home/BillboardCarousel.jsx'
@@ -54,14 +53,18 @@ const HomeScreen = () => {
 			<>
 				{!keyword && (
 					<div className='mb-3'>
-						<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
-							<h4>Best Sellers</h4>
-						</div>
-						<div className='row'>
-							<div className='col'>
-								<ProductsSlider products={products} />
-							</div>
-						</div>
+						<ProductsSlider
+							title={'Featured Products'}
+							url='/products/bestsellers'
+						/>
+					</div>
+				)}
+				{!keyword && (
+					<div className='mb-4'>
+						<ProductsSlider
+							title={'Best Sellers'}
+							url='/products/bestsellers'
+						/>
 					</div>
 				)}
 
@@ -77,18 +80,17 @@ const HomeScreen = () => {
 				</div>
 				{!loading && (
 					<Row className='bg-white'>
-						{products &&
-							products.map(product => (
-								<Col
-									key={product._id}
-									sm={12}
-									md={6}
-									lg={4}
-									xl={3}
-									className='mb-4'>
-									<Product product={product} grid />
-								</Col>
-							))}
+						{products.slice(0, 8).map(product => (
+							<Col
+								key={product.asin}
+								sm={12}
+								md={6}
+								lg={4}
+								xl={3}
+								className='mb-4'>
+								<Product product={product} grid />
+							</Col>
+						))}
 					</Row>
 				)}
 

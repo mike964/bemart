@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { useParams } from 'react-router-dom'
 import FiltersSidebar from '../components/FiltersSidebar'
+import Loader from '../components/Loader'
 // import Loader from '../components/Loader'
 import Message from '../components/Message'
 import ProductItem from '../components/ProductItemCard'
@@ -70,7 +71,6 @@ const ProductsPage = () => {
 	// 	console.log('ProductsPage mounted.')
 	// }, [])
 
-	// if (loading) return <Loader />
 	if (error) return <Message variant='danger'>{error}</Message>
 
 	return (
@@ -92,19 +92,24 @@ const ProductsPage = () => {
 
 				<div className='col'>
 					<div className='row bg-white'>
-						{filteredProducts.map(product => (
-							<Col
-								key={product.asin}
-								sm={12}
-								md={6}
-								lg={viewMode === 'grid' ? 4 : 12}
-								className={viewMode === 'grid' ? 'mb-4' : 'mb-2'}>
-								<ProductItem
-									product={product}
-									grid={viewMode === 'grid' ? true : false}
-								/>
-							</Col>
-						))}
+						{loading && <Loader />}
+						{!loading && (
+							<>
+								{filteredProducts.map(product => (
+									<Col
+										key={product.asin}
+										sm={12}
+										md={6}
+										lg={viewMode === 'grid' ? 4 : 12}
+										className={viewMode === 'grid' ? 'mb-4' : 'mb-2'}>
+										<ProductItem
+											product={product}
+											grid={viewMode === 'grid' ? true : false}
+										/>
+									</Col>
+								))}
+							</>
+						)}
 					</div>
 				</div>
 			</div>

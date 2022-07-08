@@ -1,16 +1,16 @@
 import React from 'react'
 import { Spinner } from 'react-bootstrap'
 
-const Loader = () => {
+const Loader = ({ type }) => {
 	return (
-		<div className='p-5 mx-auto my-3'>
+		<div className='p-5 mx-auto my-3 text-center'>
 			<Spinner
-				animation='border'
+				animation={type === 'grow' ? 'grow' : 'border'}
 				role='status'
 				variant='info'
 				style={{
-					width: '80px',
-					height: '80px',
+					width: '3rem',
+					height: '3rem',
 					display: 'block',
 					margin: 'auto',
 				}}>
@@ -21,3 +21,14 @@ const Loader = () => {
 }
 
 export default Loader
+
+// const Loader = (
+//   <div className='p-5 text-center'>
+//     <div
+//       className='spinner-grow text-info'
+//       style={{ width: ' 3rem', height: ' 3rem' }}
+//       role='status'>
+//       <span className='sr-only'>Loading...</span>
+//     </div>
+//   </div>
+// )
