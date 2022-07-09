@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/et-store/static/css/main.cdf0504c.chunk.css",
-    "main.js": "/et-store/static/js/main.d89bcf4c.chunk.js",
-    "main.js.map": "/et-store/static/js/main.d89bcf4c.chunk.js.map",
-    "runtime-main.js": "/et-store/static/js/runtime-main.05b6214f.js",
-    "runtime-main.js.map": "/et-store/static/js/runtime-main.05b6214f.js.map",
-    "static/css/2.a147f80c.chunk.css": "/et-store/static/css/2.a147f80c.chunk.css",
-    "static/js/2.d10e70a5.chunk.js": "/et-store/static/js/2.d10e70a5.chunk.js",
-    "static/js/2.d10e70a5.chunk.js.map": "/et-store/static/js/2.d10e70a5.chunk.js.map",
-    "index.html": "/et-store/index.html",
-    "precache-manifest.386d4fa1b20a389ce3f58f48fc6234d6.js": "/et-store/precache-manifest.386d4fa1b20a389ce3f58f48fc6234d6.js",
-    "service-worker.js": "/et-store/service-worker.js",
-    "static/css/2.a147f80c.chunk.css.map": "/et-store/static/css/2.a147f80c.chunk.css.map",
-    "static/css/main.cdf0504c.chunk.css.map": "/et-store/static/css/main.cdf0504c.chunk.css.map",
-    "static/js/2.d10e70a5.chunk.js.LICENSE.txt": "/et-store/static/js/2.d10e70a5.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/et-store/static/media/slick.f97e3bbf.svg"
+    "main.css": "/bemart/static/css/main.88b6897f.chunk.css",
+    "main.js": "/bemart/static/js/main.d5a072ec.chunk.js",
+    "main.js.map": "/bemart/static/js/main.d5a072ec.chunk.js.map",
+    "runtime-main.js": "/bemart/static/js/runtime-main.ba3d1ab4.js",
+    "runtime-main.js.map": "/bemart/static/js/runtime-main.ba3d1ab4.js.map",
+    "static/css/2.03ca2d78.chunk.css": "/bemart/static/css/2.03ca2d78.chunk.css",
+    "static/js/2.bcf74cdc.chunk.js": "/bemart/static/js/2.bcf74cdc.chunk.js",
+    "static/js/2.bcf74cdc.chunk.js.map": "/bemart/static/js/2.bcf74cdc.chunk.js.map",
+    "index.html": "/bemart/index.html",
+    "precache-manifest.32884e12f33e5c539628168130fe8a39.js": "/bemart/precache-manifest.32884e12f33e5c539628168130fe8a39.js",
+    "service-worker.js": "/bemart/service-worker.js",
+    "static/css/2.03ca2d78.chunk.css.map": "/bemart/static/css/2.03ca2d78.chunk.css.map",
+    "static/css/main.88b6897f.chunk.css.map": "/bemart/static/css/main.88b6897f.chunk.css.map",
+    "static/js/2.bcf74cdc.chunk.js.LICENSE.txt": "/bemart/static/js/2.bcf74cdc.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/bemart/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.05b6214f.js",
-    "static/css/2.a147f80c.chunk.css",
-    "static/js/2.d10e70a5.chunk.js",
-    "static/css/main.cdf0504c.chunk.css",
-    "static/js/main.d89bcf4c.chunk.js"
+    "static/js/runtime-main.ba3d1ab4.js",
+    "static/css/2.03ca2d78.chunk.css",
+    "static/js/2.bcf74cdc.chunk.js",
+    "static/css/main.88b6897f.chunk.css",
+    "static/js/main.d5a072ec.chunk.js"
   ]
 }
