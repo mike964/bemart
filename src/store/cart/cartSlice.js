@@ -1,7 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 import fakeApi from '../../_api/fakeApi'
 
-const initialState = { cartItems: [], shippingAddress: {} }
+// Get cart items from local storage
+const cartItems = localStorage.getItem('cartItems')
+	? JSON.parse(localStorage.getItem('cartItems'))
+	: []
+
+const shippingAddress = localStorage.getItem('shippingAddress')
+	? JSON.parse(localStorage.getItem('shippingAddress'))
+	: {}
+
+const initialState = { cartItems, shippingAddress }
 
 const cartSlice = createSlice({
 	name: 'cart',
