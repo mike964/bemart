@@ -3,15 +3,15 @@ import { Form, Button, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
 import CheckoutSteps from '../components/CheckoutSteps'
-import { savePaymentMethod } from '../store/actions/cartActions'
+import { savePaymentMethod } from '../store/cart/cartSlice'
 
 const PaymentScreen = ({ history }) => {
 	const cart = useSelector(state => state.cart)
 	const { shippingAddress } = cart
 
-	// if (!shippingAddress.address) {
-	// 	history.push('/shipping')
-	// }
+	if (!shippingAddress.address) {
+		history.push('/shipping')
+	}
 
 	const [paymentMethod, setPaymentMethod] = useState('PayPal')
 
@@ -34,20 +34,20 @@ const PaymentScreen = ({ history }) => {
 						<Col>
 							<Form.Check
 								type='radio'
-								label='PayPal or Credit Card'
-								id='PayPal'
+								label='PayPal'
+								id='paypal'
 								name='paymentMethod'
-								value='PayPal'
-								checked
+								value='paypal'
+								// checked
 								onChange={e => setPaymentMethod(e.target.value)}></Form.Check>
-							{/* <Form.Check
-              type='radio'
-              label='Stripe'
-              id='Stripe'
-              name='paymentMethod'
-              value='Stripe'
-              onChange={(e) => setPaymentMethod(e.target.value)}
-            ></Form.Check> */}
+							<Form.Check
+								type='radio'
+								// label='Stripe'
+								label='Credit Card'
+								id='Stripe'
+								name='paymentMethod'
+								value='Credit Card'
+								onChange={e => setPaymentMethod(e.target.value)}></Form.Check>
 						</Col>
 					</Form.Group>
 

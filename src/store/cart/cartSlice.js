@@ -56,6 +56,11 @@ const cartSlice = createSlice({
 				state.shippingAddress = action.payload
 			},
 		},
+		paymentMethodSaved: {
+			reducer(state, action) {
+				state.paymentMethod = action.payload
+			},
+		},
 	},
 })
 
@@ -104,7 +109,7 @@ export const saveShippingAddress = data => dispatch => {
 
 export const savePaymentMethod = data => dispatch => {
 	dispatch({
-		type: 'CART_SAVE_PAYMENT_METHOD',
+		type: 'cart/paymentMethodSaved',
 		payload: data,
 	})
 
