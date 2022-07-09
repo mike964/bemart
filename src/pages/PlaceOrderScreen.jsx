@@ -7,6 +7,7 @@ import CheckoutSteps from '../components/CheckoutSteps'
 import { createOrder } from '../store/actions/orderActions'
 import { ORDER_CREATE_RESET } from '../store/constants/orderConstants'
 import { USER_DETAILS_RESET } from '../store/constants/userConstants'
+import { resetCart } from '../store/cart/cartSlice'
 
 const Spinner = () => (
 	<span
@@ -88,10 +89,11 @@ const PlaceOrderScreen = ({ history }) => {
 		setTimeout(() => {
 			setSuccess(true)
 			setLoading(false)
+			dispatch(resetCart)
 			setTimeout(() => {
 				// redirect to homepage
 				history.push('/')
-			}, 500)
+			}, 900)
 		}, 900)
 	}
 

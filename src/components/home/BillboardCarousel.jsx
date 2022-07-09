@@ -30,11 +30,6 @@ const BillboardCarousel = () => {
 			link: ' ',
 			image: process.env.PUBLIC_URL + '/assets/billboard/banner-5.png',
 		},
-		{
-			id: '6',
-			link: ' ',
-			image: process.env.PUBLIC_URL + '/assets/billboard/banner-6.png',
-		},
 	]
 
 	// <img src='images/billboard/banner-1.jpeg' alt='banner' />

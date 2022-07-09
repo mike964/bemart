@@ -51,6 +51,12 @@ const cartSlice = createSlice({
 				)
 			},
 		},
+		// * remove all items
+		reset: {
+			reducer(state, action) {
+				state.cartItems = []
+			},
+		},
 		shippingAddressSaved: {
 			reducer(state, action) {
 				state.shippingAddress = action.payload
@@ -114,6 +120,15 @@ export const savePaymentMethod = data => dispatch => {
 	})
 
 	localStorage.setItem('paymentMethod', JSON.stringify(data))
+}
+
+// remove all cart items
+export const resetCart = dispatch => {
+	dispatch({
+		type: 'cart/reset',
+	})
+
+	localStorage.removeItem('cartItems')
 }
 
 export const {
