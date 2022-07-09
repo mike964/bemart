@@ -13,11 +13,11 @@ const PlaceOrderScreen = ({ history }) => {
 
 	const cart = useSelector(state => state.cart)
 
-	if (!cart.shippingAddress.address) {
-		history.push('/shipping')
-	} else if (!cart.paymentMethod) {
-		history.push('/payment')
-	}
+	// if (!cart.shippingAddress.address) {
+	// 	history.push('/shipping')
+	// } else if (!cart.paymentMethod) {
+	// 	history.push('/payment')
+	// }
 	//   Calculate prices
 	const addDecimals = num => {
 		return (Math.round(num * 100) / 100).toFixed(2)
@@ -61,7 +61,7 @@ const PlaceOrderScreen = ({ history }) => {
 	}
 
 	return (
-		<>
+		<div className='page'>
 			<CheckoutSteps step1 step2 step3 step4 />
 			<Row>
 				<Col md={8}>
@@ -161,7 +161,7 @@ const PlaceOrderScreen = ({ history }) => {
 					</Card>
 				</Col>
 			</Row>
-		</>
+		</div>
 	)
 }
 

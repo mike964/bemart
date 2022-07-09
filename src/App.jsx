@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, HashRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import HomeScreen from './pages/HomeScreen.jsx'
@@ -8,9 +8,9 @@ import CartScreen from './pages/CartScreen'
 import LoginScreen from './pages/LoginScreen'
 import RegisterScreen from './pages/RegisterScreen'
 // import ProfileScreen from './pages/ProfileScreen'
-// import ShippingScreen from './pages/ShippingScreen'
-// import PaymentScreen from './pages/PaymentScreen'
-// import PlaceOrderScreen from './pages/PlaceOrderScreen'
+import ShippingScreen from './pages/ShippingScreen'
+import PaymentScreen from './pages/PaymentScreen'
+import PlaceOrderScreen from './pages/PlaceOrderScreen'
 // import OrderScreen from './pages/OrderScreen'
 // import UserListScreen from './pages/UserListScreen'
 // import UserEditScreen from './pages/UserEditScreen'
@@ -38,9 +38,9 @@ const App = () => {
 			<main className='x'>
 				<Switch>
 					{/* <Route path='/order/:id' component={OrderScreen} /> */}
-					{/* <Route path='/shipping' component={ShippingScreen} /> */}
-					{/* <Route path='/payment' component={PaymentScreen} /> */}
-					{/* <Route path='/placeorder' component={PlaceOrderScreen} /> */}
+					<Route path='/shipping' component={ShippingScreen} />
+					<Route path='/payment' component={PaymentScreen} />
+					<Route path='/placeorder' component={PlaceOrderScreen} />
 					<Route path='/login' component={LoginScreen} />
 					<Route path='/register' component={RegisterScreen} />
 					{/* <Route path='/profile' component={ProfileScreen} /> */}

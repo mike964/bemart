@@ -2,18 +2,6 @@ import React from 'react'
 import { Dropdown, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
-	<span
-		ref={ref}
-		onClick={e => {
-			e.preventDefault()
-			onClick(e)
-		}}>
-		{children}
-		&#x25bc;
-	</span>
-))
-
 const DepartmentsDropdown = () => {
 	return (
 		<div className='nav-item dropdown flex-fill '>

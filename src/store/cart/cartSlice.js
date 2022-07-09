@@ -42,6 +42,11 @@ const cartSlice = createSlice({
 				)
 			},
 		},
+		shippingAddressSaved: {
+			reducer(state, action) {
+				state.shippingAddress = action.payload
+			},
+		},
 	},
 })
 
@@ -80,7 +85,8 @@ export const removeFromCart = id => (dispatch, getState) => {
 
 export const saveShippingAddress = data => dispatch => {
 	dispatch({
-		type: 'CART_SAVE_SHIPPING_ADDRESS',
+		// type: 'CART_SAVE_SHIPPING_ADDRESS',
+		type: 'cart/shippingAddressSaved',
 		payload: data,
 	})
 

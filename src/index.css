@@ -59,10 +59,6 @@
 	--bs-body-bg: #fff;
 }
 
-main {
-	min-height: 80vh;
-}
-
 a {
 	color: #7637ec;
 }
@@ -73,6 +69,10 @@ body {
 		'Segoe UI Symbol';
 	/* background-color: #f1f3f5; */
 	background-color: #fff;
+}
+
+main {
+	/* min-height: 90vh;  */
 }
 
 .rating span {
@@ -366,6 +366,10 @@ div.yt-spec-icon-badge-shape__badge {
 
 .page {
 	padding: 1.5rem 0;
+	height: 100vh;
+}
+.auth-page {
+	padding: 2rem 0;
 }
 
 .dropdown-item.active,
@@ -392,10 +396,6 @@ div.yt-spec-icon-badge-shape__badge {
 	margin: 1.2rem auto;
 	border-radius: 0.6rem;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-.page {
-	height: 100vh;
 }
 
 footer i {

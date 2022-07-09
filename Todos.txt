@@ -40,7 +40,9 @@ Inspired by Brad Traversy Proshop MERN project
 - Currency toggle - usd_iqd                                 ✅ 6.16 
 - Top Brands logos slider                                   ✅ 6.17 
 - loader when fitlers change
-
+- Fix Footer 7.8
+- Fix checkout and place order
+- uselocal storage custom hook to save shipping address
 
 # NOTES 
 --------------------

@@ -62,7 +62,7 @@ const LoginScreen = ({ location, history }) => {
 				</Row>
 				<div className='p-3'>
 					<p className='font-weight-light'>
-						Use 'tim@mail.com' and '123' as password
+						Use 'john@mail.com' and '123' as password
 					</p>
 				</div>
 			</div>

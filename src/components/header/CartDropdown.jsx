@@ -29,8 +29,8 @@ const CartDropdown = () => {
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
 				{cartItems.length > 0 ? (
 					<>
-						{cartItems.map(item => (
-							<span className='dropdown-item'>
+						{cartItems.map((item, index) => (
+							<span className='dropdown-item' key={index}>
 								{(item.title || item.name).slice(0, 32)}..
 							</span>
 						))}
