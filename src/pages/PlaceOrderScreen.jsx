@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
@@ -8,10 +8,21 @@ import { createOrder } from '../store/actions/orderActions'
 import { ORDER_CREATE_RESET } from '../store/constants/orderConstants'
 import { USER_DETAILS_RESET } from '../store/constants/userConstants'
 
+const Spinner = () => (
+	<span
+		className='spinner-border spinner-border-sm mx-1'
+		role='status'
+		aria-hidden='true'></span>
+)
+
 const PlaceOrderScreen = ({ history }) => {
 	const dispatch = useDispatch()
 
 	const cart = useSelector(state => state.cart)
+
+	// fake submit handlers
+	const [loading, setLoading] = useState(false)
+	const [success, setSuccess] = useState(false)
 
 	if (!cart.shippingAddress.address) {
 		history.push('/shipping')
@@ -54,17 +65,34 @@ const PlaceOrderScreen = ({ history }) => {
 	// }, [history, success])
 
 	const placeOrderHandler = () => {
-		dispatch(
-			createOrder({
-				orderItems: cart.cartItems,
-				shippingAddress: cart.shippingAddress,
-				paymentMethod: cart.paymentMethod,
-				itemsPrice: cart.itemsPrice,
-				shippingPrice: cart.shippingPrice,
-				taxPrice: cart.taxPrice,
-				totalPrice: cart.totalPrice,
-			})
-		)
+		// dispatch(
+		// 	createOrder({
+		// 		orderItems: cart.cartItems,
+		// 		shippingAddress: cart.shippingAddress,
+		// 		paymentMethod: cart.paymentMethod,
+		// 		itemsPrice: cart.itemsPrice,
+		// 		shippingPrice: cart.shippingPrice,
+		// 		taxPrice: cart.taxPrice,
+		// 		totalPrice: cart.totalPrice,
+		// 	})
+		// )
+	}
+
+	const fakePlaceOrder = () => {
+		/* 
+      first show spinner insdie place order btn
+      then after 1sec show success msg 
+      then redirect to homepage 
+    */
+		setLoading(true)
+		setTimeout(() => {
+			setSuccess(true)
+			setLoading(false)
+			setTimeout(() => {
+				// redirect to homepage
+				history.push('/')
+			}, 500)
+		}, 900)
 	}
 
 	return (
@@ -125,7 +153,7 @@ const PlaceOrderScreen = ({ history }) => {
 						</ListGroup>
 					</Col>
 					<Col md={4}>
-						<Card>
+						<Card style={{ border: '1px solid #dcdcdc' }}>
 							<ListGroup variant='flush'>
 								<ListGroup.Item>
 									<h2>Order Summary</h2>
@@ -154,16 +182,25 @@ const PlaceOrderScreen = ({ history }) => {
 										<Col>${totalPrice}</Col>
 									</Row>
 								</ListGroup.Item>
-								<ListGroup.Item>
-									{/* {error && <Message variant='danger'>{error}</Message>} */}
-								</ListGroup.Item>
+
+								{/* {error && 	<ListGroup.Item><Message variant='danger'>{error}</Message>  	</ListGroup.Item> } */}
+
 								<ListGroup.Item>
 									<Button
+										onClick={fakePlaceOrder}
 										type='button'
 										className='btn-block'
 										disabled={cart.cartItems === 0}
-										onClick={placeOrderHandler}>
+										// onClick={placeOrderHandler}
+									>
 										Place Order
+										{loading ? (
+											<Spinner />
+										) : success ? (
+											<span className='green'>&#10004;</span>
+										) : (
+											''
+										)}
 									</Button>
 								</ListGroup.Item>
 							</ListGroup>
