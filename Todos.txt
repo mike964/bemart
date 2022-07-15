@@ -40,11 +40,82 @@ Inspired by Brad Traversy Proshop MERN project
 - Currency toggle - usd_iqd                                 ✅ 6.16 
 - Top Brands logos slider                                   ✅ 6.17 
 - loader when fitlers change
-- Fix Footer 7.8
-- Fix checkout and place order
-- uselocal storage custom hook to save shipping address
+- Fix Footer                                                ✅ 7.8
+- Fix checkout and place order pages                        ✅
+- uselocal storage custom hook to save shipping address      
+- fix main page height issue                                ✅ 7.15
+- fix Select for sort in products page 
+- Build celphones filters sidebar 
+
+ 
 
 # NOTES 
---------------------
+-------------------------------------------------------------------
+No need for admin
+Make it like Amazon  / LG / acer / anker ...
+
+
+2022-4-12
+This is actually an amazon clone to use as show case project
+
+
+if possible make mock server and only work on the frontend
+only frontend
+2021-3-3
+Do it without server, auth , .... make it as simple as possible.
+
+11:30 PM 
+tomorrow: Get products to display them in frontend with .6 second delay
+start by reviewing brad async crash course and then build fake api
+video 5.3 done
+
+2021-3-4 10:35 am
+Finally build a fake rest api using promise on codesandbox.io :)
+
+12:19 am 2021-3-5
+Get products from fake api & display them in frontend with images                          #DONE  
+tomorrow continue brad course 
+1:12 AM
+video 6.1 done
+Display navbar
+
+2021-3-6
+I found a way to stop searching shit on google every few mintues. I disconnect internet when coding. :)
+
+I wanna access motherfuker amazon api. I wanna get product details from amazon (angry)
+
+@Add product to reduxStore.cart + localStorage  #DONE
+cart details reacts to changes on product count or remove
+
+10:46   2021-3-6
+video 6.5 done
+I think now I should return to roadmap project 
+
+2021-3-25 1:30 AM
+video 8.4 done
+
+
+2022-4-30
+7am : Yest motherfucker yes... Hoof. I made Greatest Billboard slideshow 😎
+I feel Great
+
+=================================================
+use this : 
+https://bootstrap-ecommerce.com/components.html
+https://themes.getbootstrap.com/preview/?theme_id=35287
+https://colorlib.com/wp/free-bootstrap-ecommerce-website-templates/
+https://www.apple.com/shop/accessories/all/headphones-speakers?page=1
+https://www.udemy.com/course/create-a-twitter-clone-with-nodejs-socketio-and-mongodb/
+https://rapidapi.com/axesso/api/axesso-amazon-data-service1/
+https://www.thetahmid.com/themes/xemart-v1.0/
+
+22.4.30
+Tomorrow : 
+Start working on Search functionality. also add authentication with redux create slice 
+
+22.5.17 , 1am
+Tomorrow : Work on product search in fakeApi and UI
+
 22.5.24
 Idea : instead of filters sidebar , build show hide horizontal filterBar
+

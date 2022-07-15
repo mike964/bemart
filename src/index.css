@@ -366,7 +366,7 @@ div.yt-spec-icon-badge-shape__badge {
 
 .page {
 	padding: 1.5rem 0;
-	height: 100vh;
+	/* height: 100vh; */
 	min-height: 700px;
 }
 .auth-page {

@@ -35,7 +35,7 @@ const App = () => {
 		<BrowserRouter>
 			<Header />
 			{/* <Navbar2 /> */}
-			<main className='x'>
+			<main className='container_'>
 				<Switch>
 					{/* <Route path='/order/:id' component={OrderScreen} /> */}
 					<Route path='/shipping' component={ShippingScreen} />

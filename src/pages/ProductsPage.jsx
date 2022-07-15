@@ -74,69 +74,67 @@ const ProductsPage = () => {
 	if (error) return <Message variant='danger'>{error}</Message>
 
 	return (
-		<div className='page'>
-			<div className='container '>
-				<div className='row'>
-					<div className='col-md-3 pl-5'>
-						<h3>{pageDetails.title}</h3>
-					</div>
-					<div className='col-md-9'>
-						<Toolbar setViewMode={setViewMode} />
-					</div>
+		<div className='page container'>
+			<div className='row'>
+				<div className='col-md-3 pl-5'>
+					<h3>{pageDetails.title}</h3>
 				</div>
-
-				<div className='row mb-3 mx-n2'>
-					{/* Products Grid */}
-					<div className={showSidebar ? 'col-md-3' : 'col-2'}>
-						{showSidebar && <FiltersSidebar />}
-					</div>
-
-					<div className='col'>
-						<div className='row bg-white'>
-							{loading && <Loader />}
-							{!loading && (
-								<>
-									{filteredProducts.map(product => (
-										<Col
-											key={product.asin}
-											sm={12}
-											md={6}
-											lg={viewMode === 'grid' ? 4 : 12}
-											className={viewMode === 'grid' ? 'mb-4' : 'mb-2'}>
-											<ProductItem
-												product={product}
-												grid={viewMode === 'grid' ? true : false}
-											/>
-										</Col>
-									))}
-								</>
-							)}
-						</div>
-					</div>
+				<div className='col-md-9'>
+					<Toolbar setViewMode={setViewMode} />
 				</div>
-
-				{!loading && pages > 1 && (
-					<Pagination className='justify-content-center'>
-						{[...Array(pages).keys()].map(x => {
-							// x starts from 0
-							let number = x + 1
-							return (
-								<LinkContainer
-									key={number}
-									to={
-										category
-											? `/products/${category}/page/${number}`
-											: `/products/page/${number}`
-									}>
-									<Pagination.Item active={number === page}>
-										{number}
-									</Pagination.Item>
-								</LinkContainer>
-							)
-						})}
-					</Pagination>
-				)}
 			</div>
+
+			<div className='row mb-3 mx-n2'>
+				{/* Products Grid */}
+				<div className={showSidebar ? 'col-md-3' : 'col-2'}>
+					{showSidebar && <FiltersSidebar />}
+				</div>
+
+				<div className='col'>
+					<div className='row bg-white'>
+						{loading && <Loader />}
+						{!loading && (
+							<>
+								{filteredProducts.map(product => (
+									<Col
+										key={product.asin}
+										sm={12}
+										md={6}
+										lg={viewMode === 'grid' ? 4 : 12}
+										className={viewMode === 'grid' ? 'mb-4' : 'mb-2'}>
+										<ProductItem
+											product={product}
+											grid={viewMode === 'grid' ? true : false}
+										/>
+									</Col>
+								))}
+							</>
+						)}
+					</div>
+				</div>
+			</div>
+
+			{!loading && pages > 1 && (
+				<Pagination className='justify-content-center'>
+					{[...Array(pages).keys()].map(x => {
+						// x starts from 0
+						let number = x + 1
+						return (
+							<LinkContainer
+								key={number}
+								to={
+									category
+										? `/products/${category}/page/${number}`
+										: `/products/page/${number}`
+								}>
+								<Pagination.Item active={number === page}>
+									{number}
+								</Pagination.Item>
+							</LinkContainer>
+						)
+					})}
+				</Pagination>
+			)}
 		</div>
 	)
 }
