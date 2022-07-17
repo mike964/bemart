@@ -1,6 +1,5 @@
 [
 	{
-		"_id": "B08J66ZMY7",
 		"title": "Apple iPad Air (10.9-inch, Wi-Fi, 64GB) - (4th Generation)",
 		"rating": "4.9 out of 5 stars",
 		"asin": "B08J66ZMY7",
@@ -4015,6 +4014,7 @@
 				"value": "October 28, 2019"
 			}
 		],
+		"specs": { "brand": "Apple", "storage": "128GB", "price": "$500 ~ $999" },
 		"minimalQuantity": "1",
 		"dealPrice": 0.0,
 		"salePrice": 0.0,
@@ -4166,6 +4166,7 @@
 				"value": "May 14, 2020"
 			}
 		],
+		"specs": { "brand": "Apple", "storage": "256GB", "price": "Under $500" },
 		"minimalQuantity": "1",
 		"dealPrice": 0.0,
 		"salePrice": 0.0,
@@ -4360,6 +4361,7 @@
 				"value": "January 11, 2022"
 			}
 		],
+		"specs": { "brand": "Samsung", "storage": "128GB", "price": "$500 ~ $999" },
 		"minimalQuantity": "1",
 		"dealPrice": 0.0,
 		"salePrice": 0.0,
@@ -4503,6 +4505,7 @@
 				"value": "Vietnam"
 			}
 		],
+		"specs": { "brand": "Samsung", "storage": "256GB", "price": "$500 ~ $999" },
 		"minimalQuantity": "1",
 		"dealPrice": 0.0,
 		"salePrice": 0.0,
@@ -4546,7 +4549,7 @@
 		"categories": ["Cell Phones & Accessories", "Cell Phones"]
 	},
 	{
-		"title": "Apple iPhone 13, 128GB, Blue - Unlocked (Renewed)",
+		"title": "Apple iPhone 13, 128GB, Blue - Unlocked",
 		"manufacturer": "Visit the Amazon Renewed Store",
 		"countReview": 155,
 		"answeredQuestions": 35,
@@ -4635,6 +4638,7 @@
 				"value": "November 11, 2021"
 			}
 		],
+		"specs": { "brand": "Apple", "storage": "128GB", "price": "$500 ~ $999" },
 		"minimalQuantity": null,
 		"dealPrice": 0.0,
 		"salePrice": 0.0,
@@ -4841,6 +4845,7 @@
 				"value": "September 22, 2021"
 			}
 		],
+		"specs": { "brand": "Microsoft" },
 		"minimalQuantity": "1",
 		"dealPrice": 0.0,
 		"salePrice": 0.0,

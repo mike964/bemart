@@ -1,7 +1,7 @@
 export const laptop_filters = [
 	{
 		name: 'Brand',
-		options: ['Apple', 'Asus', 'Acer'],
+		options: ['Apple', 'Dell', 'Microsoft', 'Asus', 'Acer'],
 		group: 'brands', // for matching in redux store
 	},
 	{
@@ -20,27 +20,40 @@ export const laptop_filters = [
 			'AMD Ryzen 7',
 			'Apple M1',
 		],
-		group: 'processors', // for matching in redux store
+		group: 'processors',
+	},
+	{
+		name: 'Display Size',
+		options: [
+			'16 Inches & Above',
+			'14 ~ 15.9 Inches',
+			'12 ~ 13.9 Inches',
+			'12 Inches & Under',
+		],
+		group: 'displays',
 	},
 	{
 		name: 'Price',
-		options: ['Under $500', '$500 ~ $999', '$1000 and more'],
-		group: 'prices', // for matching in redux store
+		options: ['Under $500', '$500 ~ $999', '$1000 & Above'],
+		group: 'prices',
 	},
 ]
 
-export const mobile_filters = [
+export const cellphone_filters = [
 	{
 		name: 'Brand',
-		options: ['Apple', 'Samsung', 'Motorola'],
+		options: ['Apple', 'Samsung', 'Motorola', 'Xiaomi'],
+		group: 'brands',
 	},
 	{
 		name: 'Storage',
 		options: ['64GB', '128GB', '256GB'],
+		group: 'storages',
 	},
 	{
 		name: 'Price',
-		options: ['500 and less', '500 ~ 999', '$1000 and more'],
+		options: ['Under $500', '$500 ~ $999', '$1000 & Above'],
+		group: 'prices',
 	},
 ]
 

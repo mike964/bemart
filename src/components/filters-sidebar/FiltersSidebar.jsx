@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { laptop_filters } from '../../constants'
+import { cellphone_filters, laptop_filters } from '../../constants'
 import {
 	brandFilterChanged,
 	filterChanged,
 } from '../../store/filters/filtersSlice'
 import FilterItem from './FilterItem'
 
-const FiltersSidebar = () => {
+const FiltersSidebar = ({ category }) => {
 	const dispatch = useDispatch()
 
+	const [filters, setFilters] = useState([])
+
+	useEffect(() => {
+		// console.log(category)  // laptops, cellphones
+		if (category === 'laptops') {
+			setFilters(laptop_filters)
+		} else if (category === 'cellphones') {
+			setFilters(cellphone_filters)
+		} else {
+			setFilters([])
+		}
+	}, [category])
+
 	const renderFilters = () => {
-		return laptop_filters.map((filter, index) => (
+		return filters.map((filter, index) => (
 			<div key={index} className='mb-2 pb-3 border-bottom'>
 				<h6 className='widget-title'>{filter.name}</h6>
 				{filter.options.map(opt => (

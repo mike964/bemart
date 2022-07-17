@@ -45,7 +45,8 @@ Inspired by Brad Traversy Proshop MERN project
 - uselocal storage custom hook to save shipping address      
 - fix main page height issue                                ✅ 7.15
 - fix Select for sort in products page 
-- Build cellphones filters sidebar 
+- create on action creator for all types of filter change   ✅ 7.17
+- Set filters sidebar for cell phones as well
 
  
 

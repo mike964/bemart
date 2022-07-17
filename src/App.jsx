@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import HomeScreen from './pages/HomeScreen.jsx'
@@ -19,7 +19,6 @@ import PlaceOrderScreen from './pages/PlaceOrderScreen'
 // import OrderListScreen from './pages/OrderListScreen'
 // import SearchInput from './components/header/SearchInput'
 import ProductsPage from './pages/ProductsPage'
-import { Switch } from 'react-router-dom'
 // import Navbar2 from './components/Navbar2'
 
 const App = () => {

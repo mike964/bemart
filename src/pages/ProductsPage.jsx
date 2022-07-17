@@ -44,10 +44,9 @@ const ProductsPage = () => {
 		}
 	}
 
-	const { loading, error, products, page, pages } = useSelector(
+	const { loading, error, page, pages } = useSelector(
 		state => state.productList
 	)
-	const { brands } = useSelector(state => state.filters)
 
 	// const filteredProducts = selectFilteredProducts(products, brands)
 	// const filteredProducts = selectFilteredProducts(store.getState())
@@ -61,8 +60,9 @@ const ProductsPage = () => {
 		if (!category) dispatch(listProducts('', pageNumber || 1))
 		else dispatch(listProductsByCategory(x.category, pageNumber))
 
-		if (category === 'laptops') setShowSidebar(true)
-		else setShowSidebar(false)
+		if (category === 'laptops' || category === 'cellphones') {
+			setShowSidebar(true)
+		} else setShowSidebar(false)
 
 		// dispatch(listProducts(1, 1, { category }))
 	}, [dispatch, category, pageNumber])
@@ -87,7 +87,7 @@ const ProductsPage = () => {
 			<div className='row mb-3 mx-n2'>
 				{/* Products Grid */}
 				<div className={showSidebar ? 'col-md-3' : 'col-2'}>
-					{showSidebar && <FiltersSidebar />}
+					{showSidebar && <FiltersSidebar category={category} />}
 				</div>
 
 				<div className='col'>
