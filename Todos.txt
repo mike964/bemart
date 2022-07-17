@@ -46,7 +46,8 @@ Inspired by Brad Traversy Proshop MERN project
 - fix main page height issue                                ✅ 7.15
 - fix Select for sort in products page 
 - create on action creator for all types of filter change   ✅ 7.17
-- Set filters sidebar for cell phones as well
+- Set filters sidebar for cell phones as well               ✅ 7.17
+- Shop spinner when products loading or filters change  
 
  
 

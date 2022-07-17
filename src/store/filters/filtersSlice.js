@@ -63,15 +63,19 @@ const filtersSlice = createSlice({
 
 				switch (changeType) {
 					case 'added': {
-						if (!state[group].includes(newFilter)) {
+						if (state[group] && !state[group].includes(newFilter)) {
 							state[group].push(newFilter)
+						} else {
+							return
 						}
 						break
 					}
 					case 'removed': {
-						state[group] = state[group].filter(
-							existingFilter => existingFilter !== newFilter
-						)
+						if (state[group]) {
+							state[group] = state[group].filter(
+								existingFilter => existingFilter !== newFilter
+							)
+						}
 						break
 					}
 					default:

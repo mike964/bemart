@@ -67,6 +67,7 @@ const App = () => {
 					/>
 
 					<Route path='/products' component={ProductsPage} exact />
+					<Route path='/hot-deals' component={ProductsPage} />
 					<Route path='/products/page/:pageNumber' component={ProductsPage} />
 
 					{productPages.map(item => (

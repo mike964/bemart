@@ -75,7 +75,7 @@ const Header = () => {
 					<Link to='/products'>Best Sellers</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products'>Hot Deals</Link>
+					<Link to='/hot-deals'>Hot Deals</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
 					<Link to='/products/laptops'>Laptops</Link>

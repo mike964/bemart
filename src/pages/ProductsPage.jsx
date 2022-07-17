@@ -86,9 +86,11 @@ const ProductsPage = () => {
 
 			<div className='row mb-3 mx-n2'>
 				{/* Products Grid */}
-				<div className={showSidebar ? 'col-md-3' : 'col-2'}>
-					{showSidebar && <FiltersSidebar category={category} />}
-				</div>
+				{!loading && (
+					<div className={showSidebar ? 'col-md-3' : 'col-2'}>
+						{showSidebar && <FiltersSidebar category={category} />}
+					</div>
+				)}
 
 				<div className='col'>
 					<div className='row bg-white'>
