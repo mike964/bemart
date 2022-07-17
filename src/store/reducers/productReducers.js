@@ -147,7 +147,7 @@ export const selectFilteredProducts = createSelector(
 	state => state.filters,
 	// Output selector: receives both values
 	(products, filters) => {
-		const { brands, oSystems } = filters
+		const { brands, opSystems, processors } = filters
 		// return all
 		// if (filters.brands.length === 0) return products
 
@@ -158,10 +158,16 @@ export const selectFilteredProducts = createSelector(
 				brands.includes(item.specs.brand || item.specs.brand.toLowerCase())
 
 			const osMatches =
-				oSystems.length === 0 ||
-				oSystems.includes(item.specs.os || item.specs.os.toLowerCase())
+				opSystems.length === 0 ||
+				opSystems.includes(item.specs.os || item.specs.os.toLowerCase())
 
-			return brandMatches && osMatches
+			const processorMatches =
+				processors.length === 0 ||
+				processors.includes(
+					item.specs.processor || item.specs.processor.toLowerCase()
+				)
+
+			return brandMatches && osMatches && processorMatches
 		})
 		// products => producst   // return all
 	}

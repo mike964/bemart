@@ -1,9 +1,31 @@
 export const laptop_filters = [
-	{ name: 'Brand', options: ['Apple', 'Asus', 'Acer'] },
-	{ name: 'Operating System', options: ['Windows', 'Mac OS', 'Chrome OS'] },
+	{
+		name: 'Brand',
+		options: ['Apple', 'Asus', 'Acer'],
+		group: 'brands', // for matching in redux store
+	},
+	{
+		name: 'Operating System',
+		options: ['Windows', 'Mac OS', 'Chrome OS'],
+		group: 'opSystems', // for matching in redux store
+	},
+	{
+		name: 'Processor',
+		options: [
+			'Intel Core i3',
+			'Intel Core i5',
+			'Intel Core i7',
+			'AMD Ryzen 3',
+			'AMD Ryzen 5',
+			'AMD Ryzen 7',
+			'Apple M1',
+		],
+		group: 'processors', // for matching in redux store
+	},
 	{
 		name: 'Price',
 		options: ['Under $500', '$500 ~ $999', '$1000 and more'],
+		group: 'prices', // for matching in redux store
 	},
 ]
 

@@ -538,7 +538,7 @@
 		"specs": {
 			"brand": "Acer",
 			"os": "Windows",
-			"processor": "Intel Core i5-9300H"
+			"processor": "Intel Core i5"
 		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71s1LRpaprL._AC_SX679_.jpg",
@@ -773,7 +773,7 @@
 		"specs": {
 			"brand": "Lenovo",
 			"os": "Windows",
-			"processor": "AMD Ryzen 5 4500U"
+			"processor": "AMD Ryzen 5"
 		},
 		"mainImage": {
 			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81AbJXWCxXL._AC_SX679_.jpg",
@@ -2881,7 +2881,7 @@
 		"specs": {
 			"brand": "Acer",
 			"os": "Windows",
-			"processor": "AMD Ryzen 3 3350U"
+			"processor": "AMD Ryzen 3"
 		},
 		"mainImage": {
 			"imageUrl": "https://m.media-amazon.com/images/I/7189iXimfWL._AC_SX679_.jpg",
@@ -3272,7 +3272,7 @@
 		"specs": {
 			"brand": "MSI",
 			"os": "Windows",
-			"processor": "Intel Core i7-11375H"
+			"processor": "Intel Core i7"
 		},
 		"mainImage": {
 			"imageUrl": "https://m.media-amazon.com/images/I/71p3Ygm14wL._AC_SX679_.jpg",
@@ -3703,7 +3703,7 @@
 		"specs": {
 			"brand": "Asus",
 			"os": "Windows",
-			"processor": "AMD Ryzen 7 3750H"
+			"processor": "AMD Ryzen 7"
 		},
 		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/81hvy0QbcPL._AC_SL1500_.jpg",
