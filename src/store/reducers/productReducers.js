@@ -154,10 +154,12 @@ export const selectFilteredProducts = createSelector(
 		return products.filter(item => {
 			// return filters.brands.includes(item.specs.brand.toLowerCase())
 			const brandMatches =
-				brands.length === 0 || brands.includes(item.specs.brand.toLowerCase())
+				brands.length === 0 ||
+				brands.includes(item.specs.brand || item.specs.brand.toLowerCase())
 
 			const osMatches =
-				oSystems.length === 0 || oSystems.includes(item.specs.os.toLowerCase())
+				oSystems.length === 0 ||
+				oSystems.includes(item.specs.os || item.specs.os.toLowerCase())
 
 			return brandMatches && osMatches
 		})

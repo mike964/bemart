@@ -328,8 +328,7 @@ div.yt-spec-icon-badge-shape__badge {
 
 /* FOOTER  */
 .widget-title {
-	margin-bottom: 1.125rem;
-	font-size: 1.0625rem;
+	/* margin-bottom: 1.125rem; */
 	font-weight: 500;
 }
 .widget-list {

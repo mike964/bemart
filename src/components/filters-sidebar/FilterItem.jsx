@@ -17,12 +17,12 @@ const FilterItem = ({ name, label, onChange }) => {
 	}
 
 	return (
-		<Form.Group className='mb-2' controlId={name}>
+		<Form.Group className='mb-1' controlId={name}>
 			<Form.Check
 				type='checkbox'
-				label={label ? label : name}
+				label={label}
 				onChange={handleChange}
-				name={name}
+				name={label}
 				value={isChecked}
 				className='capitalize'
 			/>
