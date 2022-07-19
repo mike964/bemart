@@ -28,7 +28,7 @@ import { getProduct } from '../../utils'
 import fakeApi from '../../_api/fakeApi'
 
 export const listProducts =
-	(keyword = '', pageNumber = '') =>
+	(keyword = '', pageNumber = '', category = '') =>
 	// keyword used for search
 	async dispatch => {
 		try {
@@ -41,7 +41,10 @@ export const listProducts =
 			// * Fetch products from fake api
 			const response = await fakeApi('/products', {
 				keyword,
-				pageNumber,
+				pageNumber: !pageNumber ? 1 : pageNumber,
+				// category: 'Laptops',
+				category,
+				// sortBy: 'Date',
 			})
 
 			console.log(response.data)

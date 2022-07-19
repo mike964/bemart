@@ -9,7 +9,7 @@ import { logout } from '../../store/auth/authSlice'
 const UserDropdown = ({ user }) => {
 	const dispatch = useDispatch()
 
-	console.log(user)
+	// console.log(user)
 	const logoutHandler = () => {
 		dispatch(logout())
 	}

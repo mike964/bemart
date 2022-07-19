@@ -57,10 +57,11 @@ const ProductsPage = () => {
 	useEffect(() => {
 		let x = getDetails(category)
 		setPageDetails(x)
-		if (!category) dispatch(listProducts('', pageNumber || 1))
-		else dispatch(listProductsByCategory(x.category, pageNumber))
+		// if (!category) dispatch(listProducts('', pageNumber || 1))
+		// else dispatch(listProductsByCategory(x.category, pageNumber))
+		if (category) dispatch(listProducts('', pageNumber, category))
 
-		if (category === 'laptops' || category === 'cellphones') {
+		if (category === 'Laptops' || category === 'Cell-Phones') {
 			setShowSidebar(true)
 		} else setShowSidebar(false)
 

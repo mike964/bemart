@@ -14,9 +14,9 @@ const FiltersSidebar = ({ category }) => {
 
 	useEffect(() => {
 		// console.log(category)  // laptops, cellphones
-		if (category === 'laptops') {
+		if (category === 'Laptops') {
 			setFilters(laptop_filters)
-		} else if (category === 'cellphones') {
+		} else if (category === 'Cell-Phones') {
 			setFilters(cellphone_filters)
 		} else {
 			setFilters([])

@@ -6,7 +6,7 @@ const DepartmentsDropdown = () => {
 	return (
 		<div className='nav-item dropdown flex-fill '>
 			<div
-				className='nav-link  dropdown-toggle'
+				className='nav-link dropdown-toggle'
 				to='#'
 				id='navbarDropdown'
 				role='button'
@@ -15,19 +15,19 @@ const DepartmentsDropdown = () => {
 				Departments
 			</div>
 			<div className='dropdown-menu' aria-labelledby='navbarDropdown'>
-				<Link className='dropdown-item' to='/products/laptops'>
+				<Link className='dropdown-item' to='/products/Laptops'>
 					Computers & Tablets
 				</Link>
-				<Link className='dropdown-item' to='/products/laptops'>
+				<Link className='dropdown-item' to='/products/Laptops'>
 					Laptops
 				</Link>
-				<Link className='dropdown-item' to='/products/cellphones'>
+				<Link className='dropdown-item' to='/products/Cell-Phones'>
 					Cell Phones
 				</Link>
-				<Link className='dropdown-item' to='/products/cameras'>
-					Cameras
+				<Link className='dropdown-item' to='/products/Digital-Cameras'>
+					Digital Cameras
 				</Link>
-				<Link className='dropdown-item' to='/products/accessories'>
+				<Link className='dropdown-item' to='/products/Accessories'>
 					Accessories
 				</Link>
 				{/* <NavDropdown.Divider />

@@ -14,7 +14,7 @@ const Header = () => {
 	console.log('Header..')
 
 	const { user } = useSelector(state => state.auth)
-	console.log(user)
+	// console.log(user)
 
 	return (
 		<header>
@@ -78,10 +78,10 @@ const Header = () => {
 					<Link to='/hot-deals'>Hot Deals</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products/laptops'>Laptops</Link>
+					<Link to='/products/Laptops'>Laptops</Link>
 				</div>
 				<div className='p-2 flex-fill clickable'>
-					<Link to='/products/cellphones'>Cell Phones</Link>
+					<Link to='/products/Cell-Phones'>Cell Phones</Link>
 				</div>
 
 				<CurrencyDropdown />
@@ -89,9 +89,5 @@ const Header = () => {
 		</header>
 	)
 }
-
-const ProductsDropdownItem = () => (
-	<NavDropdown.Item href='/products/laptops'>Laptops</NavDropdown.Item>
-)
 
 export default Header

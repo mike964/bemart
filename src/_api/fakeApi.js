@@ -33,31 +33,57 @@ const makeProductsResponse = (filteredProducts, pageNumber) => {
 }
 
 export default function fakeApi(endpoint, payload) {
-	console.log('__fakeApi')
+	console.log('--- fakeApi ---')
 	console.log('endpoint: ' + endpoint)
 	console.log('payload: ')
 	console.log(payload)
 	let data = {}
+	let resultsArray = []
 	// let sliceStart = payload.pageNumber * 12 - 12
 	// const laptops = [ "Macbook Air", "Macbook Pro", "Macbook 16" ];
+	// const results = await userSchema.find({}).sort('email')
+	// const results = await userSchema.find({}).sort({ username : -1})  // descending
 
 	switch (endpoint) {
 		case '/products':
 			if (!payload || !payload.keyword) {
-				data = makeProductsResponse(products, payload.pageNumber)
-			} else if (payload.keyword) {
-				// * Search products
-
+				// data = makeProductsResponse(products, payload.pageNumber)
+				resultsArray = products
+			}
+			// * Search products by keyword
+			if (payload.keyword) {
 				const { keyword } = payload
 				console.log(keyword)
-				const filteredProducts = products.filter(item => {
+				// const filteredProducts = products.filter(item => {
+				// 	return item.title.toLowerCase().indexOf(keyword.toLowerCase()) !== -1
+				// })
+				resultsArray = products.filter(item => {
 					return item.title.toLowerCase().indexOf(keyword.toLowerCase()) !== -1
 				})
 
-				console.log(filteredProducts)
+				// console.log(filteredProducts)
 				// data = { products: filteredProducts }
-				data = makeProductsResponse(filteredProducts, payload.pageNumber)
-			} else {
+				// data = makeProductsResponse(filteredProducts, payload.pageNumber)
+				// ***
+			}
+			// * Get products by category
+			if (payload.category) {
+				// const filteredProducts = products.filter(item =>
+				// 	item.categories.includes(payload.category)
+				// )
+				// * Cell-Phones => Cell Phones
+				const category_ = payload.category.replace(/-/g, ' ')
+				resultsArray = products.filter(item =>
+					item.categories.includes(category_)
+				)
+
+				// console.log(filteredProducts)
+				console.log(resultsArray)
+				// data = makeProductsResponse(filteredProducts, payload.pageNumber)
+			}
+			data = makeProductsResponse(resultsArray, payload.pageNumber)
+			/*
+      else {
 				// * payload = filters
 				// case '/products?search':
 				// console.log(payload)  // {brand: 'Apple'}
@@ -71,19 +97,9 @@ export default function fakeApi(endpoint, payload) {
 				// console.log(filteredProducts)
 				data = makeProductsResponse(filteredProducts, payload.pageNumber)
 			}
+      */
 			break
-		// * Get products by category
-		case '/products/category':
-			{
-				const filteredProducts = products.filter(item =>
-					item.categories.includes(payload.category)
-				)
-
-				// console.log(filteredProducts)
-				data = makeProductsResponse(filteredProducts, payload.pageNumber)
-			}
-			break
-		// pick random products to show in best sellers product slide show
+		// * Pick random products to show in best sellers product slide show
 		case '/products/bestsellers':
 			{
 				// shuffledArray = array.sort((a, b) => 0.5 - Math.random());
