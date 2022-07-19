@@ -9,10 +9,7 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 import ProductItem from '../components/ProductItemCard'
 import Toolbar from '../components/Toolbar'
-import {
-	listProducts,
-	listProductsByCategory,
-} from '../store/actions/productActions'
+import { listProducts } from '../store/actions/productActions'
 import { selectFilteredProducts } from '../store/reducers/productReducers'
 
 // * Show products by Category/Department
@@ -24,6 +21,7 @@ const ProductsPage = () => {
 	const [pageDetails, setPageDetails] = useState({})
 	const [viewMode, setViewMode] = useState('grid') // grid by default
 	const [showSidebar, setShowSidebar] = useState(false) // show fitlers sidebar
+	// handle sort by dropdown
 
 	console.log(useParams())
 	// {keyword: 'laptops', pageNumber: '2'}
@@ -44,7 +42,7 @@ const ProductsPage = () => {
 		}
 	}
 
-	const { loading, error, page, pages } = useSelector(
+	const { loading, error, page, pages, sortBy } = useSelector(
 		state => state.productList
 	)
 
@@ -55,18 +53,21 @@ const ProductsPage = () => {
 	console.log(filteredProducts)
 
 	useEffect(() => {
-		let x = getDetails(category)
-		setPageDetails(x)
+		if (category) {
+			let x = getDetails(category)
+			setPageDetails(x)
+		}
+
 		// if (!category) dispatch(listProducts('', pageNumber || 1))
 		// else dispatch(listProductsByCategory(x.category, pageNumber))
-		if (category) dispatch(listProducts('', pageNumber, category))
+		dispatch(listProducts('', pageNumber, category, sortBy))
 
 		if (category === 'Laptops' || category === 'Cell-Phones') {
 			setShowSidebar(true)
 		} else setShowSidebar(false)
 
 		// dispatch(listProducts(1, 1, { category }))
-	}, [dispatch, category, pageNumber])
+	}, [dispatch, category, pageNumber, sortBy])
 
 	// useEffect(() => {
 	// 	console.log('ProductsPage mounted.')

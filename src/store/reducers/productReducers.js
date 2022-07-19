@@ -26,24 +26,35 @@ import {
 	PRODUCT_TOP_FAIL,
 } from '../constants/productConstants'
 
-export const productListReducer = (state = { products: [] }, action) => {
+export const productListReducer = (
+	state = {
+		products: [],
+		loading: false,
+		sortBy: { key: 'featured', order: 'asc' },
+	},
+	action
+) => {
 	switch (action.type) {
 		case PRODUCT_LIST_REQUEST:
-			return { loading: true, products: [] }
+			return { ...state, loading: true, products: [] }
 		case PRODUCT_LIST_SUCCESS:
 			return {
+				...state,
 				loading: false,
 				products: action.payload.products,
 				pages: action.payload.pages,
 				page: action.payload.page,
 			}
 		case PRODUCT_LIST_FAIL:
-			return { loading: false, error: action.payload }
+			return { ...state, loading: false, error: action.payload }
+		case 'PRODUCT_LIST_SORT_BY':
+			return { ...state, sortBy: action.payload }
 		default:
 			return state
 	}
 }
 
+// * Single Product Page
 export const productDetailsReducer = (
 	state = { product: { reviews: [] } },
 	action
@@ -131,17 +142,7 @@ export const productTopRatedReducer = (state = { products: [] }, action) => {
 	}
 }
 
-// no selector used
-export const selectFilteredProducts_ = (products, brands) => {
-	// const brands = ['apple', 'asus']
-	if (!brands.length) return products
-	return products.filter(
-		// item => item.specs.brand.toLowerCase() === brand.toLowerCase()
-		item => brands.includes(item.specs.brand.toLowerCase())
-	)
-}
-
-// selector used
+// createSelector used for filtering products
 export const selectFilteredProducts = createSelector(
 	state => state.productList.products,
 	state => state.filters,

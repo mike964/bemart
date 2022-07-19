@@ -1,5 +1,6 @@
 import users from './users.json'
 import products from './products'
+import { compareValues } from '../utils'
 
 // Filter products by category
 // '/products?category=laptops'
@@ -80,6 +81,13 @@ export default function fakeApi(endpoint, payload) {
 				// console.log(filteredProducts)
 				console.log(resultsArray)
 				// data = makeProductsResponse(filteredProducts, payload.pageNumber)
+			}
+			if (payload.sortBy) {
+				const { key, order } = payload.sortBy
+				/*
+				 * https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/
+				 */
+				resultsArray.sort(compareValues(key, order))
 			}
 			data = makeProductsResponse(resultsArray, payload.pageNumber)
 			/*

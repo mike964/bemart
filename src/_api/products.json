@@ -1626,7 +1626,7 @@
 		"sellerId": null,
 		"warehouseAvailability": "",
 		"retailPrice": 0,
-		"price": 0,
+		"price": 1499,
 		"countInStock": 2,
 		"priceRange": null,
 		"shippingPrice": 0,
