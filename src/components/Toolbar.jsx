@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import ProductsSortByDropdown from './ProductsSortByDropdown'
+import SortByDropdown from './products/SortByDropdown'
 
 const Toolbar = ({ setViewMode }) => {
 	const dispatch = useDispatch()
@@ -8,7 +8,7 @@ const Toolbar = ({ setViewMode }) => {
 	return (
 		<div className='d-flex justify-content-center justify-content-sm-between align-items-center pt-2 mb-3 border-bottom'>
 			<div className='d-flex flex-wrap'>
-				<ProductsSortByDropdown />
+				<SortByDropdown />
 			</div>
 			<button
 				onClick={() => {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
-import Rating from './Rating'
-import { getProduct } from '../utils'
-import { addToCart } from '../store/cart/cartSlice'
+import Rating from '../Rating'
+import { getProduct } from '../../utils'
+import { addToCart } from '../../store/cart/cartSlice'
 import { useDispatch, useSelector } from 'react-redux'
 
 const CartPlus = ({ productId }) => {

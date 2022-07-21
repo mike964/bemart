@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
-import ProductItem from '../components/ProductItemCard.jsx'
+import ProductItem from '../components/products/ProductItemCard.jsx'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
@@ -10,7 +10,7 @@ import Meta from '../components/Meta'
 import { listProducts } from '../store/actions/productActions'
 import BillboardCarousel from '../components/home/BillboardCarousel.jsx'
 import { useParams } from 'react-router-dom'
-import ProductsSlider from '../components/ProductSlider.jsx'
+import ProductsSlider from '../components/products/ProductSlider.jsx'
 
 // const HomeScreen = ({ match }) => {
 const HomeScreen = () => {

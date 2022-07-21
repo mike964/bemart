@@ -4,8 +4,8 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Product from './ProductItemCard'
-import fakeApi from '../_api/fakeApi'
-import Loader from './Loader'
+import fakeApi from '../../_api/fakeApi'
+import Loader from '../Loader'
 
 const ProductSlider = ({ title, url }) => {
 	const [loading, setLoading] = useState(true)

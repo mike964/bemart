@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductsSortByDropdown = () => {
+const SortByDropdown = () => {
 	// * Select options
 	const options = [
 		{ value: 'featured', text: 'Featured', key: 'key' },
@@ -26,4 +26,4 @@ const ProductsSortByDropdown = () => {
 	)
 }
 
-export default ProductsSortByDropdown
+export default SortByDropdown
