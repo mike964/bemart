@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { cellphone_filters, laptop_filters } from '../../constants'
-import {
-	brandFilterChanged,
-	filterChanged,
-} from '../../store/filters/filtersSlice'
+import { filterChanged } from '../../store/filters/filtersSlice'
 import FilterItem from './FilterItem'
 
 const FiltersSidebar = ({ category }) => {

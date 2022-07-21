@@ -91,7 +91,7 @@ const ProductItemCard = ({
 
 						<div className='card-text'>
 							<Rating
-								value={product.rating}
+								rating={product.rating} //  4.7
 								text={`${product.numReviews} reviews`}
 							/>
 

@@ -4,8 +4,15 @@ export const getProduct = item => {
 		name: item.title,
 		image: item.mainImage.imageUrl,
 		// price: item.price,
-		rating: item.rating ? parseFloat(item.rating.slice(0, 3)) : 0,
-		numReviews: item.reviews.length,
+		rating: item.rating ? parseFloat(item.rating.split(' ')[0]) : 3.5,
+		// "4.7 out of 5 stars",
+		// value={
+		//   product.rating.length
+		//     ? parseFloat(product.rating.split.split(' ')[0])
+		//     : '4.1'
+		// }
+		// numReviews: item.reviews.length,
+		numReviews: item.countReview,
 		_id: item.asin,
 		id: item.asin,
 	}
