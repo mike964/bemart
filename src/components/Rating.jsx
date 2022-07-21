@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Rating = ({ rating, text, color }) => {
-	console.log(rating)
+	// console.log(rating)
 
 	return (
 		<div className='rating'>

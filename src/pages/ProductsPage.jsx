@@ -5,7 +5,6 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { useParams } from 'react-router-dom'
 import FiltersSidebar from '../components/filters-sidebar/FiltersSidebar'
 import Loader from '../components/Loader'
-// import Loader from '../components/Loader'
 import Message from '../components/Message'
 import ProductItem from '../components/products/ProductItemCard'
 import Toolbar from '../components/Toolbar'
@@ -23,7 +22,7 @@ const ProductsPage = () => {
 	const [showSidebar, setShowSidebar] = useState(false) // show fitlers sidebar
 	// handle sort by dropdown
 
-	console.log(useParams())
+	// console.log(useParams())
 	// {keyword: 'laptops', pageNumber: '2'}
 
 	// * Get page details
@@ -50,7 +49,7 @@ const ProductsPage = () => {
 	// const filteredProducts = selectFilteredProducts(store.getState())
 	const filteredProducts = useSelector(selectFilteredProducts)
 
-	console.log(filteredProducts)
+	// console.log(filteredProducts)
 
 	useEffect(() => {
 		if (category) {
@@ -77,14 +76,14 @@ const ProductsPage = () => {
 
 	return (
 		<div className='page container'>
-			<div className='row'>
+			<Row>
 				<div className='col-md-3 pl-5'>
 					<h3>{pageDetails.title}</h3>
 				</div>
 				<div className='col-md-9'>
 					<Toolbar setViewMode={setViewMode} />
 				</div>
-			</div>
+			</Row>
 
 			<div className='row mb-3 mx-n2'>
 				{/* Products Grid */}

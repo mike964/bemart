@@ -8,19 +8,18 @@ Inspired by Brad Traversy Proshop MERN project
 - Fix single product page                                     ✅
 - Fix produt item cards length, in home page                  ✅
 - Fix pagination, make pagination work                        ✅
-- Shorten product name , when hover show full detail           
+- Shorten product name , when hover show full detail          ✅
 - open prudct item page when product image clicked            ✅ 
-- move search box component out of Header
+- move search box component out of Header                     ✅
 - Search input suggestions - for ex. search iphone
-- Make the search bar pro - with suggestion
- - Add user.config object : 
-{preferred_currency , favorite_products : [], ...}
-
+- Make the search bar pro - with suggestion 
+ - Add user.config object :  
+ {preferred_currency , favorite_products : [], ...} 
 - Add use login as 'admin' or 'custormer'                    
 - Build Banner slice show component                         ✅ 22.4.30
 - If user not logged in pop up login dialog  
 - Add multiple language 
-- Add multiple currency
+- Add multiple currency                                     ✅
 - Build fake authentication and private routes in UI 
 - Auth Pages form rebuilt                                   ✅ 5.10
 - make login work with fakeApi                              ✅ 22.5.11
@@ -47,7 +46,8 @@ Inspired by Brad Traversy Proshop MERN project
 - fix Select for sort in products page 
 - create on action creator for all types of filter change   ✅ 7.17
 - Set filters sidebar for cell phones as well               ✅ 7.17
-- Shop spinner when products loading or filters change  
+- Show spinner when products loading or filters change  
+- Add Sort functionality for products, UI n Server          ✅ 7.21
 
  
 

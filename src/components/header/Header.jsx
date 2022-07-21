@@ -10,7 +10,7 @@ import DepartmentsDropdown from './DepartmentsDropdown'
 import CurrencyDropdown from './CurrencyDropdown'
 
 const Header = () => {
-	console.log('Header..')
+	// console.log('Header..')
 
 	const { user } = useSelector(state => state.auth)
 	// console.log(user)

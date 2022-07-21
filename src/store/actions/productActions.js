@@ -46,7 +46,7 @@ export const listProducts =
 				sortBy, // featured,'date',
 			})
 
-			console.log(response.data)
+			// console.log(response.data)
 
 			dispatch({
 				type: PRODUCT_LIST_SUCCESS,

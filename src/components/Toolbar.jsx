@@ -1,16 +1,17 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+// import { useDispatch } from 'react-redux'
 import SortByDropdown from './products/SortByDropdown'
 
 const Toolbar = ({ setViewMode }) => {
-	const dispatch = useDispatch()
+	// const dispatch = useDispatch()
 
 	return (
 		<div className='d-flex justify-content-center justify-content-sm-between align-items-center pt-2 mb-3 border-bottom'>
 			<div className='d-flex flex-wrap'>
 				<SortByDropdown />
 			</div>
-			<button
+			{/* For Development */}
+			{/* <button
 				onClick={() => {
 					dispatch({
 						type: 'PRODUCT_LIST_SORT_BY',
@@ -19,7 +20,7 @@ const Toolbar = ({ setViewMode }) => {
 					})
 				}}>
 				Sort
-			</button>
+			</button> */}
 
 			<div className='btn-group mr-2'>
 				<button
