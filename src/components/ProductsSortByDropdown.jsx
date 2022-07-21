@@ -1,6 +1,15 @@
 import React from 'react'
 
 const ProductsSortByDropdown = () => {
+	// * Select options
+	const options = [
+		{ value: 'featured', text: 'Featured', key: 'key' },
+		{ value: 'featured', text: 'Price: Low to high', key: 'key' },
+		{ value: 'featured', text: 'Price: Hight to low', key: 'key' },
+		{ value: 'featured', text: 'Average Review', key: 'key' },
+		{ value: 'featured', text: 'Newest Arival', key: 'key' },
+	]
+
 	return (
 		<div className='d-flex align-items-center flex-nowrap me-3 me-sm-4 pb-3'>
 			<label
@@ -9,10 +18,9 @@ const ProductsSortByDropdown = () => {
 				Sort by
 			</label>
 			<select className='form-control btn-toolbar' id='sorting'>
-				<option>Featured</option>
-				<option>Lowest Price</option>
-				<option>Highest Price</option>
-				<option>Average Rating</option>
+				{options.map((item, i) => (
+					<option key={i}>{item.text}</option>
+				))}
 			</select>
 		</div>
 	)

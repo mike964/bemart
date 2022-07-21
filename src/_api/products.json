@@ -14,6 +14,8 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": "You Save: $40.00 (7%)",
+		"dateFirstAvailable": "September 15, 2020",
+		"dateReleased": "",
 		"features": [
 			"Stunning 10.9-inch Liquid Retina display with True Tone and P3 wide color",
 			"A14 Bionic chip with Neural Engine",
@@ -21,7 +23,7 @@
 			"12MP back camera, 7MP FaceTime HD front camera",
 			"Available in Silver, Space Gray, Rose Gold, Green, and Sky Blue"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/719UcXKzXHL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/714s7LfdaBL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/81e93r4PDGL._AC_SL1500_.jpg",
@@ -74,7 +76,7 @@
 				"title": "Small improvements combine for a great experience",
 				"userName": "WheezingLamb",
 				"url": "/gp/customer-reviews/R35B1VE1PBF8HH/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08J66ZMY7",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: WiFi", "Size: 64GB", "Color: Space Gray"]
 			},
 			{
@@ -84,7 +86,7 @@
 				"title": "Great product, delivery concerning",
 				"userName": "Florida",
 				"url": "/gp/customer-reviews/R19KR1OGIARPYZ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08J66ZMY7",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: WiFi", "Size: 64GB", "Color: Space Gray"]
 			},
 			{
@@ -94,7 +96,7 @@
 				"title": "not to user friendly for person over 65 oldschool",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/RVNKO5EP9A6EU/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08J66ZMY7",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: WiFi", "Size: 64GB", "Color: Space Gray"]
 			}
 		],
@@ -117,7 +119,6 @@
 		"answeredQuestions": 0,
 		"rating": null,
 		"asin": "B0932HVSYM",
-		"_id": "B0932HVSYM",
 		"sizeSelection": [],
 		"soldBy": "Amazon.com",
 		"sellers": ["129218896", "232453563"],
@@ -126,11 +127,12 @@
 		"warehouseAvailability": "This item will be released on June 1, 2021. Pre-order now.",
 		"retailPrice": 0,
 		"price": 1299,
-		"countInStock": 3,
+		"countInStock": 13,
 		"priceRange": null,
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": null,
+		"dateFirstAvailable": "April 30, 2021",
 		"features": [
 			"Immersive 24-inch 4.5K Retina display with P3 wide color gamut and 500 nits of brightness",
 			"Apple M1 chip delivers powerful performance with 8-core CPU and 7-core GPU",
@@ -140,7 +142,7 @@
 			"Six-speaker sound system for a remarkably robust and high-quality audio experience",
 			"Up to 256GB of ultrafast SSD storage"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/61LNnZPoKPS._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/41fiktPZpCS._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/714ky5%2BNWYS._AC_SL1500_.jpg",
@@ -193,7 +195,7 @@
 			"imageResolution": "679 x 679"
 		},
 		"categories": ["Computers", "Computers & Accessories"],
-		"keywords": ["apple", "tablet", "ipad"]
+		"keywords": ["Apple", "iMac"]
 	},
 	{
 		"title": "Apple MacBook Air with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray",
@@ -202,7 +204,6 @@
 		"answeredQuestions": 350,
 		"rating": "4.8 out of 5 stars",
 		"asin": "B08N5LNQCX",
-		"_id": "B08N5LNQCX",
 		"sizeSelection": [],
 		"soldBy": "Amazon.com",
 		"fulfilledBy": "Amazon.com",
@@ -210,11 +211,12 @@
 		"warehouseAvailability": "In stock soon. Order it now.",
 		"retailPrice": 999,
 		"price": 949.99,
-		"countInStock": 2,
+		"countInStock": 6,
 		"priceRange": null,
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": "You Save: $49.01 (5%)",
+		"dateFirstAvailable": "November 10, 2020",
 		"features": [
 			"Apple-designed M1 chip for a giant leap in CPU, GPU, and machine learning performance",
 			"Go longer than ever with up to 18 hours of battery life",
@@ -224,7 +226,7 @@
 			"8GB of unified memory so everything you do is fast and fluid",
 			"Superfast SSD storage launches apps and opens files in an instant"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71jG%2Be7roXL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/712v9WGWDBL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/91YEUMzK8cL._AC_SL1500_.jpg",
@@ -274,7 +276,7 @@
 				"title": "Almost perfect laptop",
 				"userName": "Paul K.",
 				"url": "/gp/customer-reviews/R1PX64DBPS17BG/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5LNQCX",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Capacity: 256GB", "Color: Space Gray"]
 			},
 			{
@@ -284,7 +286,7 @@
 				"title": "Unacceptable camera. Grainy zoom video.",
 				"userName": "Adithya",
 				"url": "/gp/customer-reviews/R2Z70OJB9J5Q0Q/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5LNQCX",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Capacity: 256GB", "Color: Space Gray"]
 			},
 			{
@@ -294,7 +296,7 @@
 				"title": "MAKE SURE YOU GET AS MUCH MEMORY & STORAGE AS YOU CAN AFFORD - SPECIAL ORDER IF NEED BE",
 				"userName": "K. MURPHY",
 				"url": "/gp/customer-reviews/R173YCBP8CGFS8/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08N5LNQCX",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Capacity: 256GB", "Color: Silver"]
 			}
 		],
@@ -317,7 +319,6 @@
 		"answeredQuestions": 443,
 		"rating": "4.7 out of 5 stars",
 		"asin": "B086KJBKDW",
-		"_id": "B086KJBKDW",
 		"sizeSelection": [],
 		"soldBy": "Amazon.com",
 		"fulfilledBy": "Amazon.com",
@@ -330,6 +331,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": null,
+		"dateFirstAvailable": "April 27, 2020",
 		"features": [
 			"9th Generation Intel Core i5-9300H Processor (Up to 4.1 GHz)",
 			"15\" Full HD Widescreen IPS LED-backlit display; NVIDIA GeForce GTX 1650 Graphics with 4 GB of dedicated GDDR5 VRAM",
@@ -337,7 +339,7 @@
 			"LAN: 10/100/1000 Gigabit Ethernet LAN (RJ-45 port); Wireless: Intel Wireless Wi-Fi 6 AX200 802.11ax",
 			"Backlit keyboard; Acer Cool Boost technology with twin fans and dual exhaust ports"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71s1LRpaprL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71JK4qmCGyL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71EDDnNy4AL._AC_SL1000_.jpg",
@@ -498,7 +500,7 @@
 				"title": "Bad Quality Control",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/R1XPIXXYCXPCZG/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086KJBKDW",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Notebook only"]
 			},
 			{
@@ -508,7 +510,7 @@
 				"title": "Ram upgrade for Acer Nitro 5 (Model: AN515-54-5812)",
 				"userName": "Kindle Customer",
 				"url": "/gp/customer-reviews/R29Z7NVAYEC6BB/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086KJBKDW",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Notebook only"]
 			},
 			{
@@ -518,7 +520,7 @@
 				"title": "A TRUE \"best bang for your buck\" laptop today!!! AN515-54-5812",
 				"userName": "Enriq Orti",
 				"url": "/gp/customer-reviews/R34TGTEQHDU2DD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086KJBKDW",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/61zYyJwg4FL._SY88.jpg"
 				],
 				"variationList": ["Style: Notebook only"]
@@ -530,7 +532,7 @@
 				"title": "Acer Nitro 5 Best Bang For your Buck",
 				"userName": "IMALEKI",
 				"url": "/gp/customer-reviews/R3JJRSZZ8X3KIO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086KJBKDW",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Notebook only"]
 			}
 		],
@@ -553,239 +555,249 @@
 		"keywords": ["Acer"]
 	},
 	{
-		"title": "Lenovo Flex 5 14\" 2-in-1 Laptop, 14.0\" FHD (1920 x 1080) Touch Display, AMD Ryzen 5 4500U Processor, 16GB DDR4, 256GB SSD, AMD Radeon Graphics, Digital Pen Included, Win 10, 81X20005US, Graphite Grey",
+		"title": "Lenovo Flex 5 Laptop, 14.0\" FHD Touch Display, AMD Ryzen 5 5500U, 16GB RAM, 256GB Storage, AMD Radeon Graphics, Windows 11 Home",
 		"manufacturer": "Visit the Lenovo Store",
-		"countReview": 3878,
-		"answeredQuestions": 425,
-		"rating": "4.4 out of 5 stars",
-		"asin": "B086226DDB",
+		"countReview": 771,
+		"answeredQuestions": 159,
+		"rating": "4.5 out of 5 stars",
+		"asin": "B09BG96KFJ",
 		"sizeSelection": [],
-		"soldBy": "Amazon.com",
-		"fulfilledBy": "Amazon.com",
-		"sellerId": null,
-		"warehouseAvailability": "In Stock.",
-		"retailPrice": 0,
-		"price": 629.99,
-		"countInStock": 2,
+		"soldBy": "ABC USA",
+		"fulfilledBy": "ABC USA",
+		"sellerId": "A32VHV8KCRFP8Y",
+		"warehouseAvailability": "Only 1 left in stock - order soon.",
+		"retailPrice": 0.0,
+		"price": 600.0,
 		"priceRange": null,
-		"shippingPrice": 0,
-		"priceShippingInformation": "",
+		"shippingPrice": 0.0,
+		"priceShippingInformation": "FREE delivery July 26 - 28. Details Or fastest delivery July 25 - 26. Details",
 		"priceSaving": null,
+		"dateFirstAvailable": "October 5, 2021",
 		"features": [
-			"Thin, light, and stylish – This 2-in-1 laptop weighs just 3.64 pounds and is only 0.82\" thick. It's soft and comfortable to the touch, with a durable paint that creates a better user experience. Digital pen included",
-			"The 10-point, 14-inch FHD (1920 x 1080) IPS touchscreen allows the Lenovo Flex 5 14\" 2-in-1 laptop to be comfortable, fun, and easy to use. It's also great to look at, with 4-side narrow bezels",
-			"The 360⁰ hinge lets you use your 2-in-1 touchscreen laptop in whatever mode works best for you; Use it in 'Laptop' mode for everyday computing, 'Tent' mode for sharing things, 'Stand' mode for binge-watching, or 'Tablet' mode for more intuitive interaction",
-			"Enjoy up to 10 hours of battery life, plus quick charge to 80% in just 1 hour",
-			"Powered by the AMD Ryzen 5 4500U mobile processor with Radeon graphics, you have the performance to do more, from anywhere. With more cores, you'll experience responsiveness that leaps into action for productivity, gaming, and content creation"
+			"Powered by an AMD Ryzen 5 5500U mobile processor with Radeon graphics, this portable notebook computer has 16GB DDR4 RAM and 256GB NVMe SSD Storage",
+			"Reduce the clutter - The Flex 5 14 touchscreen laptop has a narrow bezel on 4 sides for more viewing area and less clutter on the IPS FHD (1920 x 1080) display",
+			"Designed to keep your ideas flowing, anywhere, anytime with the ability to multi-mode, this Windows laptop has a 360⁰ hinge so you can use it in laptop mode for everyday computing, tent mode for sharing, stand mode for binge-watching your favorite streaming shows, or tablet mode for easy interaction",
+			"A physical shutter on the webcam improves your privacy, allowing you to keep out unwanted attention",
+			"Stay connected with integrated 2x2 WiFi 6 (802.11AX), Bluetooth 5, 2 USB-A ports, 1 USB-C with PD to support power charging, HDMI, a 4-in-1 card reader, and an audio jack",
+			"Using Alexa on your PC is as easy as asking a question - just ask and Alexa can check your calendar, create lists, play music, answer questions, read the news and more"
 		],
-		"images": [
-			"https://images-na.ssl-images-amazon.com/images/I/81AbJXWCxXL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81KNxSLu4yL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71tnm9QslpL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71FAP1zfTTL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71F%2B-69xX0L._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/718KuIUnseL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81E7TF3NylL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71Xm1j%2BHYwL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/81EVi6koAVL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/71b4qSYGZeL._AC_SL1500_.jpg",
-			"https://images-na.ssl-images-amazon.com/images/I/61RUqc6JwJL._AC_SL1500_.jpg"
+		"imageUrlList": [
+			"https://m.media-amazon.com/images/I/71zZiQGzc5L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/818B97p+vcL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71QjZ06DaFL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71WcP2tg9BL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71k58VtLUXL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71Ji9RvCfXL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71Skp3WsDUL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/81IUcTEIYbL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/81ZtENkaviL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/718puVDixnL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71MgsefcZzS._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/81EVi6koAVL._AC_SL1500_.jpg"
 		],
-		"videoeUrlList": [
-			"https://d2y5sgsy8bbmb8.cloudfront.net/4d73c2b3-4da8-4683-b419-af875d755174/default.jobtemplate.mp4.480.mp4",
-			"https://d2y5sgsy8bbmb8.cloudfront.net/3b668284-a8ff-4b88-980a-093b7a5c88fc/default.jobtemplate.mp4.480.mp4",
-			"https://d2y5sgsy8bbmb8.cloudfront.net/fc1cbbbf-5b2a-4889-bf7e-01539ab58e0f/default.jobtemplate.mp4.480.mp4",
-			"https://d2y5sgsy8bbmb8.cloudfront.net/bac4a54c-bcbe-4028-83e0-ebf53587b05d/default.jobtemplate.mp4.480.mp4"
-		],
-		"description": "The IdeaPad Flex 5 gives you more creative choices, by blending performance, connectivity, entertainment and affordability with a sleek design and feel. Proudly powered by AMD Ryzen 5 4500U mobile processor with Radeon graphics, the IdeaPad Flex 5 14 offers you excellent all around performance, graphics and more productivity in a flexible device built to be what you need it to be. A narrow bezel on 4 sides gives you more viewing area and less clutter to interfere with the task at hand, whether that’s at work, or play, enjoy the most out of your screen with IPS panel technology and Full High Definition screen.    Today’s world is not a simple place, but that doesn’t mean we can’t build a simple solution to a complex problem. A physical shutter on the webcam ensures you keep out unwanted attention when you are concerned about your privacy. This isn’t your typical laptop—it’s a fashion statement. The IdeaPad Flex 5 is built with a new level of attention to detail, making this machine soft and comfortable to the touch with a durable paint that creates a better user-experience. (Active Pen included) The IdeaPad Flex 5 is designed for you to keep your ideas flowing, anywhere, anytime with the ability to multi-mode your laptop and use it in ‘Laptop’ mode for everyday computing, ‘Tent’ mode for sharing things, ‘Stand’ mode for binge-watching, or ‘Tablet’ mode for more intuitive interaction. The Lenovo Flex 5 2-in-1 laptop, powered by AMD Ryzen 4000 Series Mobile Processors, brings you the performance to do more. Open apps in a flash, power through heavy tasks and run multiple demanding apps with the performance of the world’s most advanced laptop processors.",
-		"details": [
+		"videoeUrlList": [],
+		"productDescription": "Designed to provide excellent all-around performance, graphics, and productivity in a flexible device, the Lenovo Flex 5 14 14-inch laptop is built to be what you need it to be. Proudly powered by AMD Ryzen™ 5000 Series mobile processors with integrated AMD Radeon™ Graphics, the Flex 5 14 has a 360⁰ hinge and touchscreen display, making it easy to watch, work, and create to your heart's content. Reduce the clutter with four-sided narrow bezels for more viewing area on the FHD IPS panel. Plus, with a 12-hour battery* with Quick Charge, this slim and lightweight laptop is your ideal travel companion, whether you're working at the coffee shop or flying across the country. The Flex 5 14 is a 2-in-1 laptop that's made to be used the way you want. Flip the hinge and use the touchscreen in \"tablet\" mode to take notes, draw, or interact with the computer in intuitive ways. Fold it into the familiar \"laptop\" mode for everyday computing and productivity tasks. Put your convertible laptop in \"tent\" mode to share photos, videos, or documents so everyone can see your full HD screen. Or flip it into \"stand\" mode to watch your favorite streaming movies and shows. This easy-to-use laptop also comes with Windows 11 Home, a backlit keyboard, a webcam privacy shutter, and a fingerprint reader. * All battery life claims are approximate and based on results using the MobileMark® 2014 battery life benchmark test. Actual battery life will vary and depends on many factors such as product configuration and usage, software use, wireless functionality, power management settings, and screen brightness. The maximum capacity of the battery will decrease with time and use.",
+		"productDetails": [
 			{
 				"name": "Standing screen display size",
-				"value": "14 Inches"
+				"value": "‎14 Inches"
 			},
 			{
 				"name": "Max Screen Resolution",
-				"value": "1920 x 1080 Pixels"
+				"value": "‎1920 x 1080"
 			},
 			{
-				"name": "processor",
-				"value": "2.1 GHz ryzen_5"
+				"name": "Processor",
+				"value": "‎2.1 GHz ryzen_5_5500u"
 			},
 			{
 				"name": "RAM",
-				"value": "16 GB DDR4"
-			},
-			{
-				"name": "Memory Speed",
-				"value": "2.1"
+				"value": "‎16 GB DDR4"
 			},
 			{
 				"name": "Hard Drive",
-				"value": "256 GB flash memory solid state"
-			},
-			{
-				"name": "Graphics Coprocessor",
-				"value": "AMD Integrated Graphics"
+				"value": "‎256 GB flash_memory_solid_state"
 			},
 			{
 				"name": "Chipset Brand",
-				"value": "AMD"
+				"value": "‎AMD"
 			},
 			{
 				"name": "Card Description",
-				"value": "Integrated"
+				"value": "‎Integrated"
 			},
 			{
 				"name": "Wireless Type",
-				"value": "802.11ac"
+				"value": "‎802.11ac"
 			},
 			{
 				"name": "Number of USB 3.0 Ports",
-				"value": "2"
+				"value": "‎2"
 			},
 			{
 				"name": "Average Battery Life (in hours)",
-				"value": "10 Hours"
+				"value": "‎12 Hours"
 			},
 			{
-				"name": "brand",
-				"value": "Lenovo"
+				"name": "Brand",
+				"value": "‎Lenovo"
 			},
 			{
 				"name": "Series",
-				"value": "Flex 5 14\""
+				"value": "‎2021"
 			},
 			{
 				"name": "Item model number",
-				"value": "81X20005US"
+				"value": "‎82HU00JWUS"
 			},
 			{
-				"name": "os",
-				"value": "Windows 10"
+				"name": "Hardware Platform",
+				"value": "‎PC"
+			},
+			{
+				"name": "Operating System",
+				"value": "‎Windows 11"
 			},
 			{
 				"name": "Item Weight",
-				"value": "3.63 pounds"
+				"value": "‎4.99 pounds"
 			},
 			{
 				"name": "Product Dimensions",
-				"value": "12.66 x 8.56 x 0.82 inches"
+				"value": "‎12.2 x 8.43 x 0.67 inches"
 			},
 			{
 				"name": "Item Dimensions LxWxH",
-				"value": "12.66 x 8.56 x 0.82 inches"
+				"value": "‎12.2 x 8.43 x 0.67 inches"
 			},
 			{
 				"name": "Color",
-				"value": "Graphite Grey"
+				"value": "‎Graphite Grey"
 			},
 			{
 				"name": "Processor Brand",
-				"value": "AMD"
+				"value": "‎AMD"
 			},
 			{
 				"name": "Processor Count",
-				"value": "1"
+				"value": "‎1"
 			},
 			{
 				"name": "Computer Memory Type",
-				"value": "DDR4 SDRAM"
+				"value": "‎DDR4 SDRAM"
+			},
+			{
+				"name": "Hard Drive Interface",
+				"value": "‎USB"
+			},
+			{
+				"name": "Optical Drive Type",
+				"value": "‎No Optical Drive"
 			},
 			{
 				"name": "Power Source",
-				"value": "Battery Powered"
+				"value": "‎Battery Powered"
 			},
 			{
 				"name": "Batteries",
-				"value": "1 Lithium Polymer batteries required. (included)"
+				"value": "‎1 Lithium Polymer batteries required. (included)"
 			},
 			{
 				"name": "ASIN",
-				"value": "B086226DDB"
+				"value": "B09BG96KFJ"
 			},
 			{
 				"name": "Customer Reviews",
-				"value": "4.4 out of 5 stars 3,878 ratings 4.4 out of 5 stars"
+				"value": "4.5 out of 5 stars 771 ratings 4.5 out of 5 stars"
 			},
 			{
 				"name": "Best Sellers Rank",
-				"value": "#54 in Computers & Accessories (See Top 100 in Computers & Accessories) #2 in 2 in 1 Laptop Computers"
+				"value": "#261 in Computers & Accessories (See Top 100 in Computers & Accessories) #27 in Traditional Laptop Computers"
 			},
 			{
 				"name": "Date First Available",
-				"value": "March 17, 2020"
+				"value": "October 5, 2021"
 			}
 		],
 		"minimalQuantity": null,
-		"dealPrice": 0,
-		"salePrice": 0,
+		"dealPrice": 0.0,
+		"salePrice": 0.0,
 		"reviews": [
 			{
-				"text": "After passing off last year's model to my brother (3500U Flex 14), I got this as soon as I saw it posted up on Reddit. I'm thankful I did, since it was sold out within an hour or two and has been since. Let's get the rundown here. - Ryzen 5 4500U 6c6t APU - Radeon Vega 6 graphics - 16 GB of DDR4-3200 MHz dual-channel RAM (CL 22, but that's par for the course for a consumer laptop) - 256 GB SK Hynix NVMe SSD - 1080p IPS touchscreen w/digitizer (pen included!) Build quality is about as good as you can get without moving to all metal. The keyboard deck is rubberized, and the outside is built solidly - no creaking! Hinge is strong, but it opens up almost all the way with one hand (tilts towards the end). The overall design is darn near similar to last year's model, but built a bit more \"premium.\" One exhaust vent at the back, but as you'll see later it really doesn't need 2. I mainly focused on CPU performance, as benchmarks for this flavor of Vega 6 are all over the place already, and given the thermals I saw performance should be what you'll find elsewhere. Long story short - roughly 10% faster than the 3500U's Vega 8 at less power (15 W vs 25 W). The benchmarks speak for themselves, but I was very surprised at what this thing was capable of. I ran these on the included USB-C wall charger (which was a surprising inclusion considering the laptop has a barrel jack for power). The only thing to keep in mind is that this was tested when my room temperature was in the upper 70s to lower 80s, so you could see the temp results as a \"worst case\" scenario. 77c absolute max during Geekbench is crazy for this thing, especially considering how thin it is. Never got too loud, either. Fan isn't whiny at all! Camera is acceptable. Nothing to write home about, but it'll work well enough for video calls. Battery is excellent - while browsing the web and watching videos, I have been consistently draining 10% per hour of use! That 10 hour claim from Lenovo seems pretty spot on. Honestly, I could think of only 3 things that would make this laptop better, but all of them would definitely drive up the price/bump it up a tier: - 120 Hz FreeSync display like the (crippled by 8 GB RAM) IdeaPad Slim 7 - Ryzen 4600U/4800U options for more threads (4700U option is now available in some places) - Metal construction I'll personally be upgrading the storage, but overall it's amazing.",
-				"date": "Reviewed in the United States on May 26, 2020",
+				"text": "I have only had this laptop for about a month. Overall, I really like it so far and have had no trouble transitioning from Windows 10 to Windows 11, although I don't give this machine a lot of tasks; it's my travel computer and my bedside companion. I did have a concern about the battery charging, though, and I want to alert people to the issue. If you don't want to read this review any further, just please remember to keep the Lenovo Vantage software on your computer in case you need it. First, the laptop ships with a charger that is a small brick with a cable that has a three-prong wall plug and another cable that connects to the USB-C port on the laptop. I used the charger and the battery charged up to 100% with no problems. I had my battery set to \"Battery Saver\" in the Windows 11 system settings. The laptop does have the older type of round charging port, but you have to buy a separate charger to use it. So that's what I did; I went to the Lenovo site and bought that charger---which by the way, is not too lightweight itself, but at least it's more manageable for use on trains and such, and it has the two-prong wall plug. So last night, I decided I had better make sure the additional (travel) charger worked okay. I noticed, though, that my battery was only charging up to 60% of capacity. The charger was powering the machine, but the battery wasn't filling up. I thought maybe the charger was defective. At that point I switched to the charger that came with the laptop, but with that charger, also, the battery wasn't charging beyond 60%! Oh, no! At that point, I thought my laptop must be a lemon. I downloaded an additional software from the Lenovo site, Lenovo Diagnostic Tool, and ran a test on the battery. The battery test failed! I remembered that another Amazon customer who had reviewed this laptop had complained that he couldn't charge his battery beyond 60%. A Lenovo representative responded something about a setting that prevented full loading of the battery to extend battery life if the laptop is kept plugged in. I looked for that setting in the Windows battery settings, and changed my Power Mode setting to Best Performance, but that didn't help. I could find nowhere in the Windows Settings to get the battery to charge more fully. Eventually, I looked in the Lenovo Vantage software, under More Settings, and found that my machine had been set (not be me, I swear) to Conservation Mode. This setting is only in the Lenovo Vantage software, and is NOT the same as Battery Saver in the Windows settings. Once I changed my laptop from Conservation Mode to Rapid Charger in Lenovo Vantage, my battery started charging again. The purpose of Conservation Mode is to conserve the life of the battery if the laptop is continually kept plugged in. Because that's how I use the laptop, I will continue to use Conservation Mode, but will try to remember to switch to Rapid Charge mode if I want to take the laptop to another location without taking along a charger. I suspected that the travel charger I purchased separately had somehow triggered the computer to convert from Conservation Mode to Rapid Charge, but that is not the case. If the computer is in Rapid Charge mode, either charger will charge the battery to 100%. If the battery has a charge of less than 60%, and the computer is in Conservation Mode, either charger will charge it to 60%. If the battery has a charge of between 60% and 100%, the computer is then put into Conservation Mode and plugged into either charger, the computer will be powered by the charger but the battery will not be further charged. I hope this review is helpful.",
+				"date": "Reviewed in the United States on May 28, 2022",
 				"rating": "5.0 out of 5 stars",
-				"title": "Amazing laptop, especially at the $600 asking price",
-				"userName": "Lee Neighoff",
-				"url": "/gp/customer-reviews/R17QK37Q9I9GC1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086226DDB",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/51WW6ldOj-L._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/51v0ixOJ0NL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/61LhEaQnAQL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/61yovw6wkbL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71LO0GrVlwL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71Yveh2F5NL._SY88.jpg"
-				],
-				"variationList": ["Style: Notebook only"]
+				"title": "Nice laptop; Be Aware of Battery Conservation Mode in Lenovo Vantage",
+				"userName": "Intermediate computer user",
+				"url": "/gp/customer-reviews/R2OGDSN6LBK7LR/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09BG96KFJ",
+				"imageUrlList": [],
+				"variationList": []
 			},
 			{
-				"text": "***UPDATE 3 - 12/2/20 - Have had several issues recently and wanted to pass along how I resolved them. Issue #1 was trying to boot up the computer after 12 hours of sleep and being unable to get the computer to turn on at all. Didn't matter if it was plugged in or not. The battery was fully charged. I tried holding the power button. No go, laptop was dead. As a final attempt before sending it in for service, I pulled off the bottom cover of the laptop and disconnected the battery cable for several minutes. I plugged it back in, pressed the power button, and the laptop booted normally. Everything worked fine after that and I haven't had the issue since. Issue #2 was noticing the laptop was no longer charging when connected to the USB-C charger. Even the charging LED wouldn't come on. The fix was to shut down the computer completely, then hold the power button for 20-40 seconds. The charge light came on and the laptop started charging again. **UPDATE 2 - 7/2/20 - Resolved an audio stuttering issue by turning off Dolby Audio processing in the Dolby app.** *UPDATE - 6/10/20 - Dropping a star. Sent original back due to crashing issues when waking from sleep. Wifi also dropped occasionally and had trouble reconnecting after sleep. New unit seems to work fine. Also replaced wireless card with Intel AX200 (need torx T5 bit to remove bottom panel). Much faster and no dropped connections. Still really like the laptop (and Amazon's return policy).* Original Review: Overall usability – Everything about the laptop feels well-built and like it should cost hundreds more. Incredibly fast processor, especially given the 15W TDP. The AMD Ryzen 4000 series processors (7nm Zen 2) have really improved the thermals and efficiency to the same level as Intel (or better). Between the 6 core processor and the PCIe NVMe SSD the laptop flies. Nothing I’ve thrown at it has been able to slow it down or make it stutter. Benchmarks comparable to my HP desktop with i7-7700 (if in best performance mode while plugged in). Applications open instantly in most cases. Comes out of short-term sleep instantly. Nice webcam privacy cover. Fingerprint reader is best I’ve used in terms of accuracy and speed. Fans are quiet under normal loads and a low non-annoying whirring when the GPU/CPU is taxed. Exterior – Very light weight (but not cheap feeling) and nice sturdy build. Feels like it will hold up well. Keyboard back-light adjustable. Plenty of ports. Hinges also feel built to last. Touchscreen – Sensitive and good feel (though I prefer matte to glossy). Works well with included pen. Bloatware – Almost none (uninstalled Skype). Speakers – Above average for price range. Not especially tinny sounding like cheaper laptops. Don’t expect bass though. The included Dolby equalizer software can help improve the sound if you don’t mind experimenting. Side-mounted front-facing speakers are well placed. Screen – Brightness OK for indoor use, but I plan to run it at 90% brightness even on battery because anything less is too dim. Colors are bright. No noticeable back light bleed. Battery life – Above average for price range. Really quite impressive. Could easily last half to three-quarters of the stated 10 hours depending on the conditions (clearly not doing anything processor or graphics intensive for the duration, but web browsing, office work, or video viewing). Wireless/Bluetooth – Some occasional random disconnects and trouble connecting after sleep, likely due to Realtek wireless card. Average speeds on my 5GHz home network. Keyboard/Trackpad – High quality feel. You can tell when you’ve hit a key unlike cheaper laptops. Miss the numpad, but knew it didn’t have one before I ordered. Trackpad not over-sensitive or unresponsive. Good balance, but still prefer a mouse. Graphics/Gaming – Played Two-Point Hospital on Steam at 1080p very high graphics setting. Not very graphics intensive or an FPS, but the game is newer and frame-rate didn’t drop below 30 in game. Game load times are ridiculously fast. Downsides – Mediocre webcam. Soldered RAM (not a big deal w/16 GB, but if it goes bad it is a big problem). Screen may not be bright enough for outdoor use and the glossy coating leads to reflections/glare when viewing from an angle. Wireless card not great. Stories of poor tech support (though, admittedly I’ve never interacted with them). **Don’t forget to create your USB backup drive from the Lenovo website for crashes/re-installs. Or have the Windows 10 ISO handy on a USB drive and download the drivers/apps from the website.",
-				"date": "Reviewed in the United States on May 31, 2020",
-				"rating": "4.0 out of 5 stars",
-				"title": "Budget laptop without the budget feel or performance. Great 2 in 1 product.",
-				"userName": "jayisunj",
-				"url": "/gp/customer-reviews/RFJTTBBJVCPH7/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086226DDB",
-				"images": [
-					"https://images-na.ssl-images-amazon.com/images/I/61RY4dV-QML._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/61irzrF4P2L._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71+4TWJoj1L._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/712AG3KYIkL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/715VVcs7rBL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71AqP1Y2daL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71ON7KuisyL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/71eCH-bl4JL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/817dYgwixJL._SY88.jpg",
-					"https://images-na.ssl-images-amazon.com/images/I/81CbDuuFzQL._SY88.jpg"
-				],
-				"variationList": ["Style: Notebook only"]
+				"text": "Be careful with this, DO NOT UPDATE THE BIOS, using Lenovo's Vantage app. It corrupts your bios leaving the laptop unable to boot. Reading through forums this seems to be a recurring issue. Laptop didn't last a day...",
+				"date": "Reviewed in the United States on February 15, 2022",
+				"rating": "1.0 out of 5 stars",
+				"title": "Issue with BIOS update that cause laptop not to post.",
+				"userName": "Daniel G. Alexis",
+				"url": "/gp/customer-reviews/R3DNSUPMLBILDY/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09BG96KFJ",
+				"imageUrlList": [],
+				"variationList": []
 			},
 			{
-				"text": "Your browser does not support HTML5 video. For <600, there's only 1 thing I want to complain: the \"Lenovo Representative\" knows nothing about their product. Yes, it has dual channel 16GB RAM @ 3200mhz, it ships with the Lenovo pencil included. Screen is only @ 250 nits, but I wouldn't call it a deal breaker unless you plan to use it outdoors a lot. Plastic machine but nothing feels cheap. The hinge is a little loose to my taste, the touchpad is a little shaky. Other than those, everything fits my needs. Very satisfying first day of use. Update: the audio starts to cutoff randomly from the 2nd day, all drivers and windows updates and BIOS are up to date. I contacted both Amazon and Lenovo tech support, after a remote session, the problem persists. Then I noticed the trackpad is shaky and sticky ( see video). So overall it's a nice product, but quality control can be a problem.",
-				"date": "Reviewed in the United States on May 30, 2020",
-				"rating": "4.0 out of 5 stars",
-				"title": "Solid product for the price, quality control is questionable",
-				"userName": "Chen Li",
-				"url": "/gp/customer-reviews/R20GXBDV6QSP29/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086226DDB",
-				"images": [],
-				"variationList": ["Style: Notebook only"]
+				"text": "The laptop works as expected. Performance and battery life is at par. I manage to work for 5-6 hours with full brightness and medium work load. I frequently work with 10+ tabs open with lot's of medium computation programming in parallel. The laptop pulls it off without a hick. Built quality is decent, the top panel could have used an extra screw around touchpad. Make sure you update the BIOS and Drivers. I faced some graphic hiccups before that. Consider Yoga series if you want a metal body and better screen. Pros: - Value for money if you manage to get it around 600 for Ryzen 5 & 16Gb. I did! - Comes with the Pen (Double check the listing) - Speakers are loud for a call, but not great for music - Fingerprint reader is very responsive Cons: - Fingerprint does not wake up the computer from sleep - No auto-brightness. - RAM is not upgradable - No space for 2.5\" HDD but you can swap the SSD - Average Brightness - Average Webcam - The cooling fan tends to get loud as there isn't sufficient clearance between laptop and table. That being said, none of this is a dealbreaker, and I would still recommend the product.",
+				"date": "Reviewed in the United States on April 29, 2022",
+				"rating": "5.0 out of 5 stars",
+				"title": "Value for money if you buy at the deal price",
+				"userName": "Nikhil",
+				"url": "/gp/customer-reviews/R2F78PAU7MI8V6/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09BG96KFJ",
+				"imageUrlList": [],
+				"variationList": []
+			},
+			{
+				"text": "I did my research on the Lenovo site, and thought I was getting a laptop that checked all the boxes. I didn't realize that the USB-C port only works for power and data; NOT another monitor. I even purchased a hub that was listed as a \"compatible\" device. But, Lenovo decided to not have their laptop work fully with their own hub. I'm sure the other features of the laptop are good, but I feel like this is a major flaw.",
+				"date": "Reviewed in the United States on March 4, 2022",
+				"rating": "1.0 out of 5 stars",
+				"title": "Misleading and Lacking MAJOR functionality",
+				"userName": "Jonathan",
+				"url": "/gp/customer-reviews/ROPQA3BHGT4M/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09BG96KFJ",
+				"imageUrlList": [],
+				"variationList": []
+			},
+			{
+				"text": "This is my 3rd Lenovo laptop and it does not disappoint! I’ve had it for about 2 months now and I am honestly very happy with my purchase. I am an engineer and a bit picky with my tech and considering the price, I don’t think you can find a better performing laptop for the price. The Ryzen 5 5500U processor is blazing fast and the 16GB RAM is sufficient to handle multiple programs simultaneously without a problem. My model only has a 256GB SSD (this model was on a special for $599), but if you are using the cloud it is more than sufficient storage. I even run an Ubuntu dual boot with 60 GB allocated and the remaining storage on the Windows side is still plenty. The touch screen and the stylus pen are significantly better than I expected. I’ve never had a touch screen laptop but I’m impressed with the responsiveness and the quality of the touch and draw features. I don’t use them very often though since I’m mostly writing software. I do a lot of typing and I really like the keyboard (though I am not one of the picky software types with mechanical keyboards complaining about key travel distance and such). I was aware of the low brightness screen (you won’t be able to work outside), the lack of display-over-USB-C capability (I just use the HDMI port) and the USB-C charger which eliminates the use of the USB-C port for other peripherals (I just use a small USB-C dock with extra ports), but I decided that for the price of the laptop, these are worth living with. One thing that bothers me a little bit though is location of the power button. It is on the side of the laptop (on the right side), and I’ve pressed it accidentally a few times while adjusting the position of my laptop, which puts the laptop to sleep. Thanks to the SSD I can get it running again within a few seconds, but it is slightly annoying. Overall I can highly recommend this laptop for someone that wants great performance at a low cost (but willing to live without certain nice-to-haves).",
+				"date": "Reviewed in the United States on May 15, 2022",
+				"rating": "5.0 out of 5 stars",
+				"title": "Extreme bang for your buck",
+				"userName": "Gerhard Janse van Vuuren",
+				"url": "/gp/customer-reviews/R1WRW8SX9O3RDR/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09BG96KFJ",
+				"imageUrlList": [],
+				"variationList": []
 			}
 		],
-		"specs": {
-			"brand": "Lenovo",
-			"os": "Windows",
-			"processor": "AMD Ryzen 5"
-		},
+		"productSpecification": [],
 		"mainImage": {
-			"imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81AbJXWCxXL._AC_SX679_.jpg",
+			"imageUrl": "https://m.media-amazon.com/images/I/71zZiQGzc5L._AC_SX679_.jpg",
 			"imageResolution": "679 x 509"
 		},
+		"variations": [],
+		"bookVariations": [],
 		"categories": [
 			"Electronics",
 			"Computers & Accessories",
 			"Computers & Tablets",
 			"Laptops",
-			"2 in 1 Laptops"
+			"Traditional Laptops"
 		],
-		"keywords": []
+		"currency": null,
+		"acKeywordLink": "lenovo flex 5",
+		"deliveryMessage": null,
+		"rentPrice": 0.0,
+		"usedPrice": 0.0,
+		"retailPriceRent": 0.0,
+		"coupon": null,
+		"series": null,
+		"importantInformation": [],
+		"prime": false
 	},
 	{
 		"title": "Asus L510MA-DS04 15.6\" Celeron N4020 4 GB RAM 128 GB eMMC",
@@ -806,6 +818,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": null,
+		"dateFirstAvailable": "February 24, 2021",
 		"features": [
 			"Celeron N4020 / 1.1 GHz",
 			"Win 10 Home in S mode",
@@ -813,7 +826,7 @@
 			"128 GB eMMC",
 			"15.6\" 1920 x 1080 (Full HD)"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71ehzrGUO7L._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71%2BqrXP--vL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/81Ygs%2BkFq0L._AC_SL1500_.jpg",
@@ -954,7 +967,7 @@
 				"title": "It worth the price. Empty slot for adding NVME M.2",
 				"userName": "Ivan",
 				"url": "/gp/customer-reviews/RFABYPHG8XZWF/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08XB41YVQ",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/81+H2E320CL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/81cylgILVzL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/91NgLhTCIFL._SY88.jpg",
@@ -972,7 +985,7 @@
 				"title": "Great for what it is",
 				"userName": "Reviewy McReviewerson",
 				"url": "/gp/customer-reviews/R2LVPWFS3DEJ88/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08XB41YVQ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": [
 					"Capacity: Intel N4020 | 64GB Storage",
 					"Style: 11.6\""
@@ -985,7 +998,7 @@
 				"title": "Be Sure To Run The Windows operating system Updater!!",
 				"userName": "B. Guidry",
 				"url": "/gp/customer-reviews/R35SUM9YYMUOQU/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08XB41YVQ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": [
 					"Capacity: Intel N4020 | 64GB Storage",
 					"Style: 11.6\""
@@ -998,7 +1011,7 @@
 				"title": "Super compact, awesome battery life, handles Win 10 and basic productivity apps no problem.",
 				"userName": "N8",
 				"url": "/gp/customer-reviews/RBUSH6YTRFYEA/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08XB41YVQ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": [
 					"Capacity: Intel N4020 | 64GB Storage",
 					"Style: 11.6\""
@@ -1043,13 +1056,14 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "Get Fast, Free Shipping with Amazon Prime",
 		"priceSaving": "You Save: $1.02 (5%)",
+		"dateFirstAvailable": "October 13, 2020",
 		"features": [
 			"The Apple 20W USB‑C Power Adapter offers fast, efficient charging at home, in the office, or on the go.",
 			"While the power adapter is compatible with any USB‑C enabled device, Apple recommends pairing it with the 11-inch iPad Pro and 12.9-inch iPad Pro (3rd generation) for optimal charging performance.",
 			"You can also pair it with iPhone 8 or later to take advantage of the fast-charging feature.",
 			"Charging cable sold separately."
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/41iWogJnZQL._AC_SL1000_.jpg"
 		],
 		"videoeUrlList": [
@@ -1093,7 +1107,7 @@
 				"title": "Apple is failing the consumer",
 				"userName": "Tman",
 				"url": "/gp/customer-reviews/R9B9QHZFHQ2S4/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08L5M9BTJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1103,7 +1117,7 @@
 				"title": "Typical Apple Rip Off",
 				"userName": "Jeremy",
 				"url": "/gp/customer-reviews/R3QSDODM9RXMTN/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08L5M9BTJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1113,7 +1127,7 @@
 				"title": "For MagSafe charger",
 				"userName": "Ziz",
 				"url": "/gp/customer-reviews/R3UPEBTGQSGB92/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08L5M9BTJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1123,7 +1137,7 @@
 				"title": "Good charger, buy Apple should of included this in the iPhone 12 phones.",
 				"userName": "The Garcia's",
 				"url": "/gp/customer-reviews/R27LC3R3228PA1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08L5M9BTJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			}
 		],
@@ -1162,6 +1176,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "Get Fast, Free Shipping with Amazon Prime",
 		"priceSaving": null,
+		"dateFirstAvailable": "April 23, 2019",
 		"features": [
 			"Quality Throughout:Built adventure-tier touch with superior durability and scratch resistance, PowerCore Slim 10000 is premium both inside and out.",
 			"Slim Size, Big Power:One of the slimmest and lightest 10,000mAh portable chargers on the market. Provides 2.25 charges for iPhone 12, 1.6 charges for Galaxy S20 and 1.2 charges for iPad mini 5.",
@@ -1169,7 +1184,7 @@
 			"Superior Safety:Anker’s comprehensive MultiProtect safety system includes overcharge protection, short circuit protection, temperature control, and more.",
 			"What You Get: PowerCore Slim 10000 portable charger, Micro USB cable (USB-C cable and Lightning cable not included), travel pouch, welcome guide, lifetime* $25,000 connected equipment warranty, and friendly customer service. *For the purpose of this connected equipment warranty, \"lifetime\" is defined as the lifetime of the product."
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/61BQ8NJJ%2BfL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71QDP-3-hYL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71gWA1vhaGL._AC_SL1500_.jpg",
@@ -1245,7 +1260,7 @@
 				"title": "Used junk in a flimsy plastic bag UPDATED: Anker support is good",
 				"userName": "Jeremy",
 				"url": "/gp/customer-reviews/R2XV2RLQ4KPYV2/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07QXV6N1B",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71jkYzR9zQL._SY88.jpg"
 				],
 				"variationList": []
@@ -1257,7 +1272,7 @@
 				"title": "Not happy",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/R1CZSNZRP4YJAW/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07QXV6N1B",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/81IELz3iYnL._SY88.jpg"
 				],
 				"variationList": []
@@ -1269,7 +1284,7 @@
 				"title": "No fuss. It works great and has enough charge to use consistently for days.",
 				"userName": "Joe Hull",
 				"url": "/gp/customer-reviews/R2VAJ0G1DU4SZN/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07QXV6N1B",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			}
 		],
@@ -1306,6 +1321,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "Get Fast, Free Shipping with Amazon Prime",
 		"priceSaving": null,
+		"dateFirstAvailable": "February 18, 2019",
 		"features": [
 			"【Selfie Stick tripod combo】- Not only want to take the selfie, but also Wanna take pictures/videos with excellent stability while liberating your hands? UBeesize has you covered with our all-in-one professional combo to take your filming to next level. Perfect for selfies, group photos, adventure travel, vlogging, YouTube videos, podcasts, Facebook Live, FaceTime, Instagram, live streaming.",
 			"【Extra long for more possibility】- Extendable from 17.5 inches to 51.0 inches (longer than average), combined with 180° neck rotation & 360° head rotation to find your best & beautiful shooting angle, you can now cram in more people or background to take the most satisfying selfies and capture awesome selfies or other photos from Formerly impossible angles",
@@ -1313,7 +1329,7 @@
 			"【Widely compatible】- Universal phone Holder fits most smartphones with or without a case, compatible with phones such as Galaxy S9/S9 Plus/Note 8/S8/S8 Plus/S7 Edge/J7, Google Pixel, Samsung, Huawei. With universal 1/4 inch screw, it fits for digital camera, DSLR, SLR, action camera, GoPro, webcam, camcorder.",
 			"【What you get】- 1X tripod Selfie stick; 1X universal phone Holder; 1X GoPro adapter; 1X Bluetooth remote shutter; UBeesize 1 year hassle free warranty and 24-hour friendly customer service."
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/61H5ZTSKIlL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71DO7ijRWUL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/710HeqxxkoL._AC_SL1500_.jpg",
@@ -1389,7 +1405,7 @@
 				"title": "This item is soooooooo worth it",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/R158U40T0C7SSU/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07NWC3L95",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/81BGVHh6AEL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/81Qew2voJrL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/81UIzD7XSaL._SY88.jpg",
@@ -1404,7 +1420,7 @@
 				"title": "Exactly as advertised, a lightweight selfie/tripod with BT remote.",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/R191B8H2SPOVJ7/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07NWC3L95",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71UEGYjkewL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71bLLcH7gQL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/812DBojf3RL._SY88.jpg",
@@ -1420,7 +1436,7 @@
 				"title": "This thing is a beast, I would call it a personal tripod",
 				"userName": "David D",
 				"url": "/gp/customer-reviews/R2C40T9NYTUXCV/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07NWC3L95",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Black"]
 			}
 		],
@@ -1456,13 +1472,14 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": null,
+		"dateFirstAvailable": "February 13, 2015",
 		"features": [
 			"Full HD 1080p video calling (upto 1920 x 1080 pixels) with the latest version of Skype for Windows; Webcam with 5 foot cable",
 			"720p HD video calling (upto 1280 x 720 pixels) with supported clients; Full HD video recording (upto 1920 x 1080 pixels). Max Resolution: 1080p/30fps 720p/30fps",
 			"Video compression, Built in dual stereo mics with automatic noise reduction; Automatic low light correction, Tripod ready universal clip fits laptops, LCD or monitors",
 			"Compatible with: Windows 7, Windows 8, Windows 10 or later; Works in USB Video Device Class (UVC) mode: Mac OS 10.10 or later (HD 720p on FaceTime for Mac or other supported video calling clients; Full HD 1080p video recording with QuickTime Player) Chrome OS,Android v 5.0 or above (with supported video calling clients),USB port,Internet connection"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71iNwni9TsL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/61VVrK2yQ5L._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/61Eco9nudPL._AC_SL1500_.jpg",
@@ -1566,7 +1583,7 @@
 				"title": "INCOMPATIBLE WITH WINDOWS 10 64-bit",
 				"userName": "Marc Phoenix Gibbs",
 				"url": "/gp/customer-reviews/R1LJTYLDF0482Y/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B006JH8T3S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1576,7 +1593,7 @@
 				"title": "$69.99 webcam being price gouged for $243+",
 				"userName": "Ben W 907496",
 				"url": "/gp/customer-reviews/R3KOEY4B49ICQ5/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B006JH8T3S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1586,7 +1603,7 @@
 				"title": "Piece of junk",
 				"userName": "Morely Myerson",
 				"url": "/gp/customer-reviews/R7WGW1FHNED8V/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B006JH8T3S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1596,7 +1613,7 @@
 				"title": "Quadruple the price due to price gouging",
 				"userName": "Marlies Fitch Ledbetter",
 				"url": "/gp/customer-reviews/R38XQM4P7YX06/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B006JH8T3S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			}
 		],
@@ -1632,6 +1649,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": null,
 		"priceSaving": null,
+		"dateFirstAvailable": "June 9, 2017",
 		"features": [
 			"49 inch super ultrawide 32:9 curved gaming monitor with dual 27 inch screen side by side",
 			"Quantum Dot (QLED) Technology, HDR support and factory calibration provides stunningly realistic and accurate color and contrast",
@@ -1639,7 +1657,7 @@
 			"ENHANCED ERGONOMICS with an adjustable stand and VESA compatibility.Brightness:350cd/m2 (Typ.), 250cd/m2 (Min.)",
 			"PRODUCT DIMENSIONS (with stand): 47.36 inches x 20.69 inches x 15.02 inches (WxHxD). Dimensions Without Stand-47.3 x 14.5 x 7.6 inches"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/81Zt42ioCgL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/81e-YkieQ6L._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71cWNfXecfL._AC_SL1500_.jpg",
@@ -1727,7 +1745,7 @@
 				"title": "Does what it sets out to do beautifully. Question is, does it meet your needs?",
 				"userName": "Matt Greer",
 				"url": "/gp/customer-reviews/R2FQX0IWRB0OVU/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B072C7TNC5",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71St-dehN+L._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/91mgv31v8AL._SY88.jpg"
 				],
@@ -1740,7 +1758,7 @@
 				"title": "Soo good and soo bad at the same time.",
 				"userName": "Frosty",
 				"url": "/gp/customer-reviews/R3L2S2NNIHF0EM/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B072C7TNC5",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71Kdukx6eBL._SY88.jpg"
 				],
 				"variationList": []
@@ -1752,7 +1770,7 @@
 				"title": "Pricey but worth it for me!",
 				"userName": "Toby Grantham",
 				"url": "/gp/customer-reviews/R2MS20BOKIEE3O/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B072C7TNC5",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71fr6t3pzUL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71uzyfQQgHL._SY88.jpg"
 				],
@@ -1785,6 +1803,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": "You Save: $23.00 (9%)",
+		"dateFirstAvailable": "April 16, 2020",
 		"features": [
 			"29” Ultra wide Full HD (2560 x 1080) IPS Display",
 			"3-Side Virtually Borderless Design",
@@ -1793,7 +1812,7 @@
 			"Lock/unlock, grant access to others and see who comes and goes from anywhere using your August app - No additional hub needed. Face Bore Dims: 2 1/8 inch",
 			"Ideal Size for Home Offices"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/91WlgTJfawL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/81-xYDwQaqL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71MXc8XSzcL._AC_SL1500_.jpg",
@@ -1887,7 +1906,7 @@
 				"title": "Bigger question is whether you need it?",
 				"userName": "Adpa",
 				"url": "/gp/customer-reviews/R2SX4BNH7S9OJB/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0876DBCBX",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -1897,7 +1916,7 @@
 				"title": "Great monitor for Multitasking but not for Gaming!",
 				"userName": "Suraiya Emdad",
 				"url": "/gp/customer-reviews/R169X3YSHOHSUJ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0876DBCBX",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71+WLqeP7sL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71aOLUpWcqL._SY88.jpg"
 				],
@@ -1910,7 +1929,7 @@
 				"title": "Monitor sits at horrible downward facing angle",
 				"userName": "KH24",
 				"url": "/gp/customer-reviews/R1VTI9YN7G6JGN/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0876DBCBX",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/61f3exJpaDL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71pAEO9YoXL._SY88.jpg"
 				],
@@ -1943,6 +1962,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": "You Save: $52.00 (21%)",
+		"dateFirstAvailable": "October 27, 2019",
 		"features": [
 			"Active noise cancellation for immersive sound",
 			"Transparency mode for hearing and connecting with the world around you",
@@ -1953,7 +1973,7 @@
 			"Quick access to Siri by saying “Hey Siri”",
 			"The Wireless Charging Case delivers more than 24 hours of battery life"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71zny7BTRlL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71%2BoSLK5SIL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71bhWgQK-cL._AC_SL1500_.jpg",
@@ -2005,7 +2025,7 @@
 				"title": "List of Features/Changes compared to Airpods (v2)",
 				"userName": "Vincent",
 				"url": "/gp/customer-reviews/R3MXI8ZV1P0T0R/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07ZPC9QD4",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2015,7 +2035,7 @@
 				"title": "Saved my marriage",
 				"userName": "Jorge Moran",
 				"url": "/gp/customer-reviews/RR4PUQZ6Z0R06/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07ZPC9QD4",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2025,7 +2045,7 @@
 				"title": "Lit",
 				"userName": "Jon",
 				"url": "/gp/customer-reviews/RZDWQBT1911C7/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07ZPC9QD4",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			}
 		],
@@ -2055,12 +2075,13 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": "You Save: $9.01 (9%)",
+		"dateFirstAvailable": "November 1, 2018",
 		"features": [
 			"Magic Keyboard combines a sleek design with a built-in rechargeable battery and enhanced key features.",
 			"With a stable scissor mechanism beneath each key, as well as optimized key travel and a low profile, Magic Keyboard provides a remarkably comfortable and precise typing experience.",
 			"It pairs automatically with your Mac, so you can get to work right away."
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/41zF0OXgNzL._AC_SL1024_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/31cNkv3aosL._AC_SL1024_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/51tewAA8QEL._AC_SL1024_.jpg"
@@ -2112,7 +2133,7 @@
 				"title": "5 Stars for the keyboard; 1 star for Amazon",
 				"userName": "S. L. Patterson",
 				"url": "/gp/customer-reviews/RIZFDMCAWABC9/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B016QO64FI",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/31bq2o6rA-L._SY88.jpg"
 				],
 				"variationList": []
@@ -2124,7 +2145,7 @@
 				"title": "Great product, but beware of getting someone's return",
 				"userName": "RWS Apogee",
 				"url": "/gp/customer-reviews/R1D305E0EC8HDO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B016QO64FI",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2134,7 +2155,7 @@
 				"title": "Paid for new, but it was used",
 				"userName": "M",
 				"url": "/gp/customer-reviews/R6G1LSDFU1GZT/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B016QO64FI",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2144,7 +2165,7 @@
 				"title": "Perfect Keyboard for iPad users who don't want the Smart Keyboard cover",
 				"userName": "Kevin A Lawrence",
 				"url": "/gp/customer-reviews/R2OGZXOKHHSAWD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B016QO64FI",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/61ssfzY31AL._SY88.jpg"
 				],
 				"variationList": []
@@ -2156,7 +2177,7 @@
 				"title": "Software Developer's Review",
 				"userName": "Tsk Tsk Tsk",
 				"url": "/gp/customer-reviews/R28H8SG1XN8C4G/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B016QO64FI",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/711yVWET5DL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/7198Wv0zFvL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71QwhOOAbWL._SY88.jpg"
@@ -2170,7 +2191,7 @@
 				"title": "I paid for a NEW keyboard and got a USED keyboard",
 				"userName": "K. Eoghan Schwope",
 				"url": "/gp/customer-reviews/R1SI2SFO5GG01T/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B016QO64FI",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/31owgF2kBhL._SY88.jpg"
 				],
 				"variationList": []
@@ -2205,13 +2226,14 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": null,
+		"dateFirstAvailable": "March 18, 2020",
 		"features": [
 			"The Magic Keyboard is the perfect companion for iPad Pro and iPad Air (4th generation).",
 			"It features the best typing experience ever on iPad, a trackpad that opens up new ways to work with iPadOS, a USB-C port for charging, backlit keys, and front and back protection.",
 			"With a new floating cantilever design, iPad Pro attaches magnetically and allows you to smoothly adjust to the perfect viewing angle for you.",
 			"Compatibility: iPad Pro 11-inch (1st, 2nd, and 3rd generation), iPad Air (4th generation)"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71KyZNzpq4S._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71BJfpPbzyS._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/610MAdCegAS._AC_SL1500_.jpg",
@@ -2259,7 +2281,7 @@
 				"title": "Magic does not mean it’s easy!",
 				"userName": "JS",
 				"url": "/gp/customer-reviews/R3CNLCJ4DAYHW0/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08634ZVKJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2269,7 +2291,7 @@
 				"title": "Expensive, but a worthy accessory to the iPad!",
 				"userName": "Random",
 				"url": "/gp/customer-reviews/RNP616FP92F86/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08634ZVKJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2279,7 +2301,7 @@
 				"title": "Great product",
 				"userName": "2ne1BlackJack",
 				"url": "/gp/customer-reviews/R19FAM24P0OBWI/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08634ZVKJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2289,7 +2311,7 @@
 				"title": "Nice",
 				"userName": "Khalid Sultan Alsulaiti",
 				"url": "/gp/customer-reviews/R1DWQUMXV5TDBR/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08634ZVKJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2299,7 +2321,7 @@
 				"title": "Happy",
 				"userName": "Rashad",
 				"url": "/gp/customer-reviews/R3A0OJPKSYXA6J/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08634ZVKJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2309,7 +2331,7 @@
 				"title": "Like",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/R3N0VQ3FUSDOL4/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08634ZVKJ",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			}
 		],
@@ -2339,6 +2361,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": null,
+		"dateFirstAvailable": "January 17, 2019",
 		"features": [
 			"Next Gen speed: experience the world’s fastest 0. 02 sec AF with real-time AF and object tracking",
 			"Enhanced subject capture: wide 425 Phase/ 425 contrast detection points over 84% of the sensor",
@@ -2347,7 +2370,7 @@
 			"Tiltable LCD screen: customizable for vlogging, still photography or recording a professional film",
 			"In the box: rechargeable battery (NP-FW50) AC adaptor (ac-uud12), shoulder strap, body cap, accessory shoe cap, eyepiece cup, micro USB cable.Metering Range: -2 to 20 EV"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/41-P7hZaf6L._AC_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71s-6jS61gL._AC_SL1178_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/71pwassgTGL._AC_SL1500_.jpg",
@@ -2420,7 +2443,7 @@
 				"title": "A Great Upgrade from the A6000",
 				"userName": "AmazonReviewer",
 				"url": "/gp/customer-reviews/R38Q5EP4ZFR5J/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07MTWVN3M",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/61+nYj2CgJL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/617QR1+IZnL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71F2SFs8StL._SY88.jpg",
@@ -2440,7 +2463,7 @@
 				"title": "My camera takes green pictures",
 				"userName": "Estefan",
 				"url": "/gp/customer-reviews/R3OP4HX41EMNAH/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07MTWVN3M",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/61Qlt522-UL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71FCYnEYpNL._SY88.jpg"
 				],
@@ -2453,7 +2476,7 @@
 				"title": "A6400 good for moving subjects (not so fast!) and decent low light performance",
 				"userName": "Carman",
 				"url": "/gp/customer-reviews/R2DC91HVXYPYEF/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07MTWVN3M",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/714pi0lvvEL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71Xwtw60ZFL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71jgqPfcNRL._SY88.jpg",
@@ -2468,7 +2491,7 @@
 				"title": "Great camera for stills AND video.",
 				"userName": "os",
 				"url": "/gp/customer-reviews/R267SUABVKRSL5/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07MTWVN3M",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Camera Only", "Configuration: Base"]
 			},
 			{
@@ -2478,7 +2501,7 @@
 				"title": "Best Camera on the Market including all brands for the price and what you get.",
 				"userName": "Andrew",
 				"url": "/gp/customer-reviews/ROO1VUN0YLBHQ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B07MTWVN3M",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71EYE6se0LL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71wUmCHorCL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71xjR8F6G9L._SY88.jpg"
@@ -2519,6 +2542,7 @@
 		"shippingPrice": 0,
 		"priceShippingInformation": "",
 		"priceSaving": "You Save: $50.00 (6%)",
+		"dateFirstAvailable": "May 26, 2020",
 		"features": [
 			"Fast Hybrid AF, Real Time Eye-AF3 and Real-time AF tracking",
 			"Quickly switch between two modes of defocused background bokeh",
@@ -2526,7 +2550,7 @@
 			"Face priority AE keeps faces bright in backlit or dim condition",
 			"What's in the box: Rechargeable battery pack (NP-BX1), Micro USB cable, wind screen, wind screen adaptor, strap"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://images-na.ssl-images-amazon.com/images/I/71sa8QS0UcL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/61Dddk9BImL._AC_SL1500_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/I/61Sc0H7aBQL._AC_SL1500_.jpg",
@@ -2594,7 +2618,7 @@
 				"title": "A comparison to DSLR and smart phones",
 				"userName": "Mindy",
 				"url": "/gp/customer-reviews/RHUL4GPT4JL0I/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08965JV8D",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Camera only", "Color: Black"]
 			},
 			{
@@ -2604,7 +2628,7 @@
 				"title": "The camera comes without a charger",
 				"userName": "Hakim",
 				"url": "/gp/customer-reviews/RP8NC1UU66IPS/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08965JV8D",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Camera only", "Color: Black"]
 			},
 			{
@@ -2614,7 +2638,7 @@
 				"title": "Great camera with a fatally flawed battery cover design.",
 				"userName": "MustangsbyMatt",
 				"url": "/gp/customer-reviews/R3H1GJX0W2B8QQ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08965JV8D",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71mjgpeqnKL._SY88.jpg"
 				],
 				"variationList": ["Style: Camera only", "Color: Black"]
@@ -2626,7 +2650,7 @@
 				"title": "Fantastic option to create family memories, vlogging is ok in most situations",
 				"userName": "jypfoto",
 				"url": "/gp/customer-reviews/RX20IIQ82JUPB/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08965JV8D",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Camera only", "Color: Black"]
 			},
 			{
@@ -2636,7 +2660,7 @@
 				"title": "No Continuous Recording. Internal mic useless. Great picture quality!",
 				"userName": "trev",
 				"url": "/gp/customer-reviews/REF0RU1XXS4H2/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08965JV8D",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Style: Camera only", "Color: Black"]
 			}
 		],
@@ -2665,6 +2689,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Thursday, May 26 Or fastest delivery Tuesday, May 24. Order within 5 hrs 31 mins",
 		"priceSaving": "-18%",
+		"dateFirstAvailable": "December 9, 2021",
 		"features": [
 			"Powerful Productivity: AMD Ryzen 3 3350U delivers desktop-class performance and amazing battery life in a slim notebook. With Precision Boost, get up to 3.5GHz for your high-demand applications",
 			"Maximized Visuals: See even more on the stunning 15.6\" Full HD display with 82.58% screen-to-body, 16:9 aspect ratio and narrow bezels",
@@ -2674,7 +2699,7 @@
 			"With Alexa Show Mode, you can use your PC as a full-screen interactive experience that features rich visuals and lets you talk to Alexa from across the room.",
 			"Secure operating system: Windows 11 Home in S mode comes with advanced security features built right in, like protections against phishing and malicious software so you don't have to think twice when navigating to a new webpage or downloading an app"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/7189iXimfWL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/716oDOEARJL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/71J7ScSjhlL._AC_SL1500_.jpg",
@@ -2849,7 +2874,7 @@
 				"title": "a real opinion",
 				"userName": "Sadie Parker",
 				"url": "/gp/customer-reviews/RVNLEXYL4MKC4/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09HVC79PC",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["CPU: AMD Ryzen 3 3000-Series", "Style: Laptop Only"]
 			},
 			{
@@ -2859,7 +2884,7 @@
 				"title": "This is NOT a Budget Laptop!",
 				"userName": "David Fisher David Fisher",
 				"url": "/gp/customer-reviews/R3MPTX8KAGSWG1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09HVC79PC",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71XURpeSD+L._SY88.jpg"
 				],
 				"variationList": ["CPU: AMD Ryzen 3 3000-Series", "Style: Laptop Only"]
@@ -2871,7 +2896,7 @@
 				"title": "Good choice for basic computing needs",
 				"userName": "Jason Jason",
 				"url": "/gp/customer-reviews/R1L697DQUUOGP1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09HVC79PC",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/81GnfcoiKHL._SY88.jpg"
 				],
 				"variationList": ["CPU: AMD Ryzen 3 3000-Series", "Style: Laptop Only"]
@@ -2913,6 +2938,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": null,
 		"priceSaving": null,
+		"dateFirstAvailable": "October 18, 2021",
 		"features": [
 			"Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and machine learning performance",
 			"Up to 10-core CPU delivers up to 2x faster performance to fly through pro workflows quicker than ever",
@@ -2922,7 +2948,7 @@
 			"Up to 64GB of unified memory so everything you do is fast and fluid",
 			"Up to 8TB of superfast SSD storage launches apps and opens files in an instant"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/716QjdQOR+L._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/61JqllsE+DL._AC_SL1500_.jpg",
@@ -2947,7 +2973,7 @@
 				"title": "Great for work and some play",
 				"userName": "Sanpete",
 				"url": "/gp/customer-reviews/R3IPCAP7R1GXD5/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2957,7 +2983,7 @@
 				"title": "Disappointed!!",
 				"userName": "Amazon Customer",
 				"url": "/gp/customer-reviews/R2K331D9XZPMKQ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2967,7 +2993,7 @@
 				"title": "This MacBook Pro Cured my depression!",
 				"userName": "Asha R. Asha R.",
 				"url": "/gp/customer-reviews/RXS6SHXZL3MKZ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [
+				"imageUrlList": [
 					"https://m.media-amazon.com/images/I/71+wEARd+jL._SY88.jpg",
 					"https://m.media-amazon.com/images/I/71OaMhN+2CL._SY88.jpg"
 				],
@@ -2980,7 +3006,7 @@
 				"title": "Dead on arrival!",
 				"userName": "AA",
 				"url": "/gp/customer-reviews/R16QQN2A26OT1S/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -2990,7 +3016,7 @@
 				"title": "A laptop you can finally use on your lap",
 				"userName": "Anon Anon",
 				"url": "/gp/customer-reviews/R2M49FPSGVXBNT/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [
+				"imageUrlList": [
 					"https://m.media-amazon.com/images/I/51AFnXGQPUL._SY88.jpg",
 					"https://m.media-amazon.com/images/I/51kQGO1VQTL._SY88.jpg"
 				],
@@ -3003,7 +3029,7 @@
 				"title": "Insanely fast.",
 				"userName": "Joseph Thomas",
 				"url": "/gp/customer-reviews/RQ8IN8RQ04WPE/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			},
 			{
@@ -3013,7 +3039,7 @@
 				"title": "Arrived DOA!",
 				"userName": "FH",
 				"url": "/gp/customer-reviews/RLUE01ZH9Y32S/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09JQMW44C",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": []
 			}
 		],
@@ -3058,6 +3084,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Thursday, May 26 Or fastest delivery Tuesday, May 24. Order within 7 hrs 16 mins",
 		"priceSaving": "$249.01 (18%)",
+		"dateFirstAvailable": "April 1, 2021",
 		"features": [
 			"Visual Performance: The 15.6” 144hz display delivers true-to-life images with a high refresh rate so you can see every frame of the game.",
 			"Redefined Power: The 11th Gen. Intel Core i7 processor, delivers high performance with cores, take on any games and applications with ease.",
@@ -3066,7 +3093,7 @@
 			"Cool and Powerful: MSI’s exclusive Cooler Boost Technology ensures optimal thermal dissipation. Featuring state of the art fans and heat pipes, get the airflow you need for gaming.",
 			"Versatile Connections: The Stealth 15M features a wide range of I/O ports, Thunderbolt 4 supporting power delivery and up to 40Gbps of data transfer and USB 4.0."
 		],
-		"images": [
+		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/71p3Ygm14wL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/61APhz4DwrL._AC_SL1000_.jpg",
 			"https://m.media-amazon.com/images/I/61+Ah1-Zb7L._AC_SL1000_.jpg",
@@ -3222,7 +3249,7 @@
 				"title": "GOOD LAPTOP, BAD SOFTWARE MSI M15 Stealth *SCREEN FLICKERING*",
 				"userName": "Clayton Wenzel",
 				"url": "/gp/customer-reviews/R2SRL2FSYP4088/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B091GGZT1S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Carbon Gray"]
 			},
 			{
@@ -3232,7 +3259,7 @@
 				"title": "Gorgeous screen",
 				"userName": "Chris Chris",
 				"url": "/gp/customer-reviews/R3SJEJL0PG08MY/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B091GGZT1S",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/81iLXvmfFjL._SY88.jpg"
 				],
 				"variationList": ["Color: Carbon Gray"]
@@ -3244,7 +3271,7 @@
 				"title": "I Felt I Purchased a Used Laptop!",
 				"userName": "Anthony",
 				"url": "/gp/customer-reviews/R3IW2Q2U4F4JE0/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B091GGZT1S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Carbon Gray"]
 			},
 			{
@@ -3254,7 +3281,7 @@
 				"title": "Light, Fast, Sturdy built and the best bang for the buck.",
 				"userName": "Yebin Kim",
 				"url": "/gp/customer-reviews/R4TOSE4TE2LE6/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B091GGZT1S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Carbon Gray"]
 			},
 			{
@@ -3264,7 +3291,7 @@
 				"title": "Quality gaming in a lightweight chassis -- headphones required",
 				"userName": "Phil Rezanow",
 				"url": "/gp/customer-reviews/R6L0MQ9TIL2GA/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B091GGZT1S",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Carbon Gray"]
 			}
 		],
@@ -3290,9 +3317,7 @@
 		"retailPriceRent": 0.0,
 		"coupon": null,
 		"series": null,
-		"prime": false,
-		"addon": false,
-		"pantry": false
+		"prime": false
 	},
 	{
 		"title": "Apple MacBook Air 2017 with 1.8GHz Intel Core i5 (13-inch, 8GB RAM, 128GB SSD Storage) (Renewed)",
@@ -3312,10 +3337,11 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery May 24 - 26. Details",
 		"priceSaving": null,
+		"dateFirstAvailable": "December 18, 2017",
 		"features": [
 			"Renewed products look and work like new. These pre-owned products have been inspected and tested by Amazon-qualified suppliers, which typically perform a full diagnostic test, replacement of any defective parts, and a thorough cleaning process. Packaging and accessories may be generic. All products on Amazon Renewed come with a minimum 90-day supplier-backed warranty."
 		],
-		"images": [
+		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/91wYB53Y4aL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/71GoxuJhXbL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/81+9CCNkhNL._AC_SL1500_.jpg",
@@ -3470,7 +3496,7 @@
 				"title": "Very disappointed with Mac purchase",
 				"userName": "Sue Sue",
 				"url": "/gp/customer-reviews/RUOFRF9V0EXNN/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B078H42W49",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/51AxHXGZLSL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/51SoXptwbaL._SY88.jpg"
 				],
@@ -3483,7 +3509,7 @@
 				"title": "Take the chance on this!",
 				"userName": "Sydney Sydney",
 				"url": "/gp/customer-reviews/R18UNJ7K1440OJ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B078H42W49",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/71QUsxRvH5L._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71ZjlA4dVBL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/71lX7J0JqCL._SY88.jpg",
@@ -3501,7 +3527,7 @@
 				"title": "BUYER BEWARE. PRODUCT IS GARBAGE!",
 				"userName": "Marc B.",
 				"url": "/gp/customer-reviews/R2ZNT72JD4768/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B078H42W49",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Capacity: 2015 Model 256GB", "Color: Silver"]
 			},
 			{
@@ -3511,7 +3537,7 @@
 				"title": "You won’t think it is refurbished, looks like you brought it home from the Apple store. Ease of setup is amazing.",
 				"userName": "D. Bowden",
 				"url": "/gp/customer-reviews/R1VR9Q3UCP0PX1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B078H42W49",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Capacity: 8GB RAM / 128GB SSD", "Color: Silver"]
 			},
 			{
@@ -3521,7 +3547,7 @@
 				"title": "Get a new one.",
 				"userName": "Aju.J.KAILATH Aju.J.KAILATH",
 				"url": "/gp/customer-reviews/R932RKAEHJIH7/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B078H42W49",
-				"images": [
+				"imageUrlList": [
 					"https://images-na.ssl-images-amazon.com/images/I/61o6SIJmZwL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/61vKC6cF2ZL._SY88.jpg",
 					"https://images-na.ssl-images-amazon.com/images/I/711wfht5dhL._SY88.jpg"
@@ -3569,6 +3595,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Friday, May 27 Or fastest delivery Monday, May 23. Order within 8 hrs 23 mins",
 		"priceSaving": null,
+		"dateFirstAvailable": "August 6, 2020",
 		"features": [
 			"Industry-leading noise canceling with Dual Noise Sensor technology",
 			"Next-level music with Edge-AI, co-developed with Sony Music Studios Tokyo",
@@ -3578,7 +3605,7 @@
 			"Superior call quality with precise voice pickup",
 			"Wearing detection pauses playback when headphones are removed"
 		],
-		"images": [
+		"imageUrlList": [
 			"https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/81hmYqQytUL._AC_SL1500_.jpg",
 			"https://m.media-amazon.com/images/I/71m+x6xx8PL._AC_SL1500_.jpg",
@@ -3653,7 +3680,7 @@
 				"title": "Great sound, but several issues make it a no-go for me. Sticking with my Bose QC 35 Series I",
 				"userName": "Dennis",
 				"url": "/gp/customer-reviews/R3JI08GCH5LUUQ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0863TXGM3",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Black"]
 			},
 			{
@@ -3663,7 +3690,7 @@
 				"title": "What have I done to deserve this?",
 				"userName": "H. Akan",
 				"url": "/gp/customer-reviews/R3KD3OA3UYL3OI/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0863TXGM3",
-				"images": [],
+				"imageUrlList": [],
 				"variationList": ["Color: Black"]
 			}
 		],
@@ -3675,7 +3702,7 @@
 		"categories": ["Electronics", "Headphones", "Over-Ear Headphones"]
 	},
 	{
-		"title": "ASUS TUF Gaming Laptop, 15.6” 120Hz Full HD IPS-Type, AMD Ryzen 7 3750H, GeForce GTX 1650, 8GB DDR4, 512GB PCIe SSD, Gigabit Wi-Fi 5, Windows 10 Home, FX505DT-EB73",
+		"title": "ASUS TUF Gaming Laptop, 15.6” 120Hz Full HD IPS-Type, AMD Ryzen 7 3750H, GeForce GTX 1650, 8GB DDR4, 512GB PCIe SSD",
 		"manufacturer": "Visit the ASUS Store",
 		"countReview": 199,
 		"answeredQuestions": 74,
@@ -3692,6 +3719,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery May 26 - 31. Details Or fastest delivery Wednesday, May 25. Details",
 		"priceSaving": null,
+		"dateFirstAvailable": "April 23, 2019",
 		"features": [
 			"NVIDIA GeForce GTX 1650 4GB Graphics",
 			"Quad-core AMD Ryzen 7 3750H Processor",
@@ -3921,6 +3949,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery June 22 - 24. Details Or fastest delivery Tuesday, June 21. Order within 13 hrs 3 mins. Details",
 		"priceSaving": null,
+		"dateFirstAvailable": "October 28, 2019",
 		"features": [
 			"This phone is unlocked and compatible with any carrier of choice on GSM and CDMA networks (e.g. AT&T, T-Mobile, Sprint, Verizon, US Cellular, Cricket, Metro, Tracfone, Mint Mobile, etc.).",
 			"Please check with your carrier to verify compatibility.",
@@ -4093,6 +4122,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Wednesday, June 22. Order within 13 hrs 56 mins. Details",
 		"priceSaving": "$20.04 (6%)",
+		"dateFirstAvailable": "May 14, 2020",
 		"features": [
 			"This phone is unlocked and compatible with any carrier of choice on GSM and CDMA networks (e.g. AT&T, T-Mobile, Sprint, Verizon, US Cellular, Cricket, Metro, Tracfone, Mint Mobile, etc.).",
 			"Tested for battery health and guaranteed to have a minimum battery capacity of 80%.",
@@ -4246,6 +4276,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Thursday, June 23 Or fastest delivery Tomorrow, June 17. Order within 8 hrs 45 mins",
 		"priceSaving": "-11%",
+		"dateFirstAvailable": "January 11, 2022",
 		"features": [
 			"SMOOTH SCROLLING: The 120Hz display delivers a super smooth scroll, with optimized refresh rate, and a fast touch response gives seamless visuals in both work and play",
 			"REAL DISPLAY VISION: The high quality display with Dynamic AMOLED 2X delivers vibrant color and brightness, even in bright sunlight",
@@ -4437,6 +4468,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Thursday, June 23 Or fastest delivery Monday, June 20. Order within 23 hrs 47 mins",
 		"priceSaving": "$300.00 (23%)",
+		"dateFirstAvailable": "February 9, 2022",
 		"features": [
 			"8K SUPER STEADY VIDEO: Shoot videos that rival how epic your life is with stunning 8K recording, the highest recording resolution available on a smartphone; Video captured is effortlessly smooth, thanks to Auto Focus Video Stabilization on Galaxy S22 Ultra",
 			"NIGHTOGRAPHY plus PORTAIT MODE: Capture the night with crystal clear, bright pics and videos, no matter the lighting with Night Mode; Portrait Mode auto-detects and adjusts to what you want front and center, making all your photos worthy of a frame",
@@ -4566,6 +4598,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Wednesday, June 22. Order within 11 hrs 44 mins. Details",
 		"priceSaving": null,
+		"dateFirstAvailable": "November 11, 2021",
 		"features": [
 			"6.1\" Super Retina XDR display. 5G Superfast downloads, high?quality streaming",
 			"Cinematic mode in 1080p at 30 fps. Dolby Vision HDR video recording up to 4K at 60 fps. 2X Optical zoom range",
@@ -4709,6 +4742,7 @@
 		"shippingPrice": 0.0,
 		"priceShippingInformation": "FREE delivery Thursday, June 23 Or fastest delivery Saturday, June 18. Order within 8 hrs 58 mins",
 		"priceSaving": "-13%",
+		"dateFirstAvailable": "September 22, 2021",
 		"features": [
 			"The most portable Surface touchscreen 2-in-1. Perfect for your everyday tasks, homework, and play.",
 			"Go-anywhere tablet with laptop productivity for the whole family. Starting at just 1.2 pounds,(4) with high-res 10.5” 220ppi touchscreen, adjustable Kickstand, Surface Pen*, and Type Cover*.",
