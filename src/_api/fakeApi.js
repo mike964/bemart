@@ -83,7 +83,9 @@ export default function fakeApi(endpoint, payload) {
 				// data = makeProductsResponse(filteredProducts, payload.pageNumber)
 			}
 			if (payload.sortBy) {
+				// pice_asc  - key_order
 				const { key, order } = payload.sortBy
+
 				/*
 				 * https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/
 				 */
