@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bemart/precache-manifest.32884e12f33e5c539628168130fe8a39.js"
+  "/bemart/precache-manifest.74be6630214ba6a3bb01c7866717b109.js"
 );
 
 self.addEventListener('message', (event) => {
