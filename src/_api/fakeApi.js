@@ -1,6 +1,6 @@
 import users from './users.json'
 import products from './products'
-import { compareValues } from '../utils'
+import { compareProductDates_desc, compareValues } from '../utils'
 
 // Filter products by category
 // '/products?category=laptops'
@@ -85,11 +85,14 @@ export default function fakeApi(endpoint, payload) {
 			if (payload.sortBy) {
 				// pice_asc  - key_order
 				const { key, order } = payload.sortBy
-
 				/*
 				 * https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/
 				 */
-				resultsArray.sort(compareValues(key, order))
+				if (key === 'newest') {
+					resultsArray.sort(compareProductDates_desc)
+				} else {
+					resultsArray.sort(compareValues(key, order))
+				}
 			}
 			data = makeProductsResponse(resultsArray, payload.pageNumber)
 			/*

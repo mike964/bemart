@@ -17,9 +17,9 @@ const SortByDropdown = () => {
 			text: 'Price: Hight to low',
 			key: 'key',
 		},
-		{ value: 'rating_asc', text: 'Average Review', key: 'key', order: 'asc' },
+		{ value: 'rating_desc', text: 'Average Review', key: 'key', order: 'asc' },
 		{
-			value: 'dateFirstAvailable_asc',
+			value: 'newest_asc',
 			text: 'Newest Arival',
 			key: 'key',
 		},
