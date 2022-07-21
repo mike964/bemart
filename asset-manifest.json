@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bemart/static/css/main.2b464d15.chunk.css",
-    "main.js": "/bemart/static/js/main.bd3d8b4d.chunk.js",
-    "main.js.map": "/bemart/static/js/main.bd3d8b4d.chunk.js.map",
+    "main.js": "/bemart/static/js/main.71e734ea.chunk.js",
+    "main.js.map": "/bemart/static/js/main.71e734ea.chunk.js.map",
     "runtime-main.js": "/bemart/static/js/runtime-main.ba3d1ab4.js",
     "runtime-main.js.map": "/bemart/static/js/runtime-main.ba3d1ab4.js.map",
     "static/css/2.03ca2d78.chunk.css": "/bemart/static/css/2.03ca2d78.chunk.css",
     "static/js/2.7e05baaa.chunk.js": "/bemart/static/js/2.7e05baaa.chunk.js",
     "static/js/2.7e05baaa.chunk.js.map": "/bemart/static/js/2.7e05baaa.chunk.js.map",
     "index.html": "/bemart/index.html",
-    "precache-manifest.74be6630214ba6a3bb01c7866717b109.js": "/bemart/precache-manifest.74be6630214ba6a3bb01c7866717b109.js",
+    "precache-manifest.f086367668b41a7e7c841e4d631977dc.js": "/bemart/precache-manifest.f086367668b41a7e7c841e4d631977dc.js",
     "service-worker.js": "/bemart/service-worker.js",
     "static/css/2.03ca2d78.chunk.css.map": "/bemart/static/css/2.03ca2d78.chunk.css.map",
     "static/css/main.2b464d15.chunk.css.map": "/bemart/static/css/main.2b464d15.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.03ca2d78.chunk.css",
     "static/js/2.7e05baaa.chunk.js",
     "static/css/main.2b464d15.chunk.css",
-    "static/js/main.bd3d8b4d.chunk.js"
+    "static/js/main.71e734ea.chunk.js"
   ]
 }
