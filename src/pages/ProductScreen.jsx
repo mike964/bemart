@@ -12,6 +12,7 @@ import {
 } from '../store/actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../store/constants/productConstants'
 import { addToCart, itemAdded } from '../store/cart/cartSlice'
+import ProductDetailsTable from '../components/product/ProductDetailsTable'
 
 // * Product Page
 const ProductScreen = ({ history, match }) => {
@@ -44,7 +45,7 @@ const ProductScreen = ({ history, match }) => {
 		}
 		if (!product._id || product._id !== match.params.id) {
 			dispatch(listProductDetails(match.params.id))
-			dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
+			// dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
 		}
 	}, [dispatch, match, successProductReview])
 
@@ -67,96 +68,127 @@ const ProductScreen = ({ history, match }) => {
 	}
 
 	return (
-		<div className='container'>
-			<Link className='btn btn-light my-3' to='/'>
-				Go Back
-			</Link>
-			{loading ? (
-				<Loader />
-			) : error ? (
-				<Message variant='danger'>{error}</Message>
-			) : (
-				<>
-					<Meta title={product.name} />
-					<Row>
-						<Col md={4}>
-							<Image src={product.image} alt={product.name} fluid />
-						</Col>
-						<Col md={5}>
-							<ListGroup variant='flush'>
-								<ListGroup.Item>
-									<h3>{product.name}</h3>
-								</ListGroup.Item>
-								<ListGroup.Item>
-									<Rating
-										value={product.rating}
-										text={`${product.numReviews} reviews`}
-									/>
-								</ListGroup.Item>
-								<ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-								<ListGroup.Item>
-									Description: {product.description}
-								</ListGroup.Item>
-							</ListGroup>
-						</Col>
-						<Col md={3}>
-							<Card>
+		<div className='page'>
+			<div className='container'>
+				<Link className='btn btn-light my-3' to='/'>
+					Go Back
+				</Link>
+				{loading ? (
+					<Loader />
+				) : error ? (
+					<Message variant='danger'>{error}</Message>
+				) : (
+					<>
+						<Meta title={product.name} />
+						<Row className='mb-5'>
+							<Col md={3}>
+								<Image src={product.image} alt={product.name} fluid />
+							</Col>
+							<Col>
 								<ListGroup variant='flush'>
 									<ListGroup.Item>
-										<Row>
-											<Col>Price:</Col>
-											<Col>
-												<strong>${product.price}</strong>
-											</Col>
-										</Row>
+										<h4>{product.name}</h4>
 									</ListGroup.Item>
-
 									<ListGroup.Item>
-										<Row>
-											<Col>Status:</Col>
-											<Col>
-												{product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
-											</Col>
-										</Row>
+										<Rating
+											rating={product.rating}
+											text={`${product.numReviews} reviews`}
+										/>
 									</ListGroup.Item>
 
-									{product.countInStock > 0 && (
-										<ListGroup.Item>
-											<Row>
-												<Col>Qty</Col>
-												<Col>
-													<Form.Control
-														as='select'
-														value={qty}
-														onChange={e => setQty(e.target.value)}>
-														{[...Array(product.countInStock).keys()].map(x => (
-															// [...Array(product.countInStock).keys()]
-															// return : [0,1,2,3..]
-															<option key={x + 1} value={x + 1}>
-																{x + 1}
-															</option>
-														))}
-													</Form.Control>
-												</Col>
-											</Row>
-										</ListGroup.Item>
-									)}
-
-									<ListGroup.Item>
-										<Button
-											onClick={addToCartHandler}
-											className='btn-block'
-											type='button'
-											disabled={product.countInStock === 0}>
-											Add To Cart
-										</Button>
-									</ListGroup.Item>
+									<div
+										// className='collapse'
+										id='collapseExample'
+										style={{ maxHeight: '236px', overflow: 'hidden' }}>
+										{product.description && (
+											<ListGroup.Item>
+												Description: {product.description}
+											</ListGroup.Item>
+										)}
+									</div>
 								</ListGroup>
-							</Card>
-						</Col>
-					</Row>
-					<Row>
-						{/* <Col md={6}>
+							</Col>
+							<Col md={3}>
+								<Card>
+									<ListGroup>
+										<div className='x' style={{ minHeight: '180px' }}>
+											<ListGroup.Item>
+												<Row>
+													<Col>Price:</Col>
+													<Col>
+														<strong>${product.price}</strong>
+													</Col>
+												</Row>
+											</ListGroup.Item>
+
+											<ListGroup.Item>
+												<Row>
+													<Col>Status:</Col>
+													<Col>
+														{product.countInStock > 0
+															? 'In Stock'
+															: 'Out Of Stock'}
+													</Col>
+												</Row>
+											</ListGroup.Item>
+
+											{product.countInStock > 0 && (
+												<ListGroup.Item>
+													<Row>
+														<Col>Qty</Col>
+														<Col>
+															<Form.Control
+																as='select'
+																value={qty}
+																onChange={e => setQty(e.target.value)}>
+																{[...Array(product.countInStock).keys()].map(
+																	x => (
+																		// [...Array(product.countInStock).keys()]
+																		// return : [0,1,2,3..]
+																		<option key={x + 1} value={x + 1}>
+																			{x + 1}
+																		</option>
+																	)
+																)}
+															</Form.Control>
+														</Col>
+													</Row>
+												</ListGroup.Item>
+											)}
+										</div>
+										<div className='p-2'>
+											<Button
+												onClick={addToCartHandler}
+												className='btn-block'
+												type='button'
+												disabled={product.countInStock === 0}>
+												Add To Cart
+											</Button>
+										</div>
+									</ListGroup>
+								</Card>
+							</Col>
+						</Row>
+						<hr />
+						<Row className='mb-5'>
+							<div className='col-2'></div>
+							<div className='col-8'>
+								<h5>About this product</h5>
+								<ul>
+									{product.features &&
+										product.features.map(item => <li key={item}>{item}</li>)}
+								</ul>
+							</div>
+						</Row>
+						<hr />
+						<Row>
+							<div className='col-8 mx-auto'>
+								<h5>Product details</h5>
+								<ProductDetailsTable details={product.details} />
+							</div>
+						</Row>
+						<Row>
+							{/* <Col md={6}>
 							<h2>Reviews</h2>
 							{product.reviews.length === 0 && (
 								<Message>No Reviews</Message>
@@ -242,9 +274,10 @@ const ProductScreen = ({ history, match }) => {
 								</ListGroup.Item>
 							</ListGroup>
 						</Col> */}
-					</Row>
-				</>
-			)}
+						</Row>
+					</>
+				)}
+			</div>
 		</div>
 	)
 }

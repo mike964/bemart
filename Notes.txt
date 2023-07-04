@@ -48,7 +48,10 @@ Inspired by Brad Traversy Proshop MERN project
 - Set filters sidebar for cell phones as well               ✅ 7.17
 - Show spinner when products loading or filters change  
 - Add Sort functionality for products, UI n Server          ✅ 7.21
+- Fix Single Product page
 
+12:12 PM 7/4/2023
+[x] check icon added for add to cart btn 😎                 ✅ 7.4
  
 
 # NOTES 
