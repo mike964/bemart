@@ -52,6 +52,7 @@ Inspired by Brad Traversy Proshop MERN project
 
 12:12 PM 7/4/2023
 [x] check icon n spinner added for add to cart btn 😎                 ✅ 7.4
+[x] Multiple Language done in redux- text dir fixed 
  
 
 # NOTES 

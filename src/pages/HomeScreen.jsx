@@ -14,97 +14,98 @@ import ProductsSlider from '../components/products/ProductSlider.jsx'
 
 // const HomeScreen = ({ match }) => {
 const HomeScreen = () => {
-	// const keyword = match.params.keyword
-	const params = useParams()
-	const { keyword } = useParams()
-	console.log(useParams())
+  // const keyword = match.params.keyword
+  const params = useParams()
+  const { keyword } = useParams()
+  console.log( useParams() )
 
-	// const pageNumber = match.params.pageNumber || 1
-	const pageNumber = params.pageNumber || 1
+  // const pageNumber = match.params.pageNumber || 1
+  const pageNumber = params.pageNumber || 1
 
-	const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-	const productList = useSelector(state => state.productList)
-	const { loading, error, products, page, pages } = productList
+  const productList = useSelector( state => state.productList )
+  const { loading, error, products, page, pages } = productList
+  const { r } = useSelector( state => state.strings )
 
-	useEffect(() => {
-		dispatch(listProducts(keyword, pageNumber))
-		// console.log(pageNumber)
-	}, [dispatch, keyword, pageNumber])
+  useEffect( () => {
+    dispatch( listProducts( keyword, pageNumber ) )
+    // console.log(pageNumber)
+  }, [ dispatch, keyword, pageNumber ] )
 
-	return (
-		<div className='container home-page'>
-			<Meta />
-			{!keyword ? (
-				// <ProductCarousel />
-				<div className='row mb-5'>
-					<div className='col p-0'>
-						<BillboardCarousel />
-					</div>
-				</div>
-			) : (
-				<Link to='/' className='btn btn-light'>
-					Go Back
-				</Link>
-			)}
-			{/* <h2>{!keyword ? 'Latest Products' : 'Search Result'}</h2> */}
-			{loading && <Loader />}
-			{error && <Message variant='danger'>{error}</Message>}
-			<>
-				{!keyword && (
-					<div className='mb-3'>
-						<ProductsSlider
-							title={'Featured Products'}
-							url='/products/bestsellers'
-						/>
-					</div>
-				)}
-				{!keyword && (
-					<div className='mb-4'>
-						<ProductsSlider
-							title={'Best Sellers'}
-							url='/products/bestsellers'
-						/>
-					</div>
-				)}
+  return (
+    <div className='container home-page'>
+      <Meta />
+      { !keyword ? (
+        // <ProductCarousel />
+        <div className='row mb-5'>
+          <div className='col p-0'>
+            <BillboardCarousel />
+          </div>
+        </div>
+      ) : (
+        <Link to='/' className='btn btn-light'>
+          Go Back
+        </Link>
+      ) }
+      {/* <h2>{!keyword ? 'Latest Products' : 'Search Result'}</h2> */ }
+      { loading && <Loader /> }
+      { error && <Message variant='danger'>{ error }</Message> }
+      <>
+        { !keyword && (
+          <div className='mb-3'>
+            <ProductsSlider
+              title={ r.featured_products }
+              url='/products/bestsellers'
+            />
+          </div>
+        ) }
+        { !keyword && (
+          <div className='mb-4'>
+            <ProductsSlider
+              title={ r.best_sellers }
+              url='/products/bestsellers'
+            />
+          </div>
+        ) }
 
-				<div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
-					<h4> {keyword ? 'Search Result' : 'Latest Products'} </h4>
-					{!keyword && (
-						<div className='p-2'>
-							<Link className=' ' to='/products'>
-								More products <i className='fas fa-angle-right' />{' '}
-							</Link>
-						</div>
-					)}
-				</div>
-				{!loading && (
-					<Row className='bg-white'>
-						{products.slice(0, 8).map(product => (
-							<Col
-								key={product.asin}
-								sm={12}
-								md={6}
-								lg={4}
-								xl={3}
-								className='mb-4'>
-								<ProductItem product={product} grid clickable />
-							</Col>
-						))}
-					</Row>
-				)}
+        <div className='d-flex flex-wrap justify-content-between align-items-center border-bottom mb-3 px-3'>
+          <h4> { keyword ? 'Search Result' : r.latest_products } </h4>
+          { !keyword && (
+            <div className='p-2'>
+              <Link className='text-secondary' to='/products'>
+                { r.show_more } <i className='fas fa-angle-right' />{ ' ' }
+              </Link>
+            </div>
+          ) }
+        </div>
+        { !loading && (
+          <Row className='bg-white'>
+            { products.slice( 0, 8 ).map( product => (
+              <Col
+                key={ product.asin }
+                sm={ 12 }
+                md={ 6 }
+                lg={ 4 }
+                xl={ 3 }
+                className='mb-4'>
+                <ProductItem product={ product } grid clickable />
+              </Col>
+            ) ) }
+          </Row>
+        ) }
 
-				{/* Only when Search, show pagination */}
-				{keyword && (
-					<Paginate
-						pages={pages}
-						page={page}
-						keyword={keyword ? keyword : ''}
-					/>
-				)}
-			</>
-		</div>
-	)
+        {/* Only when Search, show pagination */ }
+        { keyword && (
+          <Paginate
+            pages={ pages }
+            page={ page }
+            keyword={ keyword ? keyword : '' }
+          />
+        ) }
+      </>
+    </div>
+  )
 }
 
 export default HomeScreen

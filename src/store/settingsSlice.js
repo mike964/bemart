@@ -4,7 +4,7 @@ const settingsSlice = createSlice({
 	name: 'settings',
 	initialState: {
 		currency: 'usd', // [usd , gbp, eur, iqd , tl]
-		language: 'eng',
+		language: 'eng', // eng, arb
 	},
 	reducers: {
 		currencyChanged(state, action) {
@@ -18,6 +18,7 @@ const settingsSlice = createSlice({
 
 export const {
 	currencyChanged,
+	languageChanged,
 	// completedTodosCleared,
 	// todoAdded,
 	// todoColorSelected,

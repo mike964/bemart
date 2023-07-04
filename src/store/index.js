@@ -13,6 +13,7 @@ import authReducer from '../store/auth/authSlice'
 import cartSlice from './cart/cartSlice'
 import filtersSlice from './filters/filtersSlice'
 import settingsSlice from './settingsSlice'
+import stringsSlice from './stringsSlice'
 
 // * USING REDUX Toolkit
 export const store = configureStore({
@@ -29,6 +30,7 @@ export const store = configureStore({
 		cart: cartSlice,
 		filters: filtersSlice,
 		settings: settingsSlice,
+		strings: stringsSlice,
 	},
 })
 
