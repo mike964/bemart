@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5dd94839fd93cbca1d5a121e4d96ee45",
+    "revision": "ba3170bcf36362c64f2d6c8e6c83373f",
     "url": "/bemart/index.html"
   },
   {
-    "revision": "68e0c944ff898b6d42c8",
-    "url": "/bemart/static/css/2.03ca2d78.chunk.css"
+    "revision": "ea273cfc5bd3bcae9154",
+    "url": "/bemart/static/css/2.2125c921.chunk.css"
   },
   {
-    "revision": "1ce96f912df8e31f00a6",
-    "url": "/bemart/static/css/main.2b464d15.chunk.css"
+    "revision": "c2c2300cac400825fa04",
+    "url": "/bemart/static/css/main.ece7cb85.chunk.css"
   },
   {
-    "revision": "68e0c944ff898b6d42c8",
-    "url": "/bemart/static/js/2.7e05baaa.chunk.js"
+    "revision": "ea273cfc5bd3bcae9154",
+    "url": "/bemart/static/js/2.7ab5f27f.chunk.js"
   },
   {
     "revision": "4cf5c6c6f464cc15458a86cbdc669a15",
-    "url": "/bemart/static/js/2.7e05baaa.chunk.js.LICENSE.txt"
+    "url": "/bemart/static/js/2.7ab5f27f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ce96f912df8e31f00a6",
-    "url": "/bemart/static/js/main.71e734ea.chunk.js"
+    "revision": "c2c2300cac400825fa04",
+    "url": "/bemart/static/js/main.2b62f44f.chunk.js"
   },
   {
     "revision": "e4f3b31c376c5d1d530d",
